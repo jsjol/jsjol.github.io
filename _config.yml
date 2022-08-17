@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Jens Sjölund"
   avatar           : "Jens_Sjolund.png"
-  bio              : "I'm an assistant professor of artificial intelligence (AI) at Uppsala University."
+  bio              : "Assistant professor of artificial intelligence (AI) at Uppsala University."
   location         : "Uppsala, Sweden"
   employer         : #"Uppsala University"
   pubmed           : 
@@ -258,7 +258,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Stockholm # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
