@@ -63,6 +63,14 @@ img {
   	<p>PhD student (main supervisor)</p>
   </div>
 
+    <div class="box">
+  	<img src="/images/paul.jpg" alt="Paul Häusner" width="150"/>
+  	<br/>
+  	<a href="https://paulhausner.github.io">Paul Häusner</a>
+  	<br/>
+  	<p>PhD student (main supervisor)</p>
+  </div>
+
   <div class="box">
 	<img src="/images/niklas.jpg" alt="Niklas Gunnarsson" width="150"/>
   	<br/>
