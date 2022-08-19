@@ -5,4 +5,7 @@ main:
     
   - title: "Group"
     url: /group/
+  
+  - title: "Contact"
+    url: /contact/ 
 
