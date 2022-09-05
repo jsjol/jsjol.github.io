@@ -95,5 +95,13 @@ img {
   	<p>PhD student (co-supervisor)</p>
   </div>
 
+  <div class="box">
+	<img src="/images/Ziwei.png" alt="Ziwei Luo" width="150"/>
+  	<br/>
+  	<a href="https://algolzw.github.io/">Ziwei Luo</a>
+  	<br/>
+  	<p>PhD student (co-supervisor)</p>
+  </div>
+
 </div>
 
