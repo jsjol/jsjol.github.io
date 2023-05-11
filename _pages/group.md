@@ -103,5 +103,13 @@ img {
   	<p>PhD student (co-supervisor)</p>
   </div>
 
+  <div class="box">
+	<img src="/images/Viktor.png" alt="Viktor Vanoppen" width="150"/>
+  	<br/>
+  	<a href="https://www.katalog.uu.se/empinfo/?id=N19-461">Viktor Vanoppen</a>
+  	<br/>
+  	<p>PhD student (co-supervisor)</p>
+  </div>
+
 </div>
 
