@@ -1,6 +1,6 @@
 ---
 title: "Automated radiotherapy planning"
-excerpt: "Radiotherapy planning is complex and time consuming. I've made dozens of inventions, primarily based on machine learning and optimization, that can guide or automate parts of the radiotherapy workflow.<br/><img src='/images/sectors.jpg'>"
+excerpt: "Radiotherapy planning is complex and time consuming. I've made dozens of inventions, primarily based on machine learning and optimization, that can guide or automate parts of the radiotherapy workflow.<br><br><img src='/images/sectors.jpg'>"
 collection: portfolio
 ---
 
