@@ -4,10 +4,10 @@ excerpt: "Our open-source library for numerical optimization of diffusion MRI ex
 collection: portfolio
 ---
 
-Diffusion MRI (dMRI) is a useful probe of tissue microstructure, which can be used to derive biomarkers for diagnostics and treatment. Diffusion measurements using continuous gradient waveforms significantly expand the capabilities of conventional diffusion MRI \[[J5](#references)\]. However, implementing them on real-world MR scanners is challenging due to the plethora of constraints imposed by hardware limitations and physiology. 
+Diffusion MRI (dMRI) is a useful probe of tissue microstructure, which can be used to derive biomarkers for diagnostics and treatment. Diffusion measurements using continuous gradient waveforms significantly expand the capabilities of conventional diffusion MRI \[[J6](#references)\]. However, implementing them on real-world MR scanners is challenging due to the plethora of constraints imposed by hardware limitations and physiology. 
 
 ## Contributions
-In collaboration with [Filip Szczepankiewicz](https://scholar.google.se/citations?user=ktiCQwMAAAAJ&hl=sv&oi=ao) and others, we've developed the open-source library [NOW](https://github.com/jsjol/NOW) that has established itself as the de facto standard tool for gradient waveform design for tensor-valued encoding in diffusion MRI. Since its introduction in 2015 \[[J1](#references)\], the methodology and software has been extended and refined to capture additional effects, including motion compensation \[[J3](#references)\] and cross-term compensation \[[J4](#references)\]. We have also demonstrated that NOW enables diffusional variance decomposition (DIVIDE) on clinical MRI systems \[[J2](#references)\].
+In collaboration with [Filip Szczepankiewicz](https://scholar.google.se/citations?user=ktiCQwMAAAAJ&hl=sv&oi=ao) and others, we've developed the open-source library [NOW](https://github.com/jsjol/NOW) that has established itself as the de facto standard tool for gradient waveform design for tensor-valued encoding in diffusion MRI. Since its introduction in 2015 \[[J1](#references)\], the methodology and software has been extended and refined to capture additional effects, including Maxwell compensation \[[J3](#references)\], motion compensation \[[J4](#references)\] and cross-term compensation \[[J5](#references)\]. We have also demonstrated that NOW enables diffusional variance decomposition (DIVIDE) on clinical MRI systems \[[J2](#references)\].
 
 ## References
 
@@ -16,8 +16,10 @@ In collaboration with [Filip Szczepankiewicz](https://scholar.google.se/citation
 
 ###### \[J2\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F , **Sjölund J**, Ståhlberg F, Lätt J, and Nilsson M. _Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems._ PLoS One (2019).</SPAN>](https://doi.org/10.1371/journal.pone.0214238)
 
-###### \[J3\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F, **Sjölund J**, Dall’Armellina E, Plein S, Schneider E J, Teh I, and Westin C-F, _Motion-compensated gradient waveforms for tensor-valued diffusion encoding by constrained numerical optimization._ Magn Reson Med (2021)</SPAN>](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28551)
+###### \[J3\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F, Westin C F, and Nilsson, M. _Maxwell‐compensated design of asymmetric gradient waveforms for tensor‐valued diffusion encoding._ Magnetic resonance in medicine, 82(4), 1424-1437.</SPAN>](https://doi.org/10.1002/mrm.27828)
 
-###### \[J4\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F and **Sjölund J**, _Cross-term-compensated gradient waveform design for tensor-valued diffusion MRI._ Journal of Magnetic Resonance (2021)</SPAN>](https://doi.org/10.1016/j.jmr.2021.106991)
+###### \[J4\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F, **Sjölund J**, Dall’Armellina E, Plein S, Schneider E J, Teh I, and Westin C-F, _Motion-compensated gradient waveforms for tensor-valued diffusion encoding by constrained numerical optimization._ Magn Reson Med (2021)</SPAN>](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28551)
 
-###### \[J5\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F, Westin C-F, and Nilsson, M, _Gradient waveform design for tensor-valued encoding in diffusion MRI._ Journal of Neuroscience Methods (2021)</SPAN>](https://doi.org/10.1016/j.jneumeth.2020.109007)
+###### \[J5\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F and **Sjölund J**, _Cross-term-compensated gradient waveform design for tensor-valued diffusion MRI._ Journal of Magnetic Resonance (2021)</SPAN>](https://doi.org/10.1016/j.jmr.2021.106991)
+
+###### \[J6\] [<SPAN STYLE="font-weight:normal">Szczepankiewicz F, Westin C-F, and Nilsson, M, _Gradient waveform design for tensor-valued encoding in diffusion MRI._ Journal of Neuroscience Methods (2021)</SPAN>](https://doi.org/10.1016/j.jneumeth.2020.109007)
