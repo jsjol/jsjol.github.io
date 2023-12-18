@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Jens Sjölund"
   avatar           : "jens_square.jpg"
-  bio              : "Assistant professor of artificial intelligence (AI) at Uppsala University."
+  bio              : "Assistant professor of artificial intelligence (AI) at [Uppsala University](https://www.uu.se/en)."
   location         : "Uppsala, Sweden"
-  employer         : #"Uppsala University"
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.se/citations?user=AlF2g-YAAAAJ&hl=en"
   email            : "jens.sjolund@it.uu.se"
