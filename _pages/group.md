@@ -120,7 +120,7 @@ img {
   </div>
 
   <div class="box">
-	<img src="/images/Sanna.jpg" alt="Sanna Jarl" width="150"/>
+	<img src="/images/sanna.jpg" alt="Sanna Jarl" width="150"/>
   	<br/>
   	<a href="https://www.ri.se/en/person/sanna-jarl">Sanna Jarl</a>
   	<br/>
