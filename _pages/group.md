@@ -44,7 +44,7 @@ img {
     <br/>
     <a href="https://zz.zabemon.com/">Zheng Zhao</a>
     <br/>
-    <p>PostDoc</p>
+    <p>Postdoc</p>
   </div>
 
   <div class="box">
@@ -52,7 +52,7 @@ img {
     <br/>
     <a href="https://smair.github.io/">Sebastian Mair</a>
     <br/>
-    <p>PostDoc</p>
+    <p>Postdoc</p>
   </div>
 
   <div class="box">
@@ -60,7 +60,7 @@ img {
     <br/>
     <a href="https://www.it.uu.se/katalog/danes793">Daniel Hernández Escobar</a>
     <br/>
-    <p>PostDoc</p>
+    <p>Postdoc</p>
   </div>
 
   <div class="box">
