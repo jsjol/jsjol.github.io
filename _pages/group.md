@@ -56,6 +56,14 @@ img {
   </div>
 
   <div class="box">
+    <img src="/images/daniel.jpg" alt="Daniel Hernández Escobar" width="150"/>
+    <br/>
+    <a href="https://www.it.uu.se/katalog/danes793">Daniel Hernández Escobar</a>
+    <br/>
+    <p>PostDoc</p>
+  </div>
+
+  <div class="box">
   	<img src="/images/jennifer.jpg" alt="Jennifer Andersson" width="150"/>
   	<br/>
   	<a href="https://www.it.uu.se/katalog/jenan985">Jennifer Andersson</a>
@@ -107,6 +115,14 @@ img {
 	<img src="/images/Viktor.png" alt="Viktor Vanoppen" width="150"/>
   	<br/>
   	<a href="https://www.katalog.uu.se/empinfo/?id=N19-461">Viktor Vanoppen</a>
+  	<br/>
+  	<p>PhD student (co-supervisor)</p>
+  </div>
+
+  <div class="box">
+	<img src="/images/Sanna.jpg" alt="Sanna Jarl" width="150"/>
+  	<br/>
+  	<a href="https://www.ri.se/en/person/sanna-jarl">Sanna Jarl</a>
   	<br/>
   	<p>PhD student (co-supervisor)</p>
   </div>
