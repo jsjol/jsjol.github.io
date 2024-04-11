@@ -15,7 +15,7 @@ Prior to joining Uppsala University, I was a senior research scientist at the ra
 At Elekta, I did research on machine learning, optimization and medical image analysis (MRI in particular) which resulted in more than 25 patent applications. I'm particularly proud of the work on dose optimization which formed the basis for [Leksell Gamma Knife Lightning](https://www.elekta.com/radiosurgery/leksell-gamma-knife-lightning/).
 
 ## PhD opening
-I currently have an opening for a PhD student in machine learning with a focus on simulation-based inference for batteries. You can [read more about the project here](https://www.math.uu.se/digitalAssets/1078/c_1078262-l_3-k_12-sjolund-berg-broqvist-simulation-based-inference-on-metal-plating-dynamics.pdf) and [apply here](https://www.math.uu.se/the-department/vacant-positions/?positionId=702358). The deadline is March 22. 
+I currently have an opening for a PhD student in generative machine learning and statistical inference together with [Fredrik Lindsten](https://lindsten.netlify.app/) at Linköping University. You can [read more and apply here](https://liu.se/en/work-at-liu/vacancies/24191).
 
 
 ## Working with me

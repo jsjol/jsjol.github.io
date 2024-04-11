@@ -64,6 +64,14 @@ img {
   </div>
 
   <div class="box">
+    <img src="/images/liam.jpg" alt="Liam Hamed Taghavian" width="150"/>
+    <br/>
+    <a href="https://www.katalog.uu.se/profile/?id=N24-736">Liam Hamed Taghavian</a>
+    <br/>
+    <p>Postdoc</p>
+  </div>
+
+  <div class="box">
   	<img src="/images/jennifer.jpg" alt="Jennifer Andersson" width="150"/>
   	<br/>
   	<a href="https://www.it.uu.se/katalog/jenan985">Jennifer Andersson</a>
