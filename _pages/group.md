@@ -137,3 +137,30 @@ img {
 
 </div>
 
+# Alumni
+
+### Master's thesis students
+
+Jannes van Poppelen, Phase-field modeling using physics-informed neural networks, 2024
+
+Duc Huy Le, [Exploration-Exploitation Trade-off Approaches in Multi-Armed Bandit](https://uu.diva-portal.org/smash/get/diva2:1798500/FULLTEXT01.pdf), 2023
+
+Benjamin Bucknall, [Promoting Exploration in Reinforcement Learning through Surprise-Based Intrinsic Motivation](https://www.diva-portal.org/smash/get/diva2:1677513/FULLTEXT01.pdf), 2022
+
+Dmitrijs Kass, [Deep reinforcement learning for isocenter placement in Gamma Knife radiosurgery](https://uu.diva-portal.org/smash/get/diva2:1732456/FULLTEXT01.pdf), 2022
+
+Simon Löw, [Automatic Generation of Patient-specific Gamma Knife Treatment Plans for Vestibular Schwannoma Patients](http://www.diva-portal.se/smash/get/diva2:1429712/FULLTEXT01.pdf), 2020
+
+Dominik Fay, [Membership Privacy in Neural Networks for Medical Image Segmentation](http://kth.diva-portal.org/smash/get/diva2:1400696/FULLTEXT01.pdf), 2019
+
+Kenneth Lau, [Representation Learning on Brain MR Images for Tumor Segmentation](https://www.diva-portal.org/smash/get/diva2:1247208/FULLTEXT01.pdf), 2018
+
+Dennis Sångberg, [Automated Glioma Segmentation in MRI using Deep Convolutional Networks](https://kth.diva-portal.org/smash/get/diva2:841518/FULLTEXT01.pdf), 2015
+
+Johanna Skarpman Munter, [Dose-Volume Histogram Prediction using Kernel Density Estimation](http://www.diva-portal.org/smash/get/diva2:763240/FULLTEXT01), 2015
+
+Marcus Josefsson, [Robust Optimization for Radiosurgery under the Static Dose Cloud Approximation](https://kth.diva-portal.org/smash/get/diva2:766647/FULLTEXT01.pdf), 2014
+
+Jenni Svensson, [Multiobjective optimization in radiosurgery: How to approximate and navigate on the Pareto surface](https://kth.diva-portal.org/smash/get/diva2:716518/FULLTEXT01.pdf), 2014
+
+Lars Lowe Sjösund, [Automatic Localization of Bounding Boxes for Subcortical Structures in MR Images Using Regression Forests](https://www.diva-portal.org/smash/get/diva2:700083/FULLTEXT01.pdf), 2013
