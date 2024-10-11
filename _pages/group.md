@@ -40,22 +40,6 @@ img {
 <div class="wrapper">
 
   <div class="box">
-    <img src="/images/zheng.jpg" alt="Zheng Zhao" width="150"/>
-    <br/>
-    <a href="https://zz.zabemon.com/">Zheng Zhao</a>
-    <br/>
-    <p>Postdoc</p>
-  </div>
-
-  <div class="box">
-    <img src="/images/sebastian.jpg" alt="Sebastian Mair" width="150"/>
-    <br/>
-    <a href="https://smair.github.io/">Sebastian Mair</a>
-    <br/>
-    <p>Postdoc</p>
-  </div>
-
-  <div class="box">
     <img src="/images/daniel.jpg" alt="Daniel Hernández Escobar" width="150"/>
     <br/>
     <a href="https://www.it.uu.se/katalog/danes793">Daniel Hernández Escobar</a>
@@ -71,15 +55,8 @@ img {
     <p>Postdoc</p>
   </div>
 
-  <div class="box">
-  	<img src="/images/jennifer.jpg" alt="Jennifer Andersson" width="150"/>
-  	<br/>
-  	<a href="https://www.it.uu.se/katalog/jenan985">Jennifer Andersson</a>
-  	<br/>
-  	<p>PhD student (main supervisor)</p>
-  </div>
 
-    <div class="box">
+  <div class="box">
   	<img src="/images/paul.jpg" alt="Paul Häusner" width="150"/>
   	<br/>
   	<a href="https://paulhausner.github.io">Paul Häusner</a>
@@ -135,13 +112,27 @@ img {
   	<p>PhD student (co-supervisor)</p>
   </div>
 
+  <div class="box">
+	<img src="/images/adhithyan.png" alt="Adhithyan Kalaivanan" width="150"/>
+  	<br/>
+  	<a href="https://adhithyan8.github.io/">Adhithyan Kalaivanan</a>
+  	<br/>
+  	<p>PhD student (co-supervisor)</p>
+  </div>
+
 </div>
 
 # Alumni
 
+### Postdocs
+
+[Zheng Zhao](https://zz.zabemon.com/), Assistant Professor, Linköping University
+
+[Sebastian Mair](https://smair.github.io/), Assistant Professor, Linköping University
+
 ### Master's thesis students
 
-Jannes van Poppelen, Phase-field modeling using physics-informed neural networks, 2024
+Jannes van Poppelen, [Phase-field modeling using physics-informed neural networks](https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1903707&dswid=1520), 2024
 
 Duc Huy Le, [Exploration-Exploitation Trade-off Approaches in Multi-Armed Bandit](https://uu.diva-portal.org/smash/get/diva2:1798500/FULLTEXT01.pdf), 2023
 
