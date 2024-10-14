@@ -126,9 +126,9 @@ img {
 
 ### Postdocs
 
-[Zheng Zhao](https://zz.zabemon.com/), Assistant Professor, Linköping University
+2022 - 2024, [Zheng Zhao](https://zz.zabemon.com/), Assistant Professor, Linköping University
 
-[Sebastian Mair](https://smair.github.io/), Assistant Professor, Linköping University
+2021 - 2024, [Sebastian Mair](https://smair.github.io/), Assistant Professor, Linköping University
 
 ### Master's thesis students
 
