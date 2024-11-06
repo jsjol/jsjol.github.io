@@ -132,7 +132,11 @@ img {
 
 ### Master's thesis students
 
-Jannes van Poppelen, [Phase-field modeling using physics-informed neural networks](https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1903707&dswid=1520), 2024
+Henri Doerks, [Learning Distributed Optimization with Graph Neural Networks](https://uu.diva-portal.org/smash/get/diva2:1910050/FULLTEXT01.pdf), 2024
+
+Jinglin Gao, [Self-supervised representation learning for Micro-CT images](https://www.diva-portal.org/smash/get/diva2:1909757/FULLTEXT01.pdf), 2024
+
+Jannes van Poppelen, [Phase-field modeling using physics-informed neural networks](https://uu.diva-portal.org/smash/get/diva2:1903707/FULLTEXT01.pdf), 2024
 
 Duc Huy Le, [Exploration-Exploitation Trade-off Approaches in Multi-Armed Bandit](https://uu.diva-portal.org/smash/get/diva2:1798500/FULLTEXT01.pdf), 2023
 
