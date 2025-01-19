@@ -14,8 +14,8 @@ author_profile: true
 | [Convex optimization](https://uppsala.instructure.com/courses/52871) | PhD | Course responsible |
 | [Project in convex optimization](https://uppsala.instructure.com/courses/52871) | PhD | Course responsible |
 | [Great Ideas in Learning and Control](https://uppsala.instructure.com/courses/88775) | PhD | Lecturer |
-| [Statistical Machine Learning](https://uppsala.instructure.com/courses/46077) | Master | Course responsible |
-| [Advanced Probabilistic Machine Learning](https://uppsala.instructure.com/courses/68453) | Master | Lecturer |
+| [Statistical Machine Learning](https://uppsala.instructure.com/courses/101652) | Master | Course responsible |
+| [Advanced Probabilistic Machine Learning](https://uppsala.instructure.com/courses/100904) | Master | Lecturer |
 
 
 <!--

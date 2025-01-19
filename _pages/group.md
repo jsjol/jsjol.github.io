@@ -65,11 +65,11 @@ img {
   </div>
 
   <div class="box">
-	<img src="/images/niklas.jpg" alt="Niklas Gunnarsson" width="150"/>
+  	<img src="/images/Laura.jpg" alt="Laura van Weesep" width="150"/>
   	<br/>
-  	<a href="https://katalog.uu.se/empinfo/?id=N18-2523">Niklas Gunnarsson</a>
+  	<a href="https://scholar.google.com/citations?user=jW7_NugAAAAJ&hl=en">Laura van Weesep</a>
   	<br/>
-  	<p>PhD student (co-supervisor)</p>
+  	<p>PhD student (main supervisor)</p>
   </div>
 
   <div class="box">
@@ -124,11 +124,15 @@ img {
 
 # Alumni
 
+### PhD students
+
+2019 - 2024 (co-supervisor) [Niklas Gunnarsson](https://ngunnar.github.io/), [Motion Estimation from Temporally and Spatially Sparse Medical Image Sequences](https://uu.diva-portal.org/smash/record.jsf?pid=diva2:1902077), subsequently Lead Research Scientist at Elekta
+
 ### Postdocs
 
-2022 - 2024, [Zheng Zhao](https://zz.zabemon.com/), Assistant Professor, Linköping University
+2022 - 2024, [Zheng Zhao](https://zz.zabemon.com/), subsequently Assistant Professor, Linköping University
 
-2021 - 2024, [Sebastian Mair](https://smair.github.io/), Assistant Professor, Linköping University
+2021 - 2024, [Sebastian Mair](https://smair.github.io/), subsequently Assistant Professor, Linköping University
 
 ### Master's thesis students
 
