@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a [WASP](https://wasp-sweden.org/) assistant professor in Artificial Intelligence (AI) at [Uppsala University](https://www.uu.se/en). My research interests are primarily in **machine learning** and **optimization**.
+I'm a [WASP](https://wasp-sweden.org/) Fellow and an assistant professor in Artificial Intelligence (AI) at [Uppsala University](https://www.uu.se/en). My research interests are primarily in **machine learning** and **optimization**.
 
 Prior to joining Uppsala University, I was a senior research scientist at the radiotherapy company [Elekta](https://www.elekta.com) where I was also an industrial PhD student affiliated with Linköping University.
 
