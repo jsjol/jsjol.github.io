@@ -65,7 +65,7 @@ img {
   </div>
 
   <div class="box">
-  	<img src="/images/laura.jpg" alt="Laura van Weesep" width="150"/>
+  	<img src="/images/laura.JPG" alt="Laura van Weesep" width="150"/>
   	<br/>
   	<a href="https://scholar.google.com/citations?user=jW7_NugAAAAJ&hl=en">Laura van Weesep</a>
   	<br/>
