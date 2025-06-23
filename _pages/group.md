@@ -73,14 +73,6 @@ img {
   </div>
 
   <div class="box">
-	<img src="/images/dominik.jpg" alt="Dominik Fay" width="150"/>
-  	<br/>
-  	<a href="https://www.kth.se/profile/dominikf">Dominik Fay</a>
-  	<br/>
-  	<p>PhD student (co-supervisor)</p>
-  </div>
-
-  <div class="box">
 	<img src="/images/jackie.jpg" alt="Jackie Yik" width="150"/>
   	<br/>
   	<a href="https://katalog.uu.se/profile/?id=N21-1121">Jackie Yik</a>
@@ -126,6 +118,8 @@ img {
 
 ### PhD students
 
+2020 - 2025 (co-supervisor) [Dominik Fay](https://dominikfay.me/), [Machine Learning with Decentralized Data and Differential Privacy: New Methods for Training, Inference and Sampling](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-363514), subsequently Research Scientist at Elekta
+
 2019 - 2024 (co-supervisor) [Niklas Gunnarsson](https://ngunnar.github.io/), [Motion Estimation from Temporally and Spatially Sparse Medical Image Sequences](https://uu.diva-portal.org/smash/record.jsf?pid=diva2:1902077), subsequently Lead Research Scientist at Elekta
 
 ### Postdocs
@@ -135,6 +129,8 @@ img {
 2021 - 2024, [Sebastian Mair](https://smair.github.io/), subsequently Assistant Professor, Linköping University
 
 ### Master's thesis students
+
+William Samuelsson, [Accelerating Interior Point Methods using Graph Neural Networks](https://uu.diva-portal.org/smash/get/diva2:1969377/FULLTEXT01.pdf), 2025
 
 Henri Doerks, [Learning Distributed Optimization with Graph Neural Networks](https://uu.diva-portal.org/smash/get/diva2:1910050/FULLTEXT01.pdf), 2024
 
