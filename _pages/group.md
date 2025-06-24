@@ -118,7 +118,7 @@ img {
 
 ### PhD students
 
-2020 - 2025 (co-supervisor) [Dominik Fay](https://dominikfay.me/), [Machine Learning with Decentralized Data and Differential Privacy: New Methods for Training, Inference and Sampling](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-363514), subsequently Research Scientist at Elekta
+2020 - 2025 (co-supervisor) [Dominik Fay](https://dominikfay.me/), [Machine Learning with Decentralized Data and Differential Privacy: New Methods for Training, Inference and Sampling](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-363514), subsequently Senior Research Scientist at Elekta
 
 2019 - 2024 (co-supervisor) [Niklas Gunnarsson](https://ngunnar.github.io/), [Motion Estimation from Temporally and Spatially Sparse Medical Image Sequences](https://uu.diva-portal.org/smash/record.jsf?pid=diva2:1902077), subsequently Lead Research Scientist at Elekta
 
