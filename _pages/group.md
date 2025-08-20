@@ -40,6 +40,30 @@ img {
 <div class="wrapper">
 
   <div class="box">
+  	<img src="/images/paul.jpg" alt="Paul Häusner" width="150"/>
+  	<br/>
+  	<a href="https://paulhausner.github.io">Paul Häusner</a>
+  	<br/>
+  	<p>PhD student (main supervisor)</p>
+  </div>
+
+  <div class="box">
+  	<img src="/images/ella_square.jpg" alt="Ella Schmidtobreick" width="150"/>
+  	<br/>
+  	<a href="https://www.uu.se/en/contact-and-organisation/staff?query=N24-2339">Ella Schmidtobreick</a>
+  	<br/>
+  	<p>PhD student (main supervisor)</p>
+  </div>
+
+  <div class="box">
+  	<img src="/images/laura.JPG" alt="Laura van Weesep" width="150"/>
+  	<br/>
+  	<a href="https://scholar.google.com/citations?user=jW7_NugAAAAJ&hl=en">Laura van Weesep</a>
+  	<br/>
+  	<p>PhD student (main supervisor)</p>
+  </div>
+
+  <div class="box">
     <img src="/images/daniel.jpg" alt="Daniel Hernández Escobar" width="150"/>
     <br/>
     <a href="https://www.it.uu.se/katalog/danes793">Daniel Hernández Escobar</a>
@@ -55,35 +79,18 @@ img {
     <p>Postdoc</p>
   </div>
 
-
   <div class="box">
-  	<img src="/images/paul.jpg" alt="Paul Häusner" width="150"/>
+	<img src="/images/Ziwei.png" alt="Ziwei Luo" width="150"/>
   	<br/>
-  	<a href="https://paulhausner.github.io">Paul Häusner</a>
+  	<a href="https://algolzw.github.io/">Ziwei Luo</a>
   	<br/>
-  	<p>PhD student (main supervisor)</p>
-  </div>
-
-  <div class="box">
-  	<img src="/images/laura.JPG" alt="Laura van Weesep" width="150"/>
-  	<br/>
-  	<a href="https://scholar.google.com/citations?user=jW7_NugAAAAJ&hl=en">Laura van Weesep</a>
-  	<br/>
-  	<p>PhD student (main supervisor)</p>
+  	<p>PhD student (co-supervisor)</p>
   </div>
 
   <div class="box">
 	<img src="/images/jackie.jpg" alt="Jackie Yik" width="150"/>
   	<br/>
   	<a href="https://katalog.uu.se/profile/?id=N21-1121">Jackie Yik</a>
-  	<br/>
-  	<p>PhD student (co-supervisor)</p>
-  </div>
-
-  <div class="box">
-	<img src="/images/Ziwei.png" alt="Ziwei Luo" width="150"/>
-  	<br/>
-  	<a href="https://algolzw.github.io/">Ziwei Luo</a>
   	<br/>
   	<p>PhD student (co-supervisor)</p>
   </div>
@@ -129,6 +136,8 @@ img {
 2021 - 2024, [Sebastian Mair](https://smair.github.io/), subsequently Assistant Professor, Linköping University
 
 ### Master's thesis students
+
+Ella Johanna Schmidtobreick, [Accelerating Active-set Solvers using Graph Neural Networks](https://www.diva-portal.org/smash/get/diva2:1980664/FULLTEXT01.pdf), 2025
 
 William Samuelsson, [Accelerating Interior Point Methods using Graph Neural Networks](https://uu.diva-portal.org/smash/get/diva2:1969377/FULLTEXT01.pdf), 2025
 
