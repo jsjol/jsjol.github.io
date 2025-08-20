@@ -48,9 +48,9 @@ img {
   </div>
 
   <div class="box">
-  	<img src="/images/ella_square.jpg" alt="Ella Schmidtobreick" width="150"/>
+  	<img src="/images/ella_square.JPG" alt="Ella J. Schmidtobreick" width="150"/>
   	<br/>
-  	<a href="https://www.uu.se/en/contact-and-organisation/staff?query=N24-2339">Ella Schmidtobreick</a>
+  	<a href="https://www.uu.se/en/contact-and-organisation/staff?query=N24-2339">Ella J. Schmidtobreick</a>
   	<br/>
   	<p>PhD student (main supervisor)</p>
   </div>
@@ -137,7 +137,7 @@ img {
 
 ### Master's thesis students
 
-Ella Johanna Schmidtobreick, [Accelerating Active-set Solvers using Graph Neural Networks](https://www.diva-portal.org/smash/get/diva2:1980664/FULLTEXT01.pdf), 2025
+Ella J. Schmidtobreick, [Accelerating Active-set Solvers using Graph Neural Networks](https://www.diva-portal.org/smash/get/diva2:1980664/FULLTEXT01.pdf), 2025
 
 William Samuelsson, [Accelerating Interior Point Methods using Graph Neural Networks](https://uu.diva-portal.org/smash/get/diva2:1969377/FULLTEXT01.pdf), 2025
 
