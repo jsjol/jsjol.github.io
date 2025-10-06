@@ -64,6 +64,14 @@ img {
   </div>
 
   <div class="box">
+  	<img src="/images/pritish.jpg" alt="Pritish Ranjan Joshi" width="150"/>
+  	<br/>
+  	<a href="https://pritish.tech">Pritish Ranjan Joshi</a>
+  	<br/>
+  	<p>PhD student (main supervisor)</p>
+  </div>
+
+  <div class="box">
     <img src="/images/daniel.jpg" alt="Daniel Hernández Escobar" width="150"/>
     <br/>
     <a href="https://www.it.uu.se/katalog/danes793">Daniel Hernández Escobar</a>
