@@ -66,7 +66,7 @@ img {
   <div class="box">
   	<img src="/images/pritish.jpg" alt="Pritish Ranjan Joshi" width="150"/>
   	<br/>
-  	<a href="https://pritish.tech">Pritish Ranjan Joshi</a>
+  	<a href="https://drtsinx98.github.io/">Pritish Ranjan Joshi</a>
   	<br/>
   	<p>PhD student (main supervisor)</p>
   </div>
