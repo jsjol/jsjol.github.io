@@ -1,12 +1,4 @@
 /* From https://github.com/dunovank/jupyter-themes/blob/master/jupyterthemes/styles/compiled/grade3.css */
-div#notebook {
-  font-family: sans-serif;
-  font-size: 13pt;
-  line-height: 170%;
-  color: #303030;
-  -webkit-font-smoothing: antialiased !important;
-  padding-top: 25px !important;
-}
 
 body,
 div.body {
@@ -109,12 +101,6 @@ ul#tabs a {
 .nav > li.disabled > a,
 .nav > li.disabled > a:hover {
   color: #828892;
-}
-
-div#notebook {
-  font-family: sans-serif;
-  font-size: 13pt;
-  padding-top: 4px;
 }
 
 .container {
@@ -370,12 +356,6 @@ div.modal-footer > button:hover {
   border-top: none;
 }
 
-.alert-info {
-  background-color: #fdfdfd;
-  border-color: #dedede;
-  color: #303030;
-}
-
 .modal-backdrop,
 .modal-backdrop.in {
   opacity: 0.85;
@@ -398,27 +378,6 @@ div.panel,
   margin: 50px auto;
 }
 
-div.form-control,
-.form-control {
-  font-family: sans-serif;
-  font-size: initial;
-  color: #303030;
-  background-color: #ffffff;
-  border: 1px solid #d0d0d0 !important;
-  margin-left: 2px;
-  box-shadow: none;
-  transition:
-    border-color 0.15s ease-in-out 0s,
-    box-shadow 0.15s ease-in-out 0s;
-}
-
-.form-group.list-group-item {
-  color: #303030;
-  background-color: #f4f4f4;
-  border-color: #dedede;
-  margin-bottom: 0px;
-}
-
 input,
 button,
 select,
@@ -426,27 +385,6 @@ textarea {
   background-color: #ffffff;
   font-weight: normal;
   border: 1px solid #dedede;
-}
-
-.toolbar select,
-.toolbar label {
-  width: auto;
-  vertical-align: middle;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  display: inline;
-  font-size: 92%;
-  margin-left: 10px;
-  padding: 0px;
-  background: #e5e5e5 !important;
-  background-color: #e5e5e5 !important;
-  border: 2px solid #e5e5e5 !important;
-}
-
-.form-control:focus {
-  border-color: #ff7823;
-  outline: 2px solid rgba(240, 147, 43, 0.5);
-  -webkit-box-shadow: none;
 }
 
 ::-webkit-input-placeholder {
@@ -544,26 +482,6 @@ div.cell.selected:before {
   height: 100%;
 }
 
-div.prompt,
-.prompt {
-  font-family: monospace, monospace;
-  font-size: 9pt !important;
-  font-weight: normal;
-  color: #828892;
-  line-height: 170%;
-  padding: 0px;
-  padding-top: 4px;
-  padding-left: 0px;
-  padding-right: 1px;
-  text-align: right !important;
-  min-width: 11.5ex !important;
-  width: 11.5ex !important;
-}
-
-div.cell.selected .prompt {
-  top: 0;
-}
-
 pre,
 code,
 kbd {
@@ -627,24 +545,6 @@ hr {
   z-index: 10;
 }
 
-#clusters > a {
-  color: #ef5c00;
-  text-decoration: underline;
-  cursor: auto;
-}
-
-#clusters > a:hover {
-  color: #126dce;
-  text-decoration: underline;
-  cursor: auto;
-}
-
-.alert-warning {
-  background-color: #f4f4f4;
-  border-color: #f4f4f4;
-  color: #303030;
-}
-
 mark,
 .mark {
   background-color: #ffffff;
@@ -699,44 +599,6 @@ video {
   border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-
-.ansi-black-fg {
-  color: #e22978;
-}
-
-
-.ansi-blue-fg,
-.ansi-blue-intense-fg {
-  color: #009e07;
-}
-
-
-.ansi-green-fg {
-  color: #333333;
-}
-
-.ansi-green-intense-fg {
-  color: #ff8132;
-}
-
-
-.ansi-cyan-fg,
-.ansi-cyan-intense-fg {
-  color: #653bc5;
-}
-
-
-.ansi-yellow-fg,
-.ansi-yellow-intense-fg {
-  color: #ff8132;
-}
-
-
-.ansi-red-fg,
-.ansi-red-intense-fg {
-  color: #de143d;
 }
 
 

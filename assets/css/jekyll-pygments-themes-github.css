@@ -1,7 +1,4 @@
 /* https://github.com/jwarby/jekyll-pygments-themes */
-.highlight .hll {
-  background-color: #ffffcc;
-}
 .highlight .c {
   color: #999988;
   font-style: italic;
@@ -81,11 +78,7 @@
 .highlight .kp {
   color: #000000;
   font-weight: bold;
-} /* Keyword.Pseudo */
-.highlight .kr {
-  color: #000000;
-  font-weight: bold;
-} /* Keyword.Reserved */
+} /* Keyword.Pseudo */ /* Keyword.Reserved */
 .highlight .kt {
   color: #445588;
   font-weight: bold;
@@ -173,10 +166,7 @@
 } /* Literal.String.Escape */
 .highlight .sh {
   color: #d01040;
-} /* Literal.String.Heredoc */
-.highlight .si {
-  color: #d01040;
-} /* Literal.String.Interpol */
+} /* Literal.String.Heredoc */ /* Literal.String.Interpol */
 .highlight .sx {
   color: #d01040;
 } /* Literal.String.Other */
