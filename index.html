@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Metadata, OpenGraph and Schema.org -->
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+</title>
+<meta name="author" content="Jens Sjölund">
+<meta name="description" content="Assistant Professor in Machine Learning at Uppsala University. Machine learning and optimization to make computationally hard problems tractable.
+">
+<meta name="keywords" content="machine learning, optimization, graph neural networks, self-driving labs, diffusion models, Uppsala University">
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+<!-- Styles -->
+<link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+<link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://jsjol.github.io/">
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script>
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+<script>
+    initTheme();
+  </script>
+</head>
+<!-- Body -->
+<body class="fixed-top-nav ">
+<!-- Header -->
+<header>
+<!-- Nav Bar -->
+<nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+<div class="container">
+<!-- Navbar Toggle -->
+<button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar top-bar"></span>
+<span class="icon-bar middle-bar"></span>
+<span class="icon-bar bottom-bar"></span>
+</button>
+<div class="collapse navbar-collapse text-right" id="navbarNav">
+<ul class="navbar-nav ml-auto flex-nowrap">
+<!-- About -->
+<li class="nav-item active">
+<a class="nav-link" href="/">about
+<span class="sr-only">(current)</span>
+</a>
+</li>
+<!-- Other pages -->
+<li class="nav-item ">
+<a class="nav-link" href="/projects/">research
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/publications/">publications
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/people/">group
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/teaching/">teaching
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/cv/">CV
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/contact/">contact
+</a>
+</li>
+<!-- Toogle theme mode -->
+<li class="toggle-container">
+<button id="light-toggle" title="Change theme">
+<i class="fa-half-sun-moon" id="light-toggle-system"></i>
+<i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+<i class="fa-solid fa-sun" id="light-toggle-light"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Scrolling Progress Bar -->
+<progress id="progress" value="0">
+<div class="progress-container">
+<span class="progress-bar"></span>
+</div>
+</progress>
+</header>
+<!-- Content -->
+<div class="container mt-5" role="main">
+<div class="post">
+<header class="post-header">
+<h1 class="post-title">
+</h1>
+<p class="desc">Assistant Professor of AI · <a href="https://www.it.uu.se/" rel="external nofollow noopener" target="_blank">Uppsala University</a> · <a href="https://wasp-sweden.org/" rel="external nofollow noopener" target="_blank">WASP Fellow</a> · <a href="https://ellis.eu/" rel="external nofollow noopener" target="_blank">ELLIS Member</a>
+</p>
+</header>
+<article>
+<div class="profile float-right">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px)
+30vw, 95vw">
+<img src="/assets/img/prof_pic.jpg?v=4ce7839b69be6e4ce6ad720ff3c1e5d7" class="img-fluid z-depth-1
+rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</source></picture>
+</figure>
+</div>
+<div class="clearfix">
+<p>I develop machine learning and optimization methods and translate them to real-world impact in medicine and the natural sciences. The overarching theme of my current research is to <em>accelerate science with machine learning</em>, which I pursue by targeting three specific bottlenecks: accelerating <em>computations</em> through <a href="/projects/gnn-linear-algebra/">learned numerical methods</a>, accelerating <em>discovery</em> through <a href="/projects/diffusion-generative/">generative models and Bayesian inference</a>, and accelerating <em>experiments</em> through <a href="/projects/self-driving-labs/">AI-guided robotics and automation</a>.</p>
+<p>Prior to joining Uppsala University, I spent nine years at the radiotherapy company <a href="https://www.elekta.com" rel="external nofollow noopener" target="_blank">Elekta</a>, first as an industrial PhD student affiliated with Linköping University, then as a Senior Research Scientist. During this time, I developed the optimization methods behind <a href="https://www.elekta.com/radiosurgery/leksell-gamma-knife-lightning/" rel="external nofollow noopener" target="_blank">Leksell Gamma Knife Lightning</a>, a commercial radiosurgery planning system used worldwide, and filed 28 patent applications (22 now granted). The years in industry sharpened my sense of what it means for algorithms to matter—how they must function under constraints of safety, uncertainty, and cost.</p>
+<p>My research group includes six PhD students and two postdocs, with ongoing collaborations spanning materials science, medicine, and industrial applications. I collaborate with materials scientists at Uppsala University on self-driving laboratories; with <a href="https://www.astrazeneca.com" rel="external nofollow noopener" target="_blank">AstraZeneca</a>, <a href="https://www.elekta.com" rel="external nofollow noopener" target="_blank">Elekta</a>, and <a href="https://www.alleima.com" rel="external nofollow noopener" target="_blank">Alleima</a> on industrial research projects; and participate in the <a href="https://aid4bc.org/" rel="external nofollow noopener" target="_blank">AID4BC</a> consortium on AI-based diagnostics for breast cancer. I was awarded the <a href="https://gustafssonsstiftelser.se/" rel="external nofollow noopener" target="_blank">Göran Gustafsson prize</a> for young researchers in 2024.</p>
+<h3 id="working-with-me">working with me</h3>
+<p>I’m always on the lookout for curious and self-driven people as well as exciting collaborations (with both industry and academia) that align with the overarching theme above. If that may be you, please get in touch!</p>
+</div>
+<!-- News -->
+<h2>
+<a href="/news/" style="color: inherit">news</a>
+</h2>
+<div class="news">
+<div class="table-responsive" style="max-height: 60vw">
+<table class="table table-sm table-borderless">
+<tr>
+<th scope="row" style="width: 20%">Jan 22, 2026</th>
+<td>
+Two papers accepted at <a href="https://sites.google.com/usc.edu/l4dc2026/" rel="external nofollow noopener" target="_blank">L4DC 2026</a>: <a href="https://arxiv.org/abs/2511.13174" rel="external nofollow noopener" target="_blank"><em>Warm-starting active-set solvers using graph neural networks</em></a> (led by Ella J. Schmidtobreick) and <a href="https://arxiv.org/abs/2509.05288" rel="external nofollow noopener" target="_blank"><em>Learning to accelerate distributed ADMM using graph neural networks</em></a> (led by Henri Doerks and Paul Häusner).
+</td>
+</tr>
+<tr>
+<th scope="row" style="width: 20%">Nov 01, 2025</th>
+<td>
+Received a VINNOVA planning grant for Automate Sweden, a cluster of excellence on robotics bringing together leading Swedish universities and industry partners under a shared Physical AI vision.
+</td>
+</tr>
+<tr>
+<th scope="row" style="width: 20%">Mar 01, 2025</th>
+<td>
+New paper in npj Computational Materials: <a href="https://doi.org/10.1038/s41524-025-01735-x" rel="external nofollow noopener" target="_blank"><em>Navigating chemical design spaces for metal-ion batteries via ML-guided phase-field simulations</em></a>. Combines phase-field modelling with Bayesian optimization to study electrode/electrolyte interface reactions. Work led by Liam (Hamed) Taghavian.
+</td>
+</tr>
+<tr>
+<th scope="row" style="width: 20%">Feb 01, 2025</th>
+<td>
+New paper in Cell Reports Physical Science: <a href="https://doi.org/10.1016/j.xcrp.2025.102548" rel="external nofollow noopener" target="_blank"><em>Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization</em></a>. Demonstrates a self-driving lab for high-throughput battery electrolyte screening. Work led by Jackie Yik.
+</td>
+</tr>
+<tr>
+<th scope="row" style="width: 20%">Jan 15, 2025</th>
+<td>
+Two review articles published in Philosophical Transactions of the Royal Society A: <a href="https://doi.org/10.1098/rsta.2024.0253" rel="external nofollow noopener" target="_blank"><em>Conditional sampling within generative diffusion models</em></a> and <a href="https://doi.org/10.1098/rsta.2024.0107" rel="external nofollow noopener" target="_blank"><em>Taming diffusion models for image restoration: a review</em></a>. Work led by Zheng Zhao and Ziwei Luo.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<!-- Latest posts -->
+<!-- Selected papers -->
+<h2>
+<a href="/publications/" style="color: inherit">selected publications</a>
+</h2>
+<div class="publications">
+<ol class="bibliography">
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/irsde_overview.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="irsde_overview.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="luo2023image" class="col-sm-8">
+<!-- Title -->
+<div class="title">Image restoration with mean-reverting stochastic differential equations</div>
+<!-- Author -->
+<div class="author">
+Ziwei
+Luo, Fredrik K
+Gustafsson, Zheng
+Zhao, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Jens Sjölund, Thomas B Schön' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>In International Conference on Machine Learning (ICML)</em>,  2023
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2301.11699" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>This paper presents a stochastic differential equation (SDE) approach for general-purpose image restoration. The key construction consists in a mean-reverting SDE that transforms a high-quality image into a degraded counterpart as a mean state with fixed Gaussian noise. Then, by simulating the corresponding reverse-time SDE, we are able to restore the origin of the low-quality image without relying on any task-specific prior knowledge. Crucially, the proposed mean-reverting SDE has a closed-form solution, allowing us to compute the ground truth time-dependent score and learn it with a neural network. Moreover, we propose a maximum likelihood objective to learn an optimal reverse trajectory that stabilizes the training and improves the restoration results. The experiments show that our proposed method achieves highly competitive performance in quantitative comparisons on image deraining, deblurring, and denoising, setting a new state-of-the-art on two deraining datasets. Finally, the general applicability of our approach is further demonstrated via qualitative results on image super-resolution, inpainting, and dehazing. Code is available at https://github.com/Algolzw/image-restoration-sde.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/neuralIF_demo.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="neuralIF_demo.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="häusner2024neural" class="col-sm-8">
+<!-- Title -->
+<div class="title">Neural incomplete factorization: learning preconditioners for the conjugate gradient method</div>
+<!-- Author -->
+<div class="author">
+Paul
+Häusner, Ozan
+Öktem, and <em>Jens
+Sjölund</em>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Transactions on Machine Learning Research</em>,  2024
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2305.16368" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>The convergence of the conjugate gradient method for solving large-scale and sparse linear equation systems depends on the spectral properties of the system matrix, which can be improved by preconditioning. In this paper, we develop a computationally efficient data-driven approach to accelerate the generation of effective preconditioners. We, therefore, replace the typically hand-engineered preconditioners by the output of graph neural networks. Our method generates an incomplete factorization of the matrix and is, therefore, referred to as neural incomplete factorization (NeuralIF). Optimizing the condition number of the linear system directly is computationally infeasible. Instead, we utilize a stochastic approximation of the Frobenius loss which only requires matrix-vector multiplications for efficient training. At the core of our method is a novel message-passing block, inspired by sparse matrix theory, that aligns with the objective of finding a sparse factorization of the matrix. We evaluate our proposed method on both synthetic problem instances and on problems arising from the discretization of the Poisson equation on varying domains. Our experiments show that by using data-driven preconditioners within the conjugate gradient method we are able to speed up the convergence of the iterative procedure. The code is available at https://github.com/paulhausner/neural-incomplete-factorization.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/entropy-regularized.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="entropy-regularized.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="zhang2024entropy-regularized" class="col-sm-8">
+<!-- Title -->
+<div class="title">Entropy-regularized diffusion policy with q-ensembles for offline reinforcement learning</div>
+<!-- Author -->
+<div class="author">
+Ruoqi
+Zhang, Ziwei
+Luo, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Thomas B Schön, Per Mattsson' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Advances in Neural Information Processing Systems (NeurIPS)</em>,  2024
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b319c0e8092ba726cb22e718d7d9a95e-Abstract-Conference.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a novel entropy-regularized diffusion policy and takes into account the confidence of the Q-value prediction with Q-ensembles. At the core of our diffusion policy is a mean-reverting stochastic differential equation (SDE) that transfers the action distribution into a standard Gaussian form and then samples actions conditioned on the environment state with a corresponding reverse-time process. We show that the entropy of such a policy is tractable and that can be used to increase the exploration of OOD samples in offline RL training. Moreover, we propose using the lower confidence bound of Q-ensembles for pessimistic Q-value function estimation. The proposed approach demonstrates state-of-the-art performance across a range of tasks in the D4RL benchmarks, significantly improving upon existing diffusion-based policies. The code is available at https://github. com/ruoqizzz/entropy-offlineRL.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/sdl_additives.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sdl_additives.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="yik2025accelerating" class="col-sm-8">
+<!-- Title -->
+<div class="title">Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization</div>
+<!-- Author -->
+<div class="author">
+Jackie T
+Yik, Carl
+Hvarfner, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Erik J Berg, Leiting Zhang' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Cell Reports Physical Science</em>,  2025
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>The integration of automation and data-driven methodologies offers a promising approach to accelerating materials discovery in energy storage research. Thus far, in battery research, coin-cell assembly has advanced to become nearly fully automated but remains largely disconnected from data-driven methods. To bridge the disconnect, this work presents a self-driving laboratory framework to accelerate electrolyte discovery by integrating automated coin-cell assembly, galvanostatic cycling of LiFePO4||Li4Ti5O12 organic-aqueous full cells, and Bayesian optimization for selecting subsequent experiments based on prior results. The study explored an organic-aqueous hybrid electrolyte system comprising four co-solvents and two lithium-conducting salts. Using this framework, cells with an optimized electrolyte cycled with at least 94% Coulombic efficiency. Additionally, online electrochemical mass spectrometry …</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/dendrite.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="dendrite.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="taghavian2025navigating" class="col-sm-8">
+<!-- Title -->
+<div class="title">Navigating chemical design spaces for metal-ion batteries via machine-learning-guided phase-field simulations</div>
+<!-- Author -->
+<div class="author">
+Hamed
+Taghavian, Viktor
+Vanoppen, Erik
+Berg, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Peter Broqvist, Jens Sjölund' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>npj Computational Materials</em>,  2025
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://www.nature.com/articles/s41524-025-01735-x" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Metal anodes provide the highest energy density in batteries. However, they still suffer from electrode/electrolyte interface side reactions and dendrite growth, especially under fast-charging conditions. In this paper, we consider a phase-field model of electrodeposition in metal-anode batteries and provide a scalable, versatile framework for optimizing its chemical parameters. Our approach is based on Bayesian optimization and explores the parameter space with a high sample efficiency and a low computation complexity. We use this framework to find the optimal cell for suppressing dendrite growth and accelerating charging speed under constant voltage. We identify interfacial mobility as a key parameter, which should be maximized to inhibit dendrites without compromising the charging speed. The results are verified using extended simulations of dendrite evolution in charging half cells with lithium-metal anodes.</p>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<!-- Social -->
+<div class="social">
+<div class="contact-icons">
+<a href="mailto:jens.sjolund@it.uu.se" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://scholar.google.com/citations?user=AlF2g-YAAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="https://github.com/jsjol" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jens-sjolund" title="Linkedin username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://bsky.app/profile/jsjol.bsky.social" title="Bluesky url" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-bluesky"></i></a> <a href="https://orcid.org/0000-0002-9099-3522" title="Orcid id" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+</div>
+<div class="contact-note"></div>
+</div>
+</article>
+</div>
+</div>
+<!-- Footer -->
+<footer class="fixed-bottom" role="contentinfo">
+<div class="container mt-0">
+© Copyright 2026
+Jens
+Sjölund. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+</div>
+</footer>
+<!-- JavaScripts -->
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+<!-- Masonry & imagesLoaded -->
+<script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+<!-- Medium Zoom JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script>
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script>
+<script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script>
+<!-- Badges -->
+<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async src="https://badge.dimensions.ai/badge.js"></script>
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+<script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script>
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+<!-- Scrolling Progress Bar -->
+<script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+<!-- Back to Top -->
+<script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script>
+<script>
+    addBackToTop();
+  </script>
+</body>
+</html>

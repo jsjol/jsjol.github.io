@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Metadata, OpenGraph and Schema.org -->
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+Self-driving labs for accelerated materials science |
+</title>
+<meta name="author" content="Jens Sjölund">
+<meta name="description" content="Building autonomous laboratories that combine robotics and AI into closed-loop systems for rapid experimentation and exploration.">
+<meta name="keywords" content="machine learning, optimization, graph neural networks, self-driving labs, diffusion models, Uppsala University">
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+<!-- Styles -->
+<link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+<link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://jsjol.github.io/projects/self-driving-labs/">
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script>
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+<script>
+    initTheme();
+  </script>
+</head>
+<!-- Body -->
+<body class="fixed-top-nav ">
+<!-- Header -->
+<header>
+<!-- Nav Bar -->
+<nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+<div class="container">
+<a class="navbar-brand title font-weight-lighter" href="/">
+</a>
+<!-- Navbar Toggle -->
+<button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar top-bar"></span>
+<span class="icon-bar middle-bar"></span>
+<span class="icon-bar bottom-bar"></span>
+</button>
+<div class="collapse navbar-collapse text-right" id="navbarNav">
+<ul class="navbar-nav ml-auto flex-nowrap">
+<!-- About -->
+<li class="nav-item ">
+<a class="nav-link" href="/">about
+</a>
+</li>
+<!-- Other pages -->
+<li class="nav-item active">
+<a class="nav-link" href="/projects/">research
+<span class="sr-only">(current)</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/publications/">publications
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/people/">group
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/teaching/">teaching
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/cv/">CV
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/contact/">contact
+</a>
+</li>
+<!-- Toogle theme mode -->
+<li class="toggle-container">
+<button id="light-toggle" title="Change theme">
+<i class="fa-half-sun-moon" id="light-toggle-system"></i>
+<i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+<i class="fa-solid fa-sun" id="light-toggle-light"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Scrolling Progress Bar -->
+<progress id="progress" value="0">
+<div class="progress-container">
+<span class="progress-bar"></span>
+</div>
+</progress>
+</header>
+<!-- Content -->
+<div class="container mt-5" role="main">
+<div class="post">
+<header class="post-header">
+<h1 class="post-title">Self-driving labs for accelerated materials science</h1>
+<p class="post-description">Building autonomous laboratories that combine robotics and AI into closed-loop systems for rapid experimentation and exploration.</p>
+</header>
+<article>
+<p>Finding the right experimental conditions for new materials is often like finding a needle in a haystack: vast design spaces, expensive experiments, and complex interactions between variables. We address this by developing <em>Bayesian experimental design</em> methods and deploying them in self-driving laboratories—autonomous systems that combine robotics and AI into a closed-loop for rapid experimentation and exploration.</p>
+<h3 id="batteries">Batteries</h3>
+<p>Rechargeable batteries are key for transitioning to a carbon-neutral future, but it will require huge quantities of battery materials. It is therefore of utmost importance that both the battery materials and the manufacturing process are sustainable and cost effective. In these regards, batteries based on <em>aqueous</em> electrolytes are especially promising. However, water has a very narrow electrochemical stability window, which poses a major challenge for aqueous electrolytes. In principle, it can be accommodated by including functional additives to the electrolyte, but finding the right “recipe” is akin to finding a needle in a haystack.</p>
+<div style="text-align: center; margin: 1.5em 0;">
+<img src="/assets/img/odacell.png" alt="ODACell robotic setup" width="70%">
+<p><small>ODACell: a robotic setup for automated electrolyte formulation and coin cell assembly.</small></p>
+</div>
+<p>Together with the research group of <a href="https://scholar.google.se/citations?user=ErU9OB4AAAAJ&amp;hl=sv&amp;oi=ao" rel="external nofollow noopener" target="_blank">Erik J. Berg</a> at the <a href="https://www.uu.se/en/department/chemistry-angstrom-laboratory/research/structural-chemistry/angstrom-advanced-battery-centre" rel="external nofollow noopener" target="_blank">Ångström Advanced Battery Centre</a> we’ve developed <a href="https://github.com/jyik/ODACell" rel="external nofollow noopener" target="_blank">ODACell</a>, a robotic setup for automated electrolyte formulation and battery assembly, capable of preparing large batches of coin cells. The coin cells are automatically cycled to test their performance and new experiments suggested using Bayesian optimization for data-driven decision-making. In ongoing work, we are adding capabilities such as in operando sensing using Electrochemical Quartz Crystal Microbalance (EQCM).</p>
+<div style="text-align: center; margin: 1.5em 0;">
+<figure>
+<iframe src="https://www.youtube.com/embed/mAtBjrnRx-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="70%" height="400px"></iframe>
+</figure>
+</div>
+<h3 id="thin-film-science">Thin film science</h3>
+<p>In thin film science, self-driving labs have mainly been restricted to solution-based synthetic methods which are easier to automate but cannot access the broad chemical space of inorganic materials. In collaboration with the research group of <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N10-969" rel="external nofollow noopener" target="_blank">Jonathan Scragg</a>, in the division of solar cell technology, we’re building a self-driving lab based on magnetron co-sputtering. We present a rapid and calibration-free in-situ, machine learning driven approach to produce composition maps for arbitrary source combinations and sputtering conditions. Our framework dramatically increases throughput by avoiding the need for extensive characterisation or calibration, thus demonstrating the potential of self-driving labs to accelerate materials exploration.</p>
+<div style="text-align: center; margin: 1.5em 0;">
+<img src="/assets/img/solar_cell_workflow.png" alt="Self-driving sputtering lab workflow" width="70%">
+</div>
+<h3 id="simulations">Simulations</h3>
+<p>In parallel with the physical experiments above, we are also performing simulation studies to better understand the underlying mechanisms. For instance, we recently studied electrode/electrolyte interface side reactions and dendrite growth in fast-charging metal-anode batteries, by combining a phase-field model of electrodeposition with Bayesian optimization. Our approach allows exploration of the parameter space with high sample efficiency and low computation complexity.</p>
+<div style="text-align: center;">
+<img src="/assets/img/dendrite.png" alt="Simulated dendrite" width="400px">
+</div>
+<h3 id="references">References</h3>
+<ul>
+<li>Yik J T, Zhang L, <strong>Sjölund J</strong>, Hou X, Svensson P H, Edström K, and Berg E J. <a href="https://doi.org/10.1039/D3DD00058C" rel="external nofollow noopener" target="_blank"><em>Automated electrolyte formulation and coin cell assembly for high-throughput lithium-ion battery research.</em></a> Digital Discovery (2023).</li>
+<li>Yik J T, Hvarfner C, <strong>Sjölund J</strong>, Berg EJ, and Zhang L. <a href="https://doi.org/10.1016/j.xcrp.2025.102548" rel="external nofollow noopener" target="_blank"><em>Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization.</em></a> Cell Reports Physical Science (2025).</li>
+<li>Vanoppen V, Johannsmann D, Hou X, <strong>Sjölund J</strong>, Broqvist P, and Berg E J. <a href="https://doi.org/10.1002/adsr.202400025" rel="external nofollow noopener" target="_blank"><em>Exploring Metal Electroplating for Energy Storage by Quartz Crystal Microbalance: A Review.</em></a> Advanced Sensor Research.</li>
+<li>Jarl S, <strong>Sjölund J</strong>, Frost R J W, Holst A, and Scragg J J S. <a href="https://doi.org/10.1016/j.matdes.2025.115087" rel="external nofollow noopener" target="_blank"><em>Machine learning for in-situ composition mapping in a self-driving magnetron sputtering system.</em></a> Materials &amp; Design (2025).</li>
+<li>Taghavian H, Vanoppen V, Berg E J, Broqvist P, and <strong>Sjölund J</strong>. <a href="https://doi.org/10.1038/s41524-025-01735-x" rel="external nofollow noopener" target="_blank"><em>Navigating chemical design spaces for metal-ion batteries via machine-learning-guided phase-field simulations.</em></a> npj Computational Materials (2025).</li>
+</ul>
+</article>
+</div>
+</div>
+<!-- Footer -->
+<footer class="fixed-bottom" role="contentinfo">
+<div class="container mt-0">
+© Copyright 2026
+Jens
+Sjölund. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+</div>
+</footer>
+<!-- JavaScripts -->
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+<!-- Masonry & imagesLoaded -->
+<script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+<!-- Medium Zoom JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script>
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script>
+<script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script>
+<!-- Badges -->
+<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async src="https://badge.dimensions.ai/badge.js"></script>
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+<script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script>
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+<!-- Scrolling Progress Bar -->
+<script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+<!-- Back to Top -->
+<script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script>
+<script>
+    addBackToTop();
+  </script>
+</body>
+</html>

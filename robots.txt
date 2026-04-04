@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jsjol.github.io/sitemap.xml
