@@ -1,4 +1,12 @@
 /* Derived from https://github.com/dunovank/jupyter-themes/blob/master/jupyterthemes/styles/compiled/monokai.css */
+div#notebook {
+  font-family: sans-serif;
+  font-size: 13pt;
+  line-height: 170%;
+  color: #f8f8f0;
+  -webkit-font-smoothing: antialiased !important;
+  padding-top: 25px !important;
+}
 
 body,
 div.body {
@@ -101,6 +109,12 @@ ul#tabs a {
 .nav > li.disabled > a,
 .nav > li.disabled > a:hover {
   color: #75715e;
+}
+
+div#notebook {
+  font-family: sans-serif;
+  font-size: 13pt;
+  padding-top: 4px;
 }
 
 .container {
@@ -356,6 +370,12 @@ div.modal-footer > button:hover {
   border-top: none;
 }
 
+.alert-info {
+  background-color: #2f2f2f;
+  border-color: rgba(93, 92, 82, 0.25);
+  color: #f8f8f0;
+}
+
 .modal-backdrop,
 .modal-backdrop.in {
   opacity: 0.85;
@@ -378,6 +398,27 @@ div.panel,
   margin: 50px auto;
 }
 
+div.form-control,
+.form-control {
+  font-family: sans-serif;
+  font-size: initial;
+  color: #f8f8f0;
+  background-color: #282828;
+  border: 1px solid #282828 !important;
+  margin-left: 2px;
+  box-shadow: none;
+  transition:
+    border-color 0.15s ease-in-out 0s,
+    box-shadow 0.15s ease-in-out 0s;
+}
+
+.form-group.list-group-item {
+  color: #f8f8f0;
+  background-color: #232323;
+  border-color: rgba(93, 92, 82, 0.25);
+  margin-bottom: 0px;
+}
+
 input,
 button,
 select,
@@ -385,6 +426,27 @@ textarea {
   background-color: #282828;
   font-weight: normal;
   border: 1px solid rgba(93, 92, 82, 0.25);
+}
+
+.toolbar select,
+.toolbar label {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  display: inline;
+  font-size: 92%;
+  margin-left: 10px;
+  padding: 0px;
+  background: #2f2f2f !important;
+  background-color: #2f2f2f !important;
+  border: 2px solid #2f2f2f !important;
+}
+
+.form-control:focus {
+  border-color: #a6e22e;
+  outline: 2px solid #49483e;
+  -webkit-box-shadow: none;
 }
 
 ::-webkit-input-placeholder {
@@ -436,6 +498,8 @@ h6,
 pre,
 code,
 form,
+fieldset,
+legend,
 input,
 button,
 textarea,
@@ -478,6 +542,26 @@ div.cell.selected:before {
   left: 0px;
   width: 0px;
   height: 100%;
+}
+
+div.prompt,
+.prompt {
+  font-family: monospace, monospace;
+  font-size: 9pt !important;
+  font-weight: normal;
+  color: #75715e;
+  line-height: 170%;
+  padding: 0px;
+  padding-top: 4px;
+  padding-left: 0px;
+  padding-right: 1px;
+  text-align: right !important;
+  min-width: 11.5ex !important;
+  width: 11.5ex !important;
+}
+
+div.cell.selected .prompt {
+  top: 0;
 }
 
 pre,
@@ -543,6 +627,24 @@ hr {
   z-index: 10;
 }
 
+#clusters > a {
+  color: #a6e22e;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+#clusters > a:hover {
+  color: #ae81ff;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+.alert-warning {
+  background-color: #232323;
+  border-color: #232323;
+  color: #f8f8f0;
+}
+
 mark,
 .mark {
   background-color: #282828;
@@ -597,6 +699,44 @@ video {
   border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+
+.ansi-black-fg {
+  color: #282828;
+}
+
+
+.ansi-blue-fg,
+.ansi-blue-intense-fg {
+  color: #66d9ef;
+}
+
+
+.ansi-green-fg {
+  color: #a6e22e;
+}
+
+.ansi-green-intense-fg {
+  color: #888888;
+}
+
+
+.ansi-cyan-fg,
+.ansi-cyan-intense-fg {
+  color: #ae81ff;
+}
+
+
+.ansi-yellow-fg,
+.ansi-yellow-intense-fg {
+  color: #e6db74;
+}
+
+
+.ansi-red-fg,
+.ansi-red-intense-fg {
+  color: #f92672;
 }
 
 

@@ -51,7 +51,51 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact/";
           },
-        },{id: "news-awarded-the-göran-gustafsson-prize-for-young-researchers-in-natural-sciences-and-technology",
+        },{id: "post-blog-post-number-4",
+        
+          title: "Blog Post number 4",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/posts/2012/08/blog-post-4/";
+          
+        },
+      },{id: "post-blog-post-number-3",
+        
+          title: "Blog Post number 3",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/posts/2014/08/blog-post-3/";
+          
+        },
+      },{id: "post-blog-post-number-2",
+        
+          title: "Blog Post number 2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/posts/2013/08/blog-post-2/";
+          
+        },
+      },{id: "post-blog-post-number-1",
+        
+          title: "Blog Post number 1",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/posts/2012/08/blog-post-1/";
+          
+        },
+      },{id: "news-awarded-the-göran-gustafsson-prize-for-young-researchers-in-natural-sciences-and-technology",
           title: 'Awarded the Göran Gustafsson prize for young researchers in natural sciences and technology....',
           description: "",
           section: "News",},{id: "news-received-a-swedish-research-council-vr-starting-grant-for-the-project-accelerating-sparse-linear-algebra-with-graph-neural-networks",
