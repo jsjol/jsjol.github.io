@@ -24,7 +24,7 @@ We also developed a parallel ADMM algorithm for the LP formulation used in Gamma
 
 - **Sjölund J**, Riad S, Hennix M, and Nordström H. [*A linear programming approach to inverse planning in Gamma Knife radiosurgery.*](https://doi.org/10.1002/mp.13440) Medical Physics (2019).
 - Mair S, Fu A, and **Sjölund J**. [*Efficient radiation treatment planning based on voxel importance.*](https://doi.org/10.1088/1361-6560/ad37c1) Physics in Medicine & Biology (2024).
-- da Silva J, Hernández Escobar D, Kjellsson Lindblom T, Nordström H, and **Sjölund J**. [*A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans.*](https://arxiv.org/abs/2509.08602) arXiv (2025).
+- da Silva J, Hernández Escobar D, Kjellsson Lindblom T, Nordström H, and **Sjölund J**. [*A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans.*](https://arxiv.org/abs/2509.08602) Medical Physics (2026).
 
 ## Diffusion MRI
 

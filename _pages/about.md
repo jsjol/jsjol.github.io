@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Assistant Professor of AI · <a href="https://www.it.uu.se/">Uppsala University</a>
+  Assistant Professor of Machine Learning · <a href="https://www.it.uu.se/">Uppsala University</a>
   · <a href="https://wasp-sweden.org/">WASP Fellow · <a href="https://ellis.eu/">ELLIS Member
 
 profile:
