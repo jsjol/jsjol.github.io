@@ -51,51 +51,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact/";
           },
-        },{id: "post-blog-post-number-4",
-        
-          title: "Blog Post number 4",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/posts/2012/08/blog-post-4/";
-          
-        },
-      },{id: "post-blog-post-number-3",
-        
-          title: "Blog Post number 3",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/posts/2014/08/blog-post-3/";
-          
-        },
-      },{id: "post-blog-post-number-2",
-        
-          title: "Blog Post number 2",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/posts/2013/08/blog-post-2/";
-          
-        },
-      },{id: "post-blog-post-number-1",
-        
-          title: "Blog Post number 1",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/posts/2012/08/blog-post-1/";
-          
-        },
-      },{id: "news-awarded-the-göran-gustafsson-prize-for-young-researchers-in-natural-sciences-and-technology",
+        },{id: "news-awarded-the-göran-gustafsson-prize-for-young-researchers-in-natural-sciences-and-technology",
           title: 'Awarded the Göran Gustafsson prize for young researchers in natural sciences and technology....',
           description: "",
           section: "News",},{id: "news-received-a-swedish-research-council-vr-starting-grant-for-the-project-accelerating-sparse-linear-algebra-with-graph-neural-networks",
@@ -124,6 +80,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-two-papers-accepted-at-l4dc-2026-warm-starting-active-set-solvers-using-graph-neural-networks-led-by-ella-j-schmidtobreick-and-learning-to-accelerate-distributed-admm-using-graph-neural-networks-led-by-henri-doerks-and-paul-häusner",
           title: 'Two papers accepted at L4DC 2026: Warm-starting active-set solvers using graph neural networks...',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-in-medical-physics-a-parallel-algorithm-for-generating-pareto-optimal-radiosurgery-treatment-plans-this-is-a-result-of-our-collaboration-with-elekta",
+          title: 'Paper accepted in Medical Physics: A parallel algorithm for generating Pareto-optimal radiosurgery treatment...',
           description: "",
           section: "News",},{id: "projects-diffusion-and-generative-models",
           title: 'Diffusion and generative models',

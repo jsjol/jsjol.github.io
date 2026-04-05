@@ -496,6 +496,61 @@ clearInterval(textAdder);
 </div>
 </div>
 </li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/convergence_curves.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="convergence_curves.png" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="silva2026" class="col-sm-8">
+<!-- Title -->
+<div class="title">A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans</div>
+<!-- Author -->
+<div class="author">
+Joakim
+Silva, Daniel Hernández
+Escobar, Tor Kjellsson
+Lindblom, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Håkan Nordström, Jens Sjölund' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Medical Physics</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2509.08602" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Using inverse planning tools to create radiotherapy treatment plans is an iterative process, where clinical trade-offs are explored by changing the relative importance of different objectives and rerunning the optimizer until a desirable plan is found. We seek to optimize hundreds of radiosurgery treatment plans, corresponding to different weightings of objectives, fast enough to incorporate interactive Pareto navigation of clinical trade-offs into the clinical workflow. We apply the alternating direction method of multipliers (ADMM) to the linear-program formulation of the optimization problem used in Lightning. We implement both a CPU and a GPU version of ADMM in Matlab and compare them to Matlab’s built-in, single-threaded dual-simplex solver. The ADMM implementation is adapted to the optimization procedure used in the clinical software, with a bespoke algorithm for maximizing overlap between low-dose points for different objective weights. The method is evaluated on a test dataset consisting of 20 cases from three different indications, with between one and nine targets and total target volumes ranging from 0.66 to 52 cm3, yielding speedups of 1.6-97 and 54-1500 times on CPU and GPU, respectively, compared to simplex. Plan quality was evaluated by rerunning the ADMM optimization 20 times, each with a different random seed, for each test case and for nine objective weightings per case. The resulting clinical metrics closely mimicked those obtained when rerunning the simplex solver, verifying the validity of the method. In conclusion, we show how ADMM can be adapted for radiosurgery plan optimization, allowing hundreds of high …</p>
+</div>
+</div>
+</div>
+</li>
 </ol>
 <h2 class="bibliography">2025</h2>
 <ol class="bibliography">
@@ -1300,51 +1355,6 @@ Sjolund
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Techniques for generating a radiotherapy treatment plan parameter are provided. The techniques include receiving radiotherapy treatment plan information; processing the radiotherapy treatment plan information to estimate one or more radiotherapy treatment plan parameters based on a process that depends on the output of a subprocess that estimates a derivative of a dose calculation; and generating a radiotherapy treatment plan using the estimated one or more radiotherapy treatment plan parameters.</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="row">
-<div class="col col-sm-2 abbr">
-</div>
-<!-- Entry bib key -->
-<div id="silva2025a" class="col-sm-8">
-<!-- Title -->
-<div class="title">A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans</div>
-<!-- Author -->
-<div class="author">
-Joakim
-Silva, Daniel Hernández
-Escobar, Tor Kjellsson
-Lindblom, and
-<span class="more-authors" title="click to view 2 more authors" onclick="
-var element = $(this);
-element.attr('title', '');
-var more_authors_text = element.text() == '2 more authors' ? 'Håkan Nordström, Jens Sjölund' : '2 more authors';
-var cursorPosition = 0;
-var textAdder = setInterval(function(){
-element.html(more_authors_text.substring(0, cursorPosition + 1));
-if (++cursorPosition == more_authors_text.length){
-clearInterval(textAdder);
-}
-}, '10');
-">2 more authors</span>
-</div>
-<!-- Journal/Book title and date -->
-<div class="periodical">
-<em>arXiv preprint arXiv:2509.08602</em>,  2025
-</div>
-<div class="periodical">
-</div>
-<!-- Links/Buttons -->
-<div class="links">
-<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://arxiv.org/abs/2509.08602" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<!-- Hidden abstract block -->
-<div class="abstract hidden">
-<p>Using inverse planning tools to create radiotherapy treatment plans is an iterative process, where clinical trade-offs are explored by changing the relative importance of different objectives and rerunning the optimizer until a desirable plan is found. We seek to optimize hundreds of radiosurgery treatment plans, corresponding to different weightings of objectives, fast enough to incorporate interactive Pareto navigation of clinical trade-offs into the clinical workflow. We apply the alternating direction method of multipliers (ADMM) to the linear-program formulation of the optimization problem used in Lightning. We implement both a CPU and a GPU version of ADMM in Matlab and compare them to Matlab’s built-in, single-threaded dual-simplex solver. The ADMM implementation is adapted to the optimization procedure used in the clinical software, with a bespoke algorithm for maximizing overlap between low-dose points for different objective weights. The method is evaluated on a test dataset consisting of 20 cases from three different indications, with between one and nine targets and total target volumes ranging from 0.66 to 52 cm3, yielding speedups of 1.6-97 and 54-1500 times on CPU and GPU, respectively, compared to simplex. Plan quality was evaluated by rerunning the ADMM optimization 20 times, each with a different random seed, for each test case and for nine objective weightings per case. The resulting clinical metrics closely mimicked those obtained when rerunning the simplex solver, verifying the validity of the method. In conclusion, we show how ADMM can be adapted for radiosurgery plan optimization, allowing hundreds of high …</p>
 </div>
 </div>
 </div>
