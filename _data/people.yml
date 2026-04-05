@@ -1,0 +1,153 @@
+phd_students:
+  - name: "Paul Häusner"
+    website: "https://paulhausner.github.io"
+    image: paul.jpg
+    description: "Learning to solve conditionally convex optimization problems"
+  - name: "Ella J. Schmidtobreick"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N24-2339"
+    image: ella_square.JPG
+    description: "Accelerating sparse linear algebra with graph neural networks"
+  - name: "Laura van Weesep"
+    website: "https://scholar.google.com/citations?user=jW7_NugAAAAJ&hl=en"
+    image: laura.JPG
+    description: "Accelerating decision making in drug discovery with trustworthy foundation models"
+  - name: "Pritish Ranjan Joshi"
+    website: "https://drtsinx98.github.io/"
+    image: pritish.jpg
+    description: "Simulation-based inference for metal plating dynamics"
+  - name: "Aleix Nieto Juscafresa"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N22-2821"
+    image: aleix_square.jpg
+    description: "Multimodal Machine Learning for Precision Medicine in Breast Cancer"
+  - name: "Tinh Thi Cao"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N24-2682"
+    image: tinh.jpeg
+    description: "Graph neural networks for structured matrix problems"
+
+postdocs:
+  - name: "Daniel Hernández Escobar"
+    website: "https://www.it.uu.se/katalog/danes793"
+    image: daniel.jpg
+    description: "Vector optimization for radiotherapy planning"
+  - name: "Liam Hamed Taghavian"
+    website: "https://www.katalog.uu.se/profile/?id=N24-736"
+    image: liam.jpg
+    description: "Simulation and control of metal plating dynamics"
+
+co_supervised:
+  - name: "Ziwei Luo"
+    website: "https://algolzw.github.io/"
+    image: Ziwei.png
+    description: "Diffusion models for image restoration"
+  - name: "Viktor Vanoppen"
+    website: "https://www.katalog.uu.se/empinfo/?id=N19-461"
+    image: Viktor.png
+    description: "Fundamental studies of metal plating processes for energy storage"
+  - name: "Sanna Jarl"
+    website: "https://www.ri.se/en/person/sanna-jarl"
+    image: sanna.jpg
+    description: "Active learning methods for autonomous exploration of thin film optoelectronic materials"
+  - name: "Adhithyan Kalaivanan"
+    website: "https://adhithyan8.github.io/"
+    image: adhithyan.png
+    description: "Coupling diffusion and flow models with Bayesian inference"
+
+alumni_phd:
+  - name: "Jackie Yik"
+    years: "2021–2026"
+    role: "co-supervised"
+    thesis_title: "A Self-Driving Lab for Battery Electrolyte Design"
+    thesis_url: "https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A2033717"
+    now: ""
+  - name: "Dominik Fay"
+    years: "2020–2025"
+    role: "co-supervised"
+    thesis_title: "Machine Learning with Decentralized Data and Differential Privacy: New Methods for Training, Inference and Sampling"
+    thesis_url: "https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-363514"
+    now: "Senior Research Scientist at Elekta"
+  - name: "Niklas Gunnarsson"
+    years: "2019–2024"
+    role: "co-supervised"
+    thesis_title: "Motion Estimation from Temporally and Spatially Sparse Medical Image Sequences"
+    thesis_url: "https://uu.diva-portal.org/smash/record.jsf?pid=diva2:1902077"
+    now: "Lead Research Scientist at Elekta"
+
+alumni_postdoc:
+  - name: "Zheng Zhao"
+    years: "2022–2024"
+    website: "https://zz.zabemon.com/"
+    now: "Assistant Professor, Linköping University"
+  - name: "Sebastian Mair"
+    years: "2021–2024"
+    website: "https://smair.github.io/"
+    now: "Assistant Professor, Linköping University"
+
+alumni_msc:
+  - name: "Ella J. Schmidtobreick"
+    title: "Accelerating Active-set Solvers using Graph Neural Networks"
+    url: "https://www.diva-portal.org/smash/get/diva2:1980664/FULLTEXT01.pdf"
+    year: 2025
+  - name: "William Samuelsson"
+    title: "Accelerating Interior Point Methods using Graph Neural Networks"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1969377/FULLTEXT01.pdf"
+    year: 2025
+  - name: "Henri Doerks"
+    title: "Learning Distributed Optimization with Graph Neural Networks"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1910050/FULLTEXT01.pdf"
+    year: 2024
+  - name: "Aleix Nieto Juscafresa"
+    title: "Graph neural network-based preconditioners for optimizing GMRES algorithm"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1914534/FULLTEXT01.pdf"
+    year: 2024
+  - name: "Jinglin Gao"
+    title: "Self-supervised representation learning for Micro-CT images"
+    url: "https://www.diva-portal.org/smash/get/diva2:1909757/FULLTEXT01.pdf"
+    year: 2024
+  - name: "Jannes van Poppelen"
+    title: "Phase-field modeling using physics-informed neural networks"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1903707/FULLTEXT01.pdf"
+    year: 2024
+  - name: "Duc Huy Le"
+    title: "Exploration-Exploitation Trade-off Approaches in Multi-Armed Bandit"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1798500/FULLTEXT01.pdf"
+    year: 2023
+  - name: "Benjamin Bucknall"
+    title: "Promoting Exploration in Reinforcement Learning through Surprise-Based Intrinsic Motivation"
+    url: "https://www.diva-portal.org/smash/get/diva2:1677513/FULLTEXT01.pdf"
+    year: 2022
+  - name: "Dmitrijs Kass"
+    title: "Deep reinforcement learning for isocenter placement in Gamma Knife radiosurgery"
+    url: "https://uu.diva-portal.org/smash/get/diva2:1732456/FULLTEXT01.pdf"
+    year: 2022
+  - name: "Simon Löw"
+    title: "Automatic Generation of Patient-specific Gamma Knife Treatment Plans for Vestibular Schwannoma Patients"
+    url: "http://www.diva-portal.se/smash/get/diva2:1429712/FULLTEXT01.pdf"
+    year: 2020
+  - name: "Dominik Fay"
+    title: "Membership Privacy in Neural Networks for Medical Image Segmentation"
+    url: "http://kth.diva-portal.org/smash/get/diva2:1400696/FULLTEXT01.pdf"
+    year: 2019
+  - name: "Kenneth Lau"
+    title: "Representation Learning on Brain MR Images for Tumor Segmentation"
+    url: "https://www.diva-portal.org/smash/get/diva2:1247208/FULLTEXT01.pdf"
+    year: 2018
+  - name: "Dennis Sångberg"
+    title: "Automated Glioma Segmentation in MRI using Deep Convolutional Networks"
+    url: "https://kth.diva-portal.org/smash/get/diva2:841518/FULLTEXT01.pdf"
+    year: 2015
+  - name: "Johanna Skarpman Munter"
+    title: "Dose-Volume Histogram Prediction using Kernel Density Estimation"
+    url: "http://www.diva-portal.org/smash/get/diva2:763240/FULLTEXT01"
+    year: 2015
+  - name: "Marcus Josefsson"
+    title: "Robust Optimization for Radiosurgery under the Static Dose Cloud Approximation"
+    url: "https://kth.diva-portal.org/smash/get/diva2:766647/FULLTEXT01.pdf"
+    year: 2014
+  - name: "Jenni Svensson"
+    title: "Multiobjective optimization in radiosurgery: How to approximate and navigate on the Pareto surface"
+    url: "https://kth.diva-portal.org/smash/get/diva2:716518/FULLTEXT01.pdf"
+    year: 2014
+  - name: "Lars Lowe Sjösund"
+    title: "Automatic Localization of Bounding Boxes for Subcortical Structures in MR Images Using Regression Forests"
+    url: "https://www.diva-portal.org/smash/get/diva2:700083/FULLTEXT01.pdf"
+    year: 2013

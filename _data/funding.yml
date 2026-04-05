@@ -1,0 +1,30 @@
+affiliations:
+  - name: "WASP"
+    full_name: "Wallenberg AI, Autonomous Systems and Software Program"
+    url: "https://wasp-sweden.org"
+    logo: wasp.png
+    role: "Fellow"
+  - name: "ELLIS"
+    full_name: "European Laboratory for Learning and Intelligent Systems"
+    url: "https://ellis.eu"
+    logo: ellis.png
+    role: "Member"
+
+funders:
+  - name: "Swedish Research Council"
+    url: "https://www.vr.se"
+    logo: vr.png
+  - name: "VINNOVA"
+    url: "https://www.vinnova.se"
+    logo: vinnova.png
+
+industry:
+  - name: "AstraZeneca"
+    url: "https://www.astrazeneca.com"
+    logo: astrazeneca.png
+  - name: "Alleima"
+    url: "https://www.alleima.com"
+    logo: alleima.png
+  - name: "Elekta"
+    url: "https://www.elekta.com"
+    logo: elekta.png

@@ -44,6 +44,12 @@ ul.task-list input[type="checkbox"] {
     padding-top: 1.25rem;
   }
 
+  .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background: var(--global-bg-color);
+  }
+
   .card-title {
     color: var(--global-text-color);
   }
