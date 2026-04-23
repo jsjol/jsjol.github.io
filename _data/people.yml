@@ -18,7 +18,7 @@ phd_students:
   - name: "Aleix Nieto Juscafresa"
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N22-2821"
     image: aleix_square.jpg
-    description: "Multimodal Machine Learning for Precision Medicine in Breast Cancer"
+    description: "Multimodal machine learning for precision medicine in breast cancer"
   - name: "Tinh Thi Cao"
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N24-2682"
     image: tinh.jpeg
@@ -51,6 +51,10 @@ co_supervised:
     website: "https://adhithyan8.github.io/"
     image: adhithyan.png
     description: "Coupling diffusion and flow models with Bayesian inference"
+  - name: "Steven Wang"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N26-597"
+    image: steven.png
+    description: "Causal machine learning for precision medicine in breast cancer"
 
 alumni_phd:
   - name: "Jackie Yik"
