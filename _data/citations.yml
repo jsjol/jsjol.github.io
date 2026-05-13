@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-05-08'
+  last_updated: '2026-05-13'
 papers:
   AlF2g-YAAAAJ:08ZZubdj9fEC:
     citations: 0
     title: A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans
     year: '2025'
   AlF2g-YAAAAJ:0EnyYjriUFMC:
-    citations: 162
+    citations: 163
     title: 'Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems'
     year: '2019'
   AlF2g-YAAAAJ:2osOgNQ5qMEC:
@@ -30,11 +30,11 @@ papers:
     title: Generation of realizable radiotherapy plans
     year: '2022'
   AlF2g-YAAAAJ:4JMBOYKVnBMC:
-    citations: 364
+    citations: 367
     title: 'Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning'
     year: '2022'
   AlF2g-YAAAAJ:4OULZ7Gr8RgC:
-    citations: 4
+    citations: 5
     title: 'Exploring metal electroplating for energy storage by quartz crystal microbalance: a review'
     year: '2024'
   AlF2g-YAAAAJ:4fKUyHm3Qg0C:
@@ -66,7 +66,7 @@ papers:
     title: A computational framework for efficient porosity analysis and process parameter optimization in powder bed fusion with laser beam
     year: '2026'
   AlF2g-YAAAAJ:BqipwSGYUEgC:
-    citations: 31
+    citations: 32
     title: 'Neural incomplete factorization: learning preconditioners for the conjugate gradient method'
     year: '2024'
   AlF2g-YAAAAJ:D03iK_w7-QYC:
@@ -110,7 +110,7 @@ papers:
     title: "Probabilistic Zeeman-Doppler imaging of stellar magnetic fields-I. Analysis of \u03C4 Scorpii in the weak-field limit"
     year: Unknown Year
   AlF2g-YAAAAJ:M3NEmzRMIkIC:
-    citations: 395
+    citations: 399
     title: Image restoration with mean-reverting stochastic differential equations
     year: '2023'
   AlF2g-YAAAAJ:MXK_kJrjxJIC:
@@ -118,7 +118,7 @@ papers:
     title: System and method for automatic treatment planning
     year: '2018'
   AlF2g-YAAAAJ:NMxIlDl6LWMC:
-    citations: 231
+    citations: 232
     title: 'Refusion: Enabling large-size realistic image restoration with latent-space diffusion models'
     year: '2023'
   AlF2g-YAAAAJ:NaGl4SEjCO4C:
@@ -130,7 +130,7 @@ papers:
     title: Generative model of phase space
     year: '2024'
   AlF2g-YAAAAJ:O3NaXMp0MMsC:
-    citations: 173
+    citations: 174
     title: 'NTIRE 2023 challenge on stereo image super-resolution: Methods and results'
     year: '2023'
   AlF2g-YAAAAJ:OU6Ihb5iCvQC:
@@ -178,7 +178,7 @@ papers:
     title: Dose-volume histogram prediction using density estimation
     year: '2015'
   AlF2g-YAAAAJ:W7OEmFMy1HYC:
-    citations: 68
+    citations: 69
     title: Systems and methods for optimizing treatment planning
     year: '2021'
   AlF2g-YAAAAJ:WbkHhVStYXYC:
@@ -202,7 +202,7 @@ papers:
     title: Cross-term-compensated gradient waveform design for tensor-valued diffusion MRI
     year: '2021'
   AlF2g-YAAAAJ:Zph67rFs4hoC:
-    citations: 36
+    citations: 37
     title: Modality-agnostic method for medical image representation
     year: '2020'
   AlF2g-YAAAAJ:_FxGoFyzp5QC:
@@ -218,7 +218,7 @@ papers:
     title: Learning incomplete factorization preconditioners for GMRES
     year: '2025'
   AlF2g-YAAAAJ:a0OBvERweLwC:
-    citations: 309
+    citations: 314
     title: Controlling Vision-Language Models for Multi-Task Image Restoration
     year: '2024'
   AlF2g-YAAAAJ:abG-DnoFyZgC:
@@ -230,7 +230,7 @@ papers:
     title: Computing radiotherapy dose distribution
     year: '2021'
   AlF2g-YAAAAJ:b0M2c_1WBrUC:
-    citations: 24
+    citations: 26
     title: 'Taming diffusion models for image restoration: a review'
     year: '2025'
   AlF2g-YAAAAJ:bEWYMUwI8FkC:
@@ -254,7 +254,7 @@ papers:
     title: Generating patient specific pseudo-CT of the head from MR using atlas-based regression
     year: '2015'
   AlF2g-YAAAAJ:dfsIfKJdRG4C:
-    citations: 29
+    citations: 30
     title: Photo-realistic image restoration in the wild with controlled vision-language models
     year: '2024'
   AlF2g-YAAAAJ:dhFuZR0502QC:
@@ -326,7 +326,7 @@ papers:
     title: Continuum radiotherapy treatment planning
     year: '2024'
   AlF2g-YAAAAJ:ns9cj8rnVeAC:
-    citations: 26
+    citations: 27
     title: Lens-to-lens bokeh effect transformation. NTIRE 2023 challenge report
     year: '2023'
   AlF2g-YAAAAJ:p2g8aNsByqUC:
@@ -382,7 +382,7 @@ papers:
     title: Minimal positive Markov realizations
     year: '2025'
   AlF2g-YAAAAJ:u_35RYKgDlwC:
-    citations: 32
+    citations: 33
     title: Entropy-regularized diffusion policy with q-ensembles for offline reinforcement learning
     year: '2024'
   AlF2g-YAAAAJ:ufrVoPGSRksC:
