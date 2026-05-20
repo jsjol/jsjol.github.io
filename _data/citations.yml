@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-05-13'
+  last_updated: '2026-05-20'
 papers:
   AlF2g-YAAAAJ:08ZZubdj9fEC:
     citations: 0
-    title: A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans
-    year: '2025'
+    title: "A parallel algorithm for generating Pareto\u2010optimal radiosurgery treatment plans"
+    year: '2026'
   AlF2g-YAAAAJ:0EnyYjriUFMC:
-    citations: 163
+    citations: 164
     title: 'Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems'
     year: '2019'
   AlF2g-YAAAAJ:2osOgNQ5qMEC:
@@ -26,11 +26,11 @@ papers:
     title: Diffusion-Based 3D Motion Estimation from Sparse 2D Observations
     year: '2023'
   AlF2g-YAAAAJ:4DMP91E08xMC:
-    citations: 8
+    citations: 9
     title: Generation of realizable radiotherapy plans
     year: '2022'
   AlF2g-YAAAAJ:4JMBOYKVnBMC:
-    citations: 367
+    citations: 370
     title: 'Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning'
     year: '2022'
   AlF2g-YAAAAJ:4OULZ7Gr8RgC:
@@ -46,11 +46,11 @@ papers:
     title: Observation-dependent Bayesian active learning via input-warped Gaussian processes
     year: '2026'
   AlF2g-YAAAAJ:5nxA0vEk-isC:
-    citations: 6
+    citations: 7
     title: System and method for automatic treatment planning
     year: '2020'
   AlF2g-YAAAAJ:738O_yMBCRsC:
-    citations: 6
+    citations: 5
     title: Machine learning for in-situ composition mapping in a self-driving magnetron sputtering system
     year: '2025'
   AlF2g-YAAAAJ:8AbLer7MMksC:
@@ -110,7 +110,7 @@ papers:
     title: "Probabilistic Zeeman-Doppler imaging of stellar magnetic fields-I. Analysis of \u03C4 Scorpii in the weak-field limit"
     year: Unknown Year
   AlF2g-YAAAAJ:M3NEmzRMIkIC:
-    citations: 399
+    citations: 402
     title: Image restoration with mean-reverting stochastic differential equations
     year: '2023'
   AlF2g-YAAAAJ:MXK_kJrjxJIC:
@@ -118,7 +118,7 @@ papers:
     title: System and method for automatic treatment planning
     year: '2018'
   AlF2g-YAAAAJ:NMxIlDl6LWMC:
-    citations: 232
+    citations: 233
     title: 'Refusion: Enabling large-size realistic image restoration with latent-space diffusion models'
     year: '2023'
   AlF2g-YAAAAJ:NaGl4SEjCO4C:
@@ -130,7 +130,7 @@ papers:
     title: Generative model of phase space
     year: '2024'
   AlF2g-YAAAAJ:O3NaXMp0MMsC:
-    citations: 174
+    citations: 176
     title: 'NTIRE 2023 challenge on stereo image super-resolution: Methods and results'
     year: '2023'
   AlF2g-YAAAAJ:OU6Ihb5iCvQC:
@@ -178,7 +178,7 @@ papers:
     title: Dose-volume histogram prediction using density estimation
     year: '2015'
   AlF2g-YAAAAJ:W7OEmFMy1HYC:
-    citations: 69
+    citations: 70
     title: Systems and methods for optimizing treatment planning
     year: '2021'
   AlF2g-YAAAAJ:WbkHhVStYXYC:
@@ -202,7 +202,7 @@ papers:
     title: Cross-term-compensated gradient waveform design for tensor-valued diffusion MRI
     year: '2021'
   AlF2g-YAAAAJ:Zph67rFs4hoC:
-    citations: 37
+    citations: 38
     title: Modality-agnostic method for medical image representation
     year: '2020'
   AlF2g-YAAAAJ:_FxGoFyzp5QC:
@@ -218,7 +218,7 @@ papers:
     title: Learning incomplete factorization preconditioners for GMRES
     year: '2025'
   AlF2g-YAAAAJ:a0OBvERweLwC:
-    citations: 314
+    citations: 319
     title: Controlling Vision-Language Models for Multi-Task Image Restoration
     year: '2024'
   AlF2g-YAAAAJ:abG-DnoFyZgC:
@@ -230,7 +230,7 @@ papers:
     title: Computing radiotherapy dose distribution
     year: '2021'
   AlF2g-YAAAAJ:b0M2c_1WBrUC:
-    citations: 26
+    citations: 27
     title: 'Taming diffusion models for image restoration: a review'
     year: '2025'
   AlF2g-YAAAAJ:bEWYMUwI8FkC:
@@ -262,7 +262,7 @@ papers:
     title: Radiotherapy treatment plan optimization using machine learning
     year: '2023'
   AlF2g-YAAAAJ:e5wmG9Sq2KIC:
-    citations: 11
+    citations: 10
     title: Private learning via knowledge transfer with high-dimensional targets
     year: '2022'
   AlF2g-YAAAAJ:f2IySw72cVMC:
@@ -273,6 +273,10 @@ papers:
     citations: 6
     title: 'Ising on the graph: Task-specific graph subsampling via the Ising model'
     year: '2024'
+  AlF2g-YAAAAJ:fQNAKQ3IYiAC:
+    citations: 0
+    title: Hasan Tahsin Arisan in Hayati
+    year: '2020'
   AlF2g-YAAAAJ:g5m5HwL7SMYC:
     citations: 12
     title: 'Icml 2023 topological deep learning challenge: Design and results'
@@ -282,7 +286,7 @@ papers:
     title: Trials and Tribulations of High-Dimensional Electrolyte Design for Aqueous Zinc Batteries Using Bayesian Optimization
     year: '2026'
   AlF2g-YAAAAJ:hqOjcs7Dif8C:
-    citations: 69
+    citations: 71
     title: A linear programming approach to inverse planning in Gamma Knife radiosurgery
     year: '2019'
   AlF2g-YAAAAJ:iH-uZ7U-co4C:
@@ -290,7 +294,7 @@ papers:
     title: Unsupervised dynamic modeling of medical image transformations
     year: '2022'
   AlF2g-YAAAAJ:isC4tDSrTZIC:
-    citations: 33
+    citations: 32
     title: Automated electrolyte formulation and coin cell assembly for high-throughput lithium-ion battery research
     year: '2023'
   AlF2g-YAAAAJ:kNdYIx-mwKoC:
@@ -338,11 +342,11 @@ papers:
     title: Parallel generation of Pareto optimal radiotherapy plans
     year: '2023'
   AlF2g-YAAAAJ:qUcmZB5y_30C:
-    citations: 11
+    citations: 12
     title: Parameter search in radiotherapy treatment plan optimization
     year: '2024'
   AlF2g-YAAAAJ:qjMakFHDy7sC:
-    citations: 258
+    citations: 259
     title: Constrained optimization of gradient waveforms for generalized diffusion encoding
     year: '2015'
   AlF2g-YAAAAJ:qxL8FJ1GzNcC:
@@ -382,7 +386,7 @@ papers:
     title: Minimal positive Markov realizations
     year: '2025'
   AlF2g-YAAAAJ:u_35RYKgDlwC:
-    citations: 33
+    citations: 34
     title: Entropy-regularized diffusion policy with q-ensembles for offline reinforcement learning
     year: '2024'
   AlF2g-YAAAAJ:ufrVoPGSRksC:
