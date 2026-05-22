@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-20'
+  last_updated: '2026-05-22'
 papers:
   AlF2g-YAAAAJ:08ZZubdj9fEC:
     citations: 0
@@ -262,7 +262,7 @@ papers:
     title: Radiotherapy treatment plan optimization using machine learning
     year: '2023'
   AlF2g-YAAAAJ:e5wmG9Sq2KIC:
-    citations: 10
+    citations: 11
     title: Private learning via knowledge transfer with high-dimensional targets
     year: '2022'
   AlF2g-YAAAAJ:f2IySw72cVMC:
