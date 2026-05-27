@@ -542,11 +542,66 @@ clearInterval(textAdder);
 <!-- Links/Buttons -->
 <div class="links">
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://arxiv.org/abs/2509.08602" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+<a href="https://doi.org/10.1002/mp.70454" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Using inverse planning tools to create radiotherapy treatment plans is an iterative process, where clinical trade-offs are explored by changing the relative importance of different objectives and rerunning the optimizer until a desirable plan is found. We seek to optimize hundreds of radiosurgery treatment plans, corresponding to different weightings of objectives, fast enough to incorporate interactive Pareto navigation of clinical trade-offs into the clinical workflow. We apply the alternating direction method of multipliers (ADMM) to the linear-program formulation of the optimization problem used in Lightning. We implement both a CPU and a GPU version of ADMM in Matlab and compare them to Matlab’s built-in, single-threaded dual-simplex solver. The ADMM implementation is adapted to the optimization procedure used in the clinical software, with a bespoke algorithm for maximizing overlap between low-dose points for different objective weights. The method is evaluated on a test dataset consisting of 20 cases from three different indications, with between one and nine targets and total target volumes ranging from 0.66 to 52 cm3, yielding speedups of 1.6-97 and 54-1500 times on CPU and GPU, respectively, compared to simplex. Plan quality was evaluated by rerunning the ADMM optimization 20 times, each with a different random seed, for each test case and for nine objective weightings per case. The resulting clinical metrics closely mimicked those obtained when rerunning the simplex solver, verifying the validity of the method. In conclusion, we show how ADMM can be adapted for radiosurgery plan optimization, allowing hundreds of high …</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<img src="/assets/img/publication_preview/our_arch_new.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="our_arch_new.png" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="baghi2025towards" class="col-sm-8">
+<!-- Title -->
+<div class="title">Improving Sample Efficiency in Multi-Agent Reinforcement Learning for Simulated Football Games via Exploration</div>
+<!-- Author -->
+<div class="author">
+Amir
+Baghi, <em>Jens
+Sjölund</em>, Joakim
+Bergdahl, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Linus Gisslén, Alessandro Sestini' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>In Foundations of Digital Games (FDG)</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2503.13077" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Multi-agent reinforcement learning has shown promise in learning cooperative behaviors in team-based environments. However, such methods often demand extensive training time. For instance, the state-of-the-art method TiZero takes 40 days to train high-quality policies for a football environment. In this paper, we hypothesize that better exploration mechanisms can improve the sample efficiency of multi-agent methods. We propose two different approaches for better exploration in TiZero: a self-supervised intrinsic reward and a random network distillation bonus. Additionally, we introduce architectural modifications to the original algorithm to enhance TiZero’s computational efficiency. We evaluate the sample efficiency of these approaches through extensive experiments. Our results show that random network distillation improves training sample efficiency by 18.8% compared to the original TiZero. Furthermore, we evaluate the qualitative behavior of the models produced by both variants against a heuristic AI, with the self-supervised reward encouraging possession and random network distillation leading to a more offensive performance. Our results highlights the applicability of our random network distillation variant in practical settings. Lastly, due to the nature of the proposed method, we acknowledge its use beyond football simulation, especially in environments with strong multi-agent and strategic aspects.</p>
 </div>
 </div>
 </div>
@@ -1387,51 +1442,6 @@ Gunnarsson
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>The present invention relates to the field of radiation therapy and methods, software and systems for adaptive radiotherapy. There is provided a method for adaptive radiotherapy treatment of a patient comprising receiving a sequence of measurement data of the treatment, the measurements being captured at different time points, mapping measurement data to a representation of a treatment geometry at the time points, using the representation in a dynamical model describing how variables in the representation evolve over time, based on the dynamical model, estimating positions over time of the treatment geometry or selected parts of the treatment geometry, determining a treatment action for the patient at a defined time point using the estimation from the dynamical model and executing the treatment action at the defined time point.</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="row">
-<div class="col col-sm-2 abbr">
-</div>
-<!-- Entry bib key -->
-<div id="baghi2025towards" class="col-sm-8">
-<!-- Title -->
-<div class="title">Towards Better Sample Efficiency in Multi-Agent Reinforcement Learning via Exploration</div>
-<!-- Author -->
-<div class="author">
-Amir
-Baghi, <em>Jens
-Sjölund</em>, Joakim
-Bergdahl, and
-<span class="more-authors" title="click to view 2 more authors" onclick="
-var element = $(this);
-element.attr('title', '');
-var more_authors_text = element.text() == '2 more authors' ? 'Linus Gisslén, Alessandro Sestini' : '2 more authors';
-var cursorPosition = 0;
-var textAdder = setInterval(function(){
-element.html(more_authors_text.substring(0, cursorPosition + 1));
-if (++cursorPosition == more_authors_text.length){
-clearInterval(textAdder);
-}
-}, '10');
-">2 more authors</span>
-</div>
-<!-- Journal/Book title and date -->
-<div class="periodical">
-<em>arXiv preprint arXiv:2503.13077</em>,  2025
-</div>
-<div class="periodical">
-</div>
-<!-- Links/Buttons -->
-<div class="links">
-<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://arxiv.org/abs/2503.13077" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<!-- Hidden abstract block -->
-<div class="abstract hidden">
-<p>Multi-agent reinforcement learning has shown promise in learning cooperative behaviors in team-based environments. However, such methods often demand extensive training time. For instance, the state-of-the-art method TiZero takes 40 days to train high-quality policies for a football environment. In this paper, we hypothesize that better exploration mechanisms can improve the sample efficiency of multi-agent methods. We propose two different approaches for better exploration in TiZero: a self-supervised intrinsic reward and a random network distillation bonus. Additionally, we introduce architectural modifications to the original algorithm to enhance TiZero’s computational efficiency. We evaluate the sample efficiency of these approaches through extensive experiments. Our results show that random network distillation improves training sample efficiency by 18.8% compared to the original TiZero. Furthermore, we evaluate the qualitative behavior of the models produced by both variants against a heuristic AI, with the self-supervised reward encouraging possession and random network distillation leading to a more offensive performance. Our results highlights the applicability of our random network distillation variant in practical settings. Lastly, due to the nature of the proposed method, we acknowledge its use beyond football simulation, especially in environments with strong multi-agent and strategic aspects.</p>
 </div>
 </div>
 </div>
