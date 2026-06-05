@@ -51,6 +51,10 @@ co_supervised:
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N26-597"
     image: steven.png
     description: "Causal machine learning for precision medicine in breast cancer"
+  - name: "Erik Thiringer"
+    website: "https://ki.se/personer/erik-thiringer"
+    image: erik.jpeg
+    description: "Multi-modal AI precision diagnostics for breast cancer"
 
 alumni_phd:
   - name: "Jackie Yik"
