@@ -90,6 +90,10 @@ alumni_postdoc:
     now: "Assistant Professor, Linköping University"
 
 alumni_msc:
+  - name: "Stina Brunzell"
+    title: "Inverse Design of Thin-Film Optical Characteristics with Guided Flow Matching"
+    url: "https://uu.diva-portal.org/smash/get/diva2:2065328/FULLTEXT01.pdf"
+    year: 2026
   - name: "Ella J. Schmidtobreick"
     title: "Accelerating Active-set Solvers using Graph Neural Networks"
     url: "https://www.diva-portal.org/smash/get/diva2:1980664/FULLTEXT01.pdf"

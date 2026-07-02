@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-04-05
+date: 2026-05-10
 inline: true
 related_posts: false
 ---
 
-Paper accepted in [Medical Physics](https://www.medphys.org/): [*A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans*](https://arxiv.org/abs/2509.08602). This is a result of our collaboration with Elekta.
+New paper in Medical Physics, [*A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans*](https://doi.org/10.1002/mp.70454), resulting from our collaboration with Elekta.
