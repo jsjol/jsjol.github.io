@@ -56,7 +56,7 @@ table {
 
 a,
 table.table a {
-  color: var(--global-link-color);
+  color: var(--global-theme-color);
 
   &:hover {
     color: var(--global-hover-color);
@@ -169,23 +169,4 @@ blockquote {
       text-decoration: none;
     }
   }
-}
-
-// Content links carry a faint underline so that a near-black link is still
-// recognisable as one. Scoped to .post, which excludes the navbar; buttons and
-// the social icons keep their own treatment.
-
-.post a:not(.btn):not(.no-underline) {
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-
-  &:hover {
-    text-decoration-color: currentColor;
-  }
-}
-
-.post .social a {
-  text-decoration: none;
 }

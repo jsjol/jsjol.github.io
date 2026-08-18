@@ -10,10 +10,8 @@
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  // Body links are near-black and identified by their underline, so that no
-  // link is ever mistaken for a visited one. The accent below is what
-  // interactive state uses: hover, the active nav item, inline code.
-  --global-link-color: #{v.$grey-color-dark};
+  // Uppsala University's profile red, replacing al-folio's stock #b509ac, which
+  // reads as an already-visited link.
   --global-theme-color: #{v.$uu-red};
   --global-hover-color: #{v.$uu-red};
   --global-hover-text-color: #{v.$white-color};
@@ -81,7 +79,6 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-link-color: #{v.$grey-color-light};
   --global-theme-color: #{v.$uu-red-light};
   --global-hover-color: #{v.$uu-red-light};
   --global-hover-text-color: #{v.$white-color};

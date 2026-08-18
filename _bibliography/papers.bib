@@ -8,7 +8,8 @@
   eprint        = {2301.11699},
   archiveprefix = {arXiv},
   selected      = {true},
-  preview       = {irsde_overview.png}
+  preview       = {irsde_overview.png},
+  google_scholar_id = {M3NEmzRMIkIC}
 }
 
 @article{hering2022learn2reg_,
@@ -21,7 +22,8 @@
   pages     = {697-712},
   publisher = {IEEE},
   abstract  = {Image registration is a fundamental medical image analysis task, and a wide variety of approaches have been proposed. However, only a few studies have comprehensively compared medical image registration approaches on a wide range of clinically relevant tasks. This limits the development of registration methods, the adoption of research advances into practice, and a fair benchmark across competing approaches. The Learn2Reg challenge addresses these limitations by providing a multi-task medical image registration data set for comprehensive characterisation of deformable registration algorithms. A continuous evaluation will be possible at https://learn2reg.grand-challenge.org. Learn2Reg covers a wide range of anatomies (brain, abdomen, and thorax), modalities (ultrasound, CT, MR), availability of annotations, as well as intra- and inter-patient registration evaluation. We established an easily accessible …},
-  url       = {https://ieeexplore.ieee.org/abstract/document/9925717/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/9925717/},
+  google_scholar_id = {4JMBOYKVnBMC}
 }
 
 @inproceedings{luo2024controlling,
@@ -33,7 +35,8 @@
   url           = {https://arxiv.org/abs/2310.01018},
   eprint        = {2310.01018},
   archiveprefix = {arXiv},
-  preview       = {daclip_teaser.jpg}
+  preview       = {daclip_teaser.jpg},
+  google_scholar_id = {a0OBvERweLwC}
 }
 
 @article{sjölund2015constrained,
@@ -45,7 +48,8 @@
   pages     = {157-168},
   publisher = {Academic Press},
   abstract  = {Diffusion MRI is a useful probe of tissue microstructure. The conventional diffusion encoding sequence, the single pulsed field gradient, has recently been challenged as more general gradient waveforms have been introduced. Out of these, we focus on q-space trajectory imaging, which generalizes the scalar b-value to a tensor valued entity. To take full advantage of its capabilities, it is imperative to respect the constraints imposed by the hardware, while at the same time maximizing the diffusion encoding strength. We provide a tool that achieves this by solving a constrained optimization problem that accommodates constraints on maximum gradient amplitude, slew rate, coil heating and positioning of radio frequency pulses. The method’s efficacy and flexibility is demonstrated both experimentally and by comparison with previous work on optimization of isotropic diffusion sequences.},
-  url       = {https://www.sciencedirect.com/science/article/pii/S1090780715002451}
+  url       = {https://www.sciencedirect.com/science/article/pii/S1090780715002451},
+  google_scholar_id = {qjMakFHDy7sC}
 }
 
 @inproceedings{luo2023refusion_,
@@ -55,7 +59,8 @@
   booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
   pages     = {1680-1691},
   abstract  = {This work aims to improve the applicability of diffusion models in realistic image restoration. Specifically, we enhance the diffusion model in several aspects such as network architecture, noise level, denoising steps, training image size, and optimizer/scheduler. We show that tuning these hyperparameters allows us to achieve better performance on both distortion and perceptual scores. We also propose a U-Net based latent diffusion model which performs diffusion in a low-resolution latent space while preserving high-resolution information from the original input for the decoding process. Compared to the previous latent-diffusion model which trains a VAE-GAN to compress the image, our proposed U-Net compression strategy is significantly more stable and can recover highly accurate images without relying on adversarial optimization. Importantly, these modifications allow us to apply diffusion models to various image restoration tasks, including real-world shadow removal, HR non-homogeneous dehazing, stereo super-resolution, and bokeh effect transformation. By simply replacing the datasets and slightly changing the noise network, our model, named Refusion, is able to deal with large-size images (eg, 6000 x 4000 x 3 in HR dehazing) and produces good results on all the above restoration problems. Our Refusion achieves the best perceptual performance in the NTIRE 2023 Image Shadow Removal Challenge and wins 2nd place overall.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Luo_Refusion_Enabling_Large-Size_Realistic_Image_Restoration_With_Latent-Space_Diffusion_Models_CVPRW_2023_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Luo_Refusion_Enabling_Large-Size_Realistic_Image_Restoration_With_Latent-Space_Diffusion_Models_CVPRW_2023_paper.html},
+  google_scholar_id = {NMxIlDl6LWMC}
 }
 
 @article{sjölund2015generating,
@@ -68,7 +73,8 @@
   pages     = {825},
   publisher = {IOP Publishing},
   abstract  = {Radiotherapy planning and attenuation correction of PET images require simulation of radiation transport. The necessary physical properties are typically derived from computed tomography (CT) images, but in some cases, including stereotactic neurosurgery and combined PET/MR imaging, only magnetic resonance (MR) images are available. With these applications in mind, we describe how a realistic, patient-specific, pseudo-CT of the head can be derived from anatomical MR images. We refer to the method as atlas-based regression, because of its similarity to atlas-based segmentation.Given a target MR and an atlas database comprising MR and CT pairs, atlas-based regression works by registering each atlas MR to the target MR, applying the resulting displacement fields to the corresponding atlas CTs and, finally, fusing the deformed atlas CTs into a single pseudo-CT.We use a deformable registration …},
-  url       = {https://iopscience.iop.org/article/10.1088/0031-9155/60/2/825/meta}
+  url       = {https://iopscience.iop.org/article/10.1088/0031-9155/60/2/825/meta},
+  google_scholar_id = {d1gkVwhDpl0C}
 }
 
 @inproceedings{wang2023ntire,
@@ -78,7 +84,8 @@
   booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
   pages     = {1346-1372},
   abstract  = {In this paper, we summarize the 2nd NTIRE challenge on stereo image super-resolution (SR) with a focus on new solutions and results. The task of the challenge is to super-resolve a low-resolution stereo image pair to a high-resolution one with a magnification factor of x4. Compared with single image SR, the major challenge of this challenge lies in how to exploit additional information in another viewpoint and how to maintain stereo consistency in the results. This challenge has 3 tracks, including one track on distortion (eg, PSNR) and bicubic degradation, one track on perceptual quality (eg, LPIPS) and bicubic degradation, as well as another track on real degradations. In total, 175, 93, and 103 participants were successfully registered for each track, respectively. In the test phase, 21, 17, and 12 teams successfully submitted results with PSNR (RGB) scores better than the baseline. This challenge establishes a new benchmark for stereo image SR.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Wang_NTIRE_2023_Challenge_on_Stereo_Image_Super-Resolution_Methods_and_Results_CVPRW_2023_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Wang_NTIRE_2023_Challenge_on_Stereo_Image_Super-Resolution_Methods_and_Results_CVPRW_2023_paper.html},
+  google_scholar_id = {O3NaXMp0MMsC}
 }
 
 @article{szczepankiewicz2019tensor-valued,
@@ -91,7 +98,8 @@
   pages     = {e0214238},
   publisher = {Public Library of Science},
   abstract  = {Microstructure imaging techniques based on tensor-valued diffusion encoding have gained popularity within the MRI research community. Unlike conventional diffusion encoding—applied along a single direction in each shot—tensor-valued encoding employs diffusion encoding along multiple directions within a single preparation of the signal. The benefit is that such encoding may probe tissue features that are not accessible by conventional encoding. For example, diffusional variance decomposition (DIVIDE) takes advantage of tensor-valued encoding to probe microscopic diffusion anisotropy independent of orientation coherence. The drawback is that tensor-valued encoding generally requires gradient waveforms that are more demanding on hardware; it has therefore been used primarily in MRI systems with relatively high performance. The purpose of this work was to explore tensor-valued diffusion encoding on clinical MRI systems with varying performance to test its technical feasibility within the context of DIVIDE. We performed whole-brain imaging with linear and spherical b-tensor encoding at field strengths between 1.5 and 7 T, and at maximal gradient amplitudes between 45 and 80 mT/m. Asymmetric gradient waveforms were optimized numerically to yield b-values up to 2 ms/μm2. Technical feasibility was assessed in terms of the repeatability, SNR, and quality of DIVIDE parameter maps. Variable system performance resulted in echo times between 83 to 115 ms and total acquisition times of 6 to 9 minutes when using 80 signal samples and resolution 2×2×4 mm3. As expected, the repeatability, signal-to-noise ratio and parameter …},
-  url       = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214238}
+  url       = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214238},
+  google_scholar_id = {0EnyYjriUFMC}
 }
 
 @article{sjölund2019a,
@@ -103,7 +111,8 @@
   number   = {4},
   pages    = {1533-1544},
   abstract = {Leksell Gamma Knife® is a stereotactic radiosurgery system that allows fine‐grained control of the delivered dose distribution. We describe a new inverse planning approach that both resolves shortcomings of earlier approaches and unlocks new capabilities.We fix the isocenter positions and perform sector‐duration optimization using linear programming, and study the effect of beam‐on time penalization on the trade‐off between beam‐on time and plan quality. We also describe two techniques that reduce the problem size and thus further reduce the solution time: dualization and representative subsampling.The beam‐on time penalization reduces the beam‐on time by a factor 2–3 compared with the naïve alternative. Dualization and representative subsampling each leads to optimization time‐savings by a factor 5–20. Overall, we find in a comparison with 75 clinical plans that we …},
-  url      = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.13440}
+  url      = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.13440},
+  google_scholar_id = {hqOjcs7Dif8C}
 }
 
 @article{sjölund2021systems,
@@ -111,7 +120,8 @@
   author   = {Jens Olof Sjölund},
   year     = {2021},
   abstract = {The present disclosure relates to systems, methods, and computer-readable storage devices for radiotherapy treat ment planning. For example, a method may generate a treatment plan for a patient. The method may receive training data reflecting radiotherapy treatment data. The training data may include a feature vector and a target vector. The method may further determine a training model based on the feature vector and the target vector. The method may further receive testing data associated with the patient. The testing data may include a descriptive feature vector. The method may further determine a therapy model based on the descriptive feature vector and the training model. The therapy model may be used to generate the treatment plan. 18 Claims, 10 Drawing Sheets},
-  url      = {https://patents.google.com/patent/US11056243B2/en}
+  url      = {https://patents.google.com/patent/US11056243B2/en},
+  google_scholar_id = {W7OEmFMy1HYC}
 }
 
 @article{szczepankiewicz2021motion_compensated,
@@ -123,7 +133,8 @@
   number   = {4},
   pages    = {2117-2126},
   abstract = {Diffusion‐weighted MRI is sensitive to incoherent tissue motion, which may confound the measured signal and subsequent analysis. We propose a “motion‐compensated” gradient waveform design for tensor‐valued diffusion encoding that negates the effects bulk motion and incoherent motion in the ballistic regime.Motion compensation was achieved by constraining the magnitude of gradient waveform moment vectors. The constraint was incorporated into a numerical optimization framework, along with existing constraints that account for b‐tensor shape, hardware restrictions, and concomitant field gradients. We evaluated the efficacy of encoding and motion compensation in simulations, and we demonstrated the approach by linear and planar b‐tensor encoding in a healthy heart in vivo.The optimization framework produced asymmetric motion‐compensated waveforms that yielded …},
-  url      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.28551}
+  url      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.28551},
+  google_scholar_id = {Wp0gIr-vW9MC}
 }
 
 @article{munter2015dose-volume,
@@ -136,7 +147,8 @@
   pages     = {6923-6936},
   publisher = {IOP Publishing},
   abstract  = {Knowledge of what dose-volume histograms can be expected for a previously unseen patient could increase consistency and quality in radiotherapy treatment planning. We propose a machine learning method that uses previous treatment plans to predict such dose-volume histograms. The key to the approach is the framing of dose-volume histograms in a probabilistic setting.The training consists of estimating, from the patients in the training set, the joint probability distribution of some predictive features and the dose. The joint distribution immediately provides an estimate of the conditional probability of the dose given the values of the predictive features. The prediction consists of estimating, from the new patient, the distribution of the predictive features and marginalizing the conditional probability from the training over this. Integrating the resulting probability distribution for the dose yields an estimate of the dose …},
-  url       = {https://iopscience.iop.org/article/10.1088/0031-9155/60/17/6923/meta}
+  url       = {https://iopscience.iop.org/article/10.1088/0031-9155/60/17/6923/meta},
+  google_scholar_id = {UeHWp8X0CEIC}
 }
 
 @article{lau2019a,
@@ -147,7 +159,8 @@
   abstract      = {Over the last few years machine learning has demonstrated groundbreaking results in many areas of medical image analysis, including segmentation. A key assumption, however, is that the train- and test distributions match. We study a realistic scenario where this assumption is clearly violated, namely segmentation with missing input modalities. We describe two neural network approaches that can handle a variable number of input modalities. The first is modality dropout: a simple but surprisingly effective modification of the training. The second is the unified representation network: a network architecture that maps a variable number of input modalities into a unified representation that can be used for downstream tasks such as segmentation. We demonstrate that modality dropout makes a standard segmentation network reasonably robust to missing modalities, but that the same network works even better if trained on the unified representation.},
   url           = {https://arxiv.org/abs/1908.06683},
   eprint        = {1908.06683},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {3fE2CSJIrl8C}
 }
 
 @inproceedings{ancuti2023ntire,
@@ -157,7 +170,8 @@
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages     = {1808-1825},
   abstract  = {This study assesses the outcomes of the NTIRE 2023 Challenge on Non-Homogeneous Dehazing, wherein novel techniques were proposed and evaluated on new image dataset called HD-NH-HAZE. The HD-NH-HAZE dataset contains 50 high resolution pairs of real-life outdoor images featuring nonhomogeneous hazy images and corresponding haze-free images of the same scene. The nonhomogeneous haze was simulated using a professional setup that replicated real-world conditions of hazy scenarios. The competition had 246 participants and 17 teams that competed in the final testing phase, and the proposed solutions demonstrated the cutting-edge in image dehazing technology.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Ancuti_NTIRE_2023_HR_NonHomogeneous_Dehazing_Challenge_Report_CVPRW_2023_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Ancuti_NTIRE_2023_HR_NonHomogeneous_Dehazing_Challenge_Report_CVPRW_2023_paper.html},
+  google_scholar_id = {RGFaLdJalmkC}
 }
 
 @article{sjölund2020modality-agnostic,
@@ -165,7 +179,8 @@
   author   = {Jens Olof Sjölund and Jonas Anders Adler},
   year     = {2020},
   abstract = {Techniques for the operation and use of a model that learns the general representation of multimodal images is dis closed. In various examples, methods from representation learning are used to find a common basis for representation of medical images. These include aspects of encoding, fusion, and downstream tasks, with use the general representation and model. In an example, a method for generating a modality-agnostic model includes receiving imaging data, encoding the imaging data by mapping data to a latent representation, fusing the encoded data to conserve latent variables corresponding to the latent representation, and training a model using the latent representation. In an example, a method for processing imaging data using a trained modality-agnostic model includes receiving imaging data, encoding the data to the defined encoding, processing the encoded data with a trained model, and …},
-  url      = {https://patents.google.com/patent/US10762398B2/en}
+  url      = {https://patents.google.com/patent/US10762398B2/en},
+  google_scholar_id = {Zph67rFs4hoC}
 }
 
 @article{häusner2024neural,
@@ -178,7 +193,8 @@
   eprint        = {2305.16368},
   archiveprefix = {arXiv},
   selected      = {true},
-  preview       = {neuralIF_demo.png}
+  preview       = {neuralIF_demo.png},
+  google_scholar_id = {BqipwSGYUEgC}
 }
 
 @article{yik2023automated,
@@ -191,7 +207,8 @@
   pages     = {799-808},
   publisher = {Royal Society of Chemistry},
   abstract  = {Battery cell assembly and testing in conventional battery research is acknowledged to be heavily time-consuming and often suffers from large cell-to-cell variations. Manual battery cell assembly and electrolyte formulations are prone to introducing errors which confound optimization strategies and upscaling. Herein we present ODACell, an automated electrolyte formulation and battery assembly setup, capable of preparing large batches of coin cells. We demonstrate the feasibility of Li-ion cell assembly in an ambient atmosphere by preparing LiFePO4‖Li4Ti5O12-based full cells with dimethyl sulfoxide-based model electrolyte. Furthermore, the influence of water is investigated to account for the hygroscopic nature of the non-aqueous electrolyte when exposed to ambient atmosphere. The reproducibility tests demonstrate a conservative fail rate of 5\%, while the relative standard deviation of the discharge capacity …},
-  url       = {https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00058c}
+  url       = {https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00058c},
+  google_scholar_id = {isC4tDSrTZIC}
 }
 
 @article{sjölund2018system,
@@ -211,7 +228,8 @@
   pages     = {106991},
   publisher = {Academic Press},
   abstract  = {Diffusion MRI uses magnetic field gradients to sensitize the signal to the random motion of spins. In addition to the prescribed gradient waveforms, background field gradients contribute to the diffusion weighting and thereby cause an error in the measured signal and consequent parameterization. The most prominent contribution to the error comes from so-called ‘cross-terms.’ In this work we present a novel gradient waveform design that enables diffusion encoding that cancels such cross-terms and yields a more accurate measurement. This is achieved by numerical optimization that maximizes encoding efficiency with a simultaneous constraint on the ‘cross-term sensitivity’ (c = 0). We found that the optimized cross-term-compensated waveforms were superior to previous cross-term-compensated designs for a wide range of waveform types that yield linear, planar, and spherical b-tensor encoding. The efficacy of …},
-  url       = {https://www.sciencedirect.com/science/article/pii/S109078072100080X}
+  url       = {https://www.sciencedirect.com/science/article/pii/S109078072100080X},
+  google_scholar_id = {ZeXyd9-uunAC}
 }
 
 @article{zhang2024entropy-regularized,
@@ -222,7 +240,8 @@
   abstract = {Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a novel entropy-regularized diffusion policy and takes into account the confidence of the Q-value prediction with Q-ensembles. At the core of our diffusion policy is a mean-reverting stochastic differential equation (SDE) that transfers the action distribution into a standard Gaussian form and then samples actions conditioned on the environment state with a corresponding reverse-time process. We show that the entropy of such a policy is tractable and that can be used to increase the exploration of OOD samples in offline RL training. Moreover, we propose using the lower confidence bound of Q-ensembles for pessimistic Q-value function estimation. The proposed approach demonstrates state-of-the-art performance across a range of tasks in the D4RL benchmarks, significantly improving upon existing diffusion-based policies. The code is available at https://github. com/ruoqizzz/entropy-offlineRL.},
   url      = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/b319c0e8092ba726cb22e718d7d9a95e-Abstract-Conference.html},
   selected = {true},
-  preview  = {entropy-regularized.png}
+  preview  = {entropy-regularized.png},
+  google_scholar_id = {u_35RYKgDlwC}
 }
 
 @inproceedings{luo2024photo-realistic,
@@ -232,7 +251,8 @@
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages     = {6641-6651},
   abstract  = {Though diffusion models have been successfully applied to various image restoration (IR) tasks their performance is sensitive to the choice of training datasets. Typically diffusion models trained in specific datasets fail to recover images that have out-of-distribution degradations. To address this problem this work leverages a capable vision-language model and a synthetic degradation pipeline to learn image restoration in the wild (wild IR). More specifically all low-quality images are simulated with a synthetic degradation pipeline that contains multiple common degradations such as blur resize noise and JPEG compression. Then we introduce robust training for a degradation-aware CLIP model to extract enriched image content features to assist high-quality image restoration. Our base diffusion model is the image restoration SDE (IR-SDE). Built upon it we further present a posterior sampling strategy for fast noise-free image generation. We evaluate our model on both synthetic and real-world degradation datasets. Moreover experiments on the unified image restoration task illustrate that the proposed posterior sampling improves image generation quality for various degradations.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Luo_Photo-Realistic_Image_Restoration_in_the_Wild_with_Controlled_Vision-Language_Models_CVPRW_2024_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Luo_Photo-Realistic_Image_Restoration_in_the_Wild_with_Controlled_Vision-Language_Models_CVPRW_2024_paper.html},
+  google_scholar_id = {dfsIfKJdRG4C}
 }
 
 @article{yik2025accelerating,
@@ -246,7 +266,8 @@
   abstract  = {The integration of automation and data-driven methodologies offers a promising approach to accelerating materials discovery in energy storage research. Thus far, in battery research, coin-cell assembly has advanced to become nearly fully automated but remains largely disconnected from data-driven methods. To bridge the disconnect, this work presents a self-driving laboratory framework to accelerate electrolyte discovery by integrating automated coin-cell assembly, galvanostatic cycling of LiFePO4||Li4Ti5O12 organic-aqueous full cells, and Bayesian optimization for selecting subsequent experiments based on prior results. The study explored an organic-aqueous hybrid electrolyte system comprising four co-solvents and two lithium-conducting salts. Using this framework, cells with an optimized electrolyte cycled with at least 94\% Coulombic efficiency. Additionally, online electrochemical mass spectrometry …},
   url       = {https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X},
   selected  = {true},
-  preview   = {sdl_additives.jpg}
+  preview   = {sdl_additives.jpg},
+  google_scholar_id = {u9iWguZQMMsC}
 }
 
 @inproceedings{conde2023lens-to-lens,
@@ -256,7 +277,8 @@
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages     = {1643-1659},
   abstract  = {We present the new Bokeh Effect Transformation Dataset (BETD), and review the proposed solutions for this novel task at the NTIRE 2023 Bokeh Effect Transformation Challenge. Recent advancements of mobile photography aim to reach the visual quality of full-frame cameras. Now, a goal in computational photography is to optimize the Bokeh effect itself, which is the aesthetic quality of the blur in out-of-focus areas of an image. Photographers create this aesthetic effect by benefiting from the lens optical properties. The aim of this work is to design a neural network capable of converting the the Bokeh effect of one lens to the effect of another lens without harming the sharp foreground regions in the image. For a given input image, knowing the target lens type, we render or transform the Bokeh effect accordingly to the lens properties. We build the BETD using two full-frame Sony cameras, and diverse lens setups. To the best of our knowledge, we are the first attempt to solve this novel task, and we provide the first BETD dataset and benchmark for it. The challenge had 99 registered participants. The submitted methods gauge the state-of-the-art in Bokeh effect rendering and transformation.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Conde_Lens-to-Lens_Bokeh_Effect_Transformation._NTIRE_2023_Challenge_Report_CVPRW_2023_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Conde_Lens-to-Lens_Bokeh_Effect_Transformation._NTIRE_2023_Challenge_Report_CVPRW_2023_paper.html},
+  google_scholar_id = {ns9cj8rnVeAC}
 }
 
 @article{luo2025taming,
@@ -266,7 +288,8 @@
   journal  = {Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences},
   abstract = {Diffusion models (DMs) have achieved remarkable progress in generative modelling, particularly in enhancing image quality to conform to human preferences. Recently, these models have also been applied to low-level computer vision for photo-realistic image restoration (IR) in tasks such as image denoising, deblurring and dehazing. In this review, we introduce key constructions in DMs and survey contemporary techniques that make use of DMs in solving general IR tasks. We also point out the main challenges and limitations of existing diffusion-based IR frameworks and provide potential directions for future work.},
   url      = {https://royalsocietypublishing.org/rsta/article/383/2299/20240358/234771},
-  preview  = {rsta_ir.png}
+  preview  = {rsta_ir.png},
+  google_scholar_id = {b0M2c_1WBrUC}
 }
 
 @article{sjölund2018bayesian,
@@ -278,7 +301,8 @@
   pages     = {272-285},
   publisher = {Academic Press},
   abstract  = {Diffusion MRI (dMRI) is a valuable tool in the assessment of tissue microstructure. By fitting a model to the dMRI signal it is possible to derive various quantitative features. Several of the most popular dMRI signal models are expansions in an appropriately chosen basis, where the coefficients are determined using some variation of least-squares. However, such approaches lack any notion of uncertainty, which could be valuable in e.g. group analyses. In this work, we use a probabilistic interpretation of linear least-squares methods to recast popular dMRI models as Bayesian ones. This makes it possible to quantify the uncertainty of any derived quantity. In particular, for quantities that are affine functions of the coefficients, the posterior distribution can be expressed in closed-form. We simulated measurements from single- and double-tensor models where the correct values of several quantities are known, to validate …},
-  url       = {https://www.sciencedirect.com/science/article/pii/S1053811918302696}
+  url       = {https://www.sciencedirect.com/science/article/pii/S1053811918302696},
+  google_scholar_id = {ufrVoPGSRksC}
 }
 
 @inproceedings{liang2024ntire,
@@ -288,7 +312,8 @@
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages     = {6632-6640},
   abstract  = {In this paper we review the NTIRE 2024 challenge on Restore Any Image Model (RAIM) in the Wild. The RAIM challenge constructed a benchmark for image restoration in the wild including real-world images with/without reference ground truth in various scenarios from real applications. The participants were required to restore the real-captured images from complex and unknown degradation where generative perceptual quality and fidelity are desired in the restoration result. The challenge consisted of two tasks. Task one employed real referenced data pairs where quantitative evaluation is available. Task two used unpaired images and a comprehensive user study was conducted. The challenge attracted more than 200 registrations where 39 of them submitted results with more than 400 submissions. Top-ranked methods improved the state-of-the-art restoration performance and obtained unanimous recognition from all 18 judges. The proposed datasets are available at https://drive. google. com/file/d/1DqbxUoiUqkAIkExu3jZAqoElr_nu1IXb/view? usp= sharing and the homepage of this challenge is at https://codalab. lisn. upsaclay. fr/competitions/17632.},
-  url       = {https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Liang_NTIRE_2024_Restore_Any_Image_Model_RAIM_in_the_Wild_CVPRW_2024_paper.html}
+  url       = {https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Liang_NTIRE_2024_Restore_Any_Image_Model_RAIM_in_the_Wild_CVPRW_2024_paper.html},
+  google_scholar_id = {D03iK_w7-QYC}
 }
 
 @inproceedings{sjölund2014skull,
@@ -299,7 +324,8 @@
   pages     = {3274-3279},
   publisher = {IEEE},
   abstract  = {Magnetic resonance (MR) images lack information about radiation transport-a fact which is problematic in applications such as radiotherapy planning and attenuation correction in combined PET/MR imaging. To remedy this, a crude but common approach is to approximate all tissue properties as equivalent to those of water. We improve upon this using an algorithm that automatically identifies bone tissue in MR. More specifically, we focus on segmenting the skull prior to stereotactic neurosurgery, where it is common that only MR images are available. In the proposed approach, a machine learning algorithm known as a support vector machine is trained on patients for which both a CT and an MR scan are available. As input, a combination of local and global information is used. The latter is needed to distinguish between bone and air as this is not possible based only on the local image intensity. A whole skull …},
-  url       = {https://ieeexplore.ieee.org/abstract/document/6977276/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/6977276/},
+  google_scholar_id = {u-x6o8ySG0sC}
 }
 
 @article{sjölund2022graph-based,
@@ -310,7 +336,8 @@
   abstract      = {We describe a graph-based neural acceleration technique for nonnegative matrix factorization that builds upon a connection between matrices and bipartite graphs that is well-known in certain fields, e.g., sparse linear algebra, but has not yet been exploited to design graph neural networks for matrix computations. We first consider low-rank factorization more broadly and propose a graph representation of the problem suited for graph neural networks. Then, we focus on the task of nonnegative matrix factorization and propose a graph neural network that interleaves bipartite self-attention layers with updates based on the alternating direction method of multipliers. Our empirical evaluation on synthetic and two real-world datasets shows that we attain substantial acceleration, even though we only train in an unsupervised fashion on smaller synthetic instances.},
   url           = {https://arxiv.org/abs/2202.00264},
   eprint        = {2202.00264},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {TQgYirikUcIC}
 }
 
 @article{sjölund2021radiotherapy,
@@ -328,7 +355,8 @@
   journal  = {Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences},
   abstract = {Generative diffusions are a powerful class of Monte Carlo samplers that leverage bridging Markov processes to approximate complex, high-dimensional distributions, such as those found in image processing and language models. Despite their success in these domains, an important open challenge remains: extending these techniques to sample from conditional distributions, as required in, for example, Bayesian inverse problems. In this paper, we present a comprehensive review of existing computational approaches to conditional sampling within generative diffusion models. Specifically, we highlight key methodologies that either utilize the joint distribution, or rely on (pre-trained) marginal distributions with explicit likelihoods, to construct conditional generative samplers.This article is part of the theme issue ‘Generative modelling meets Bayesian inference: a new paradigm for inverse problems’.},
   url      = {https://royalsocietypublishing.org/rsta/article-abstract/383/2299/20240329/234805},
-  preview  = {rsta_sampling.png}
+  preview  = {rsta_sampling.png},
+  google_scholar_id = {EUQCXRtRnyEC}
 }
 
 @article{bånkestad2023variational,
@@ -340,7 +368,8 @@
   url           = {https://arxiv.org/abs/2311.12566},
   eprint        = {2311.12566},
   archiveprefix = {arXiv},
-  preview       = {variational_elliptical.png}
+  preview       = {variational_elliptical.png},
+  google_scholar_id = {ldfaerwXgEUC}
 }
 
 @article{eriksson2021computing,
@@ -348,7 +377,8 @@
   author   = {Markus Eriksson and Jens Olof Sjölund and Linn Öström and David Andreas Tilly and Peter Kimstrand and Jonas Anders Adler},
   year     = {2021},
   abstract = {Systems and methods for calculating radiotherapy dose distribution are provided. The systems and methods include operations for receiving data representing at least one of particle trajectories or a dose deposition pattern in a simu lated delivery of a radiotherapy plan; applying a dose calculation process to the received data to generate a first radiotherapy dose distribution having a first level of detail; and processing the first radiotherapy dose distribution using a trained machine learning technique to generate a second radiotherapy dose distribution having a second level of detail that enhances the first level of detail.},
-  url      = {https://patents.google.com/patent/US11020615B2/en}
+  url      = {https://patents.google.com/patent/US11020615B2/en},
+  google_scholar_id = {aqlVkmm33-oC}
 }
 
 @article{gunnarsson2020learning,
@@ -358,7 +388,8 @@
   pages     = {80-86},
   publisher = {Springer International Publishing},
   abstract  = {We introduce an end-to-end unsupervised (or weakly supervised) image registration method that blends conventional medical image registration with contemporary deep learning techniques from computer vision. Our method downsamples both the fixed and the moving images into multiple feature map levels where a displacement field is estimated at each level and then further refined throughout the network. We train and test our model on three different datasets. In comparison with the initial registrations we find an improved performance using our model, yet we expect it would improve further if the model was fine-tuned for each task. The implementation is publicly available (https://github.com/ngunnar/learning-a-deformable-registration-pyramid). },
-  url       = {https://link.springer.com/chapter/10.1007/978-3-030-71827-5_10}
+  url       = {https://link.springer.com/chapter/10.1007/978-3-030-71827-5_10},
+  google_scholar_id = {L8Ckcad2t8MC}
 }
 
 @inproceedings{sjölund2017gaussian,
@@ -369,7 +400,8 @@
   pages     = {778-782},
   publisher = {IEEE},
   abstract  = {We propose to use Gaussian process regression to accurately estimate the diffusion MRI signal at arbitrary locations in q-space. By estimating the signal on a grid, we can do synthetic diffusion spectrum imaging: reconstructing the ensemble averaged propagator (EAP) by an inverse Fourier transform. We also propose an alternative reconstruction method guaranteeing a nonnegative EAP that integrates to unity. The reconstruction is validated on data simulated from two Gaussians at various crossing angles. Moreover, we demonstrate on non-uniformly sampled in vivo data that the method is far superior to linear interpolation, and allows a drastic undersampling of the data with only a minor loss of accuracy. We envision the method as a potential replacement for standard diffusion spectrum imaging, in particular when acquisition time is limited.},
-  url       = {https://ieeexplore.ieee.org/abstract/document/7950634/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/7950634/},
+  google_scholar_id = {Tyk-4Ss8FVUC}
 }
 
 @inproceedings{häusner2025learning,
@@ -381,7 +413,8 @@
   url           = {https://arxiv.org/abs/2409.08262},
   eprint        = {2409.08262},
   archiveprefix = {arXiv},
-  preview       = {learning_if_singular.png}
+  preview       = {learning_if_singular.png},
+  google_scholar_id = {_xSYboBqXhAC}
 }
 
 @article{sjolund2024parameter,
@@ -389,7 +422,8 @@
   author   = {Jens Olof Sjolund},
   year     = {2024},
   abstract = {Techniques for generating a radiotherapy treatment plan are provided. The techniques include receiving a radiotherapy optimization problem, the radiotherapy problem comprising a plurality of parameters; processing the radiotherapy optimization problem to instantiate a first set of candidate parameters; converting the first set of candidate parameters into an adapted representation; defining an adapted radiotherapy optimization problem as a function of the adapted representation such that a given solution to the adapted optimization problem estimates a solution to the radiotherapy optimization problem; processing the adapted radiotherapy optimization problem to estimate a function of the solution to the adapted radiotherapy optimization problem; and processing the estimated function of the solution to the adapted optimization problem to generate a deliverable radiotherapy treatment plan.},
-  url      = {https://patents.google.com/patent/US11996178B2/en}
+  url      = {https://patents.google.com/patent/US11996178B2/en},
+  google_scholar_id = {qUcmZB5y_30C}
 }
 
 @inproceedings{papillon2023icml,
@@ -400,7 +434,8 @@
   pages     = {3-8},
   publisher = {PMLR},
   abstract  = {This paper presents the computational challenge on topological deep learning that was hosted within the ICML 2023 Workshop on Topology and Geometry in Machine Learning. The competition asked participants to provide open-source implementations of topological neural networks from the literature by contributing to the python packages TopoNetX (data processing) and TopoModelX (deep learning). The challenge attracted twenty-eight qualifying submissions in its two month duration. This paper describes the design of the challenge and summarizes its main findings.},
-  url       = {http://proceedings.mlr.press/v221/papillon23a.html}
+  url       = {http://proceedings.mlr.press/v221/papillon23a.html},
+  google_scholar_id = {g5m5HwL7SMYC}
 }
 
 @article{zhao2023probabilistic,
@@ -412,7 +447,8 @@
   pages     = {461-476},
   publisher = {IEEE},
   abstract  = {We present a continuous-time probabilistic approach for estimating the chirp signal and its instantaneous frequency function when the true forms of these functions are not accessible. Our model represents these functions by non-linearly cascaded Gaussian processes represented as non-linear stochastic differential equations. The posterior distribution of the functions is then estimated with stochastic filters and smoothers. We compute a (posterior) Cramér–Rao lower bound for the Gaussian process model, and derive a theoretical upper bound for the estimation error in the mean squared sense. The experiments show that the proposed method outperforms a number of state-of-the-art methods on a synthetic data. We also show that the method works out-of-the-box for two real-world datasets.},
-  url       = {https://ieeexplore.ieee.org/abstract/document/10045818/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/10045818/},
+  google_scholar_id = {blknAaTinKkC}
 }
 
 @article{sjölund2023a,
@@ -422,7 +458,8 @@
   abstract      = {Variational inference uses optimization, rather than integration, to approximate the marginal likelihood, and thereby the posterior, in a Bayesian model. Thanks to advances in computational scalability made in the last decade, variational inference is now the preferred choice for many high-dimensional models and large datasets. This tutorial introduces variational inference from the parametric perspective that dominates these recent developments, in contrast to the mean-field perspective commonly found in other introductory texts.},
   url           = {https://arxiv.org/abs/2301.01236},
   eprint        = {2301.01236},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {maZDTaKrznsC}
 }
 
 @article{sjölund2022compressing,
@@ -430,7 +467,8 @@
   author   = {Jens Olof Sjölund},
   year     = {2022},
   abstract = {Woessner, PA (57) ABSTRACT Techniques for solving a radiotherapy treatment plan opti mization problem are provided. The techniques include receiving a first radiotherapy treatment plan optimization problem having a first set of parameters; processing the first set of parameters to estimate a second set of parameters of a second radiotherapy treatment plan optimization problem; generating a solution to the second radiotherapy treatment plan optimization problem based on the estimated second set of parameters; and generating a radiotherapy treatment plan based on the solution to the second radiotherapy treatment plan optimization problem.},
-  url      = {https://patents.google.com/patent/US11367520B2/en}
+  url      = {https://patents.google.com/patent/US11367520B2/en},
+  google_scholar_id = {QIV2ME_5wuYC}
 }
 
 @inproceedings{fay2022private,
@@ -441,7 +479,8 @@
   pages     = {3873-3877},
   publisher = {IEEE},
   abstract  = {Preventing unintentional leakage of information about the training set has high relevance for many machine learning tasks, such as medical image segmentation. While differential privacy (DP) offers mathematically rigorous protection, the high output dimensionality of segmentation tasks prevents the direct application of state-of-the-art algorithms such as Private Aggregation of Teacher Ensembles (PATE). In order to alleviate this problem, we propose to learn dimensionality-reducing transformations to map the prediction target into a bounded lower-dimensional space to reduce the required noise level during the aggregation stage. To this end, we assess the suitability of principal component analysis (PCA) and autoencoders. We conclude that autoencoders are an effective means to reduce the noise in the target variables.},
-  url       = {https://ieeexplore.ieee.org/abstract/document/9747159/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/9747159/},
+  google_scholar_id = {e5wmG9Sq2KIC}
 }
 
 @article{sjölund2020convex,
@@ -461,14 +500,16 @@
   url           = {https://arxiv.org/abs/2405.13794},
   eprint        = {2405.13794},
   archiveprefix = {arXiv},
-  preview       = {conditioning_diffusion.png}
+  preview       = {conditioning_diffusion.png},
+  google_scholar_id = {yD5IFk8b50cC}
 }
 
 @article{adler2023radiotherapy,
   title  = {{Radiotherapy treatment plan optimization using machine learning}},
   author = {Jonas Anders Adler and Jens Olof Sjölund},
   year   = {2023},
-  url    = {https://patents.google.com/patent/US11605452B2/en}
+  url    = {https://patents.google.com/patent/US11605452B2/en},
+  google_scholar_id = {dhFuZR0502QC}
 }
 
 @inproceedings{bånkestad2024ising,
@@ -481,7 +522,8 @@
   url           = {https://arxiv.org/abs/2402.10206},
   eprint        = {2402.10206},
   archiveprefix = {arXiv},
-  preview       = {ising_graph.png}
+  preview       = {ising_graph.png},
+  google_scholar_id = {fPk4N6BV_jEC}
 }
 
 @article{mair2024archetypal,
@@ -492,7 +534,8 @@
   abstract      = {Archetypal analysis is a matrix factorization method with convexity constraints. Due to local minima, a good initialization is essential, but frequently used initialization methods yield either sub-optimal starting points or are prone to get stuck in poor local minima. In this paper, we propose archetypal analysis++ (AA++), a probabilistic initialization strategy for archetypal analysis that sequentially samples points based on their influence on the objective function, similar to -means++. In fact, we argue that -means++ already approximates the proposed initialization method. Furthermore, we suggest to adapt an efficient Monte Carlo approximation of -means++ to AA++. In an extensive empirical evaluation of 15 real-world data sets of varying sizes and dimensionalities and considering two pre-processing strategies, we show that AA++ almost always outperforms all baselines, including the most frequently used ones.},
   url           = {https://arxiv.org/abs/2301.13748},
   eprint        = {2301.13748},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {JV2RwH3_ST0C}
 }
 
 @article{sjölund2022generation,
@@ -500,7 +543,8 @@
   author   = {Jens Olof Sjölund and Jonas Anders Adler},
   year     = {2022},
   abstract = {Int. Ci. A6IN 5/10(2006.01) G16H 20/40(2018.01) GOON 20/00(2019.01)(52) US Ci. CPC A61N 5/103 (2013.01); A61N 5/1031 (2013.01); A61N 5/1039 (2013.01); A6IN 5/1081 (2013.01); GO6N 20/00 (2019.01); 416H 20/40 (2018.01)(58) Field of Classification Search CPC A61N 5/103; A61N 5/1031; A61N 5/1038; A61N 5/1039; A61N 2005/1041 See application file for complete search history.Techniques for generating a radiotherapy treatment plan are provided. The techniques include receiving an input param eter related to a patient, the input parameter being of a given type; processing the input parameter with a machine learn ing technique to estimate a realizable plan parameter of a radiotherapy treatment plan, wherein the machine learning technique is trained to establish a relationship between the given type of input parameter and a set of realizable radio therapy treatment plan parameters to achieve a …},
-  url      = {https://patents.google.com/patent/US11358003B2/en}
+  url      = {https://patents.google.com/patent/US11358003B2/en},
+  google_scholar_id = {4DMP91E08xMC}
 }
 
 @article{sjolund2021radiotherapy,
@@ -508,7 +552,8 @@
   author   = {Jens Sjölund},
   year     = {2021},
   abstract = {Embodiments of the present disclosure are directed to treat ment planning systems for a radiotherapy apparatus. In one implementation, a treatment planning system may include a computational processor configured to apply a set of instruc tions to an input data set. The input data set may include a three-dimensional dose distribution for delivery by the radiotherapy apparatus to a volume to be irradiated, a three-dimensional volume image characterizing tissue types within the volume to be irradiated, and a set of apparatus parameters which characterize the radiotherapy apparatus.},
-  url      = {https://patents.google.com/patent/US10946215B2/en}
+  url      = {https://patents.google.com/patent/US10946215B2/en},
+  google_scholar_id = {qxL8FJ1GzNcC}
 }
 
 @article{sjolund2020system,
@@ -528,7 +573,8 @@
   publisher = {Elsevier},
   abstract  = {Self-driving labs (SDLs) employing automation and machine learning (ML) offer great promise for accelerating materials discovery and optimisation. However, in thin film science, SDLs are mainly restricted to solution-based methods which are easier to automate, restricting access to the broader chemical space of inorganic materials. This work advances an SDL based on magnetron co-sputtering, addressing a key challenge: rapidly generating accurate composition maps of multi-element, compositionally graded thin films. Traditional ex-situ methods are slow and error-prone; instead, we present a fast, calibration-free, in-situ ML approach to predict the deposition rate using quartz-crystal microbalance (QCM) sensors. For each sputtering source, deposition rates are sequentially learned as a function of pressure and power via active learning with Gaussian processes (GPs). The final GPs are combined with a …},
   url       = {https://www.sciencedirect.com/science/article/pii/S0264127525015084},
-  preview   = {solar_cell_workflow.png}
+  preview   = {solar_cell_workflow.png},
+  google_scholar_id = {738O_yMBCRsC}
 }
 
 @article{taghavian2025navigating,
@@ -543,7 +589,8 @@
   abstract  = {Metal anodes provide the highest energy density in batteries. However, they still suffer from electrode/electrolyte interface side reactions and dendrite growth, especially under fast-charging conditions. In this paper, we consider a phase-field model of electrodeposition in metal-anode batteries and provide a scalable, versatile framework for optimizing its chemical parameters. Our approach is based on Bayesian optimization and explores the parameter space with a high sample efficiency and a low computation complexity. We use this framework to find the optimal cell for suppressing dendrite growth and accelerating charging speed under constant voltage. We identify interfacial mobility as a key parameter, which should be maximized to inhibit dendrites without compromising the charging speed. The results are verified using extended simulations of dendrite evolution in charging half cells with lithium-metal anodes.},
   url       = {https://www.nature.com/articles/s41524-025-01735-x},
   selected  = {true},
-  preview   = {dendrite.png}
+  preview   = {dendrite.png},
+  google_scholar_id = {K3LRdlH-MEoC}
 }
 
 @article{nordström2021methods,
@@ -562,7 +609,8 @@
   number   = {9},
   pages    = {2400025},
   abstract = {The development and application of Electrochemical Quartz Crystal Microbalance (EQCM) sensing to study metal electroplating, especially for energy storage purposes, are reviewed. The roles of EQCM in describing electrode/electrolyte interface dynamics, such as the electric double‐layer build‐up, ionic/molecular adsorption, metal nucleation, and growth, are addressed. Modeling of the QCM sensor is introduced and its importance is emphasized. Challenges of metal electrode use, including side reactions and dendrite formation, along with their mitigation strategies are reviewed. Numerous factors affecting the electroplating processes, such as electrolyte composition, additives, temperature, and current density, and their influence on the electroplated metals’ mass, structural, and mechanical characteristics are discussed. Looking forward, the need for deeper fundamental understanding and advancing …},
-  url      = {https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adsr.202400025}
+  url      = {https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adsr.202400025},
+  google_scholar_id = {4OULZ7Gr8RgC}
 }
 
 @article{mair2024efficient,
@@ -575,7 +623,8 @@
   pages     = {165031},
   publisher = {IOP Publishing Ltd},
   abstract  = { Objective Radiation treatment planning (RTP) involves optimization over a large number of voxels, many of which carry limited information about the clinical problem. We propose an approach to reduce the large optimization problem by only using a representative subset of informative voxels. This way, we drastically improve planning efficiency while maintaining the plan quality. Approach Within an initial probing step, we pre-solve an easier optimization problem involving a simplified objective from which we derive an importance score per voxel. This importance score is then turned into a sampling distribution, which allows us to subsample a small set of informative voxels using importance sampling. By solving a—now reduced—version of the original optimization problem using this subset, we effectively reduce the problem’s size and computational demands while accounting for regions where …},
-  url       = {https://iopscience.iop.org/article/10.1088/1361-6560/ad68bd/meta}
+  url       = {https://iopscience.iop.org/article/10.1088/1361-6560/ad68bd/meta},
+  google_scholar_id = {cFHS6HbyZ2cC}
 }
 
 @article{fay2024radiotherapy,
@@ -583,7 +632,8 @@
   author   = {Dominik Fay and Jens Olof Sjolund},
   year     = {2024},
   abstract = {Techniques for producing segmentation with privacy are provided. The techniques include receiving a medical image; processing the medical image with a student machine learning model to estimate radiotherapy plan parameters, the student machine learning model being trained to establish a relationship between a plurality of public training medical images and corresponding radiotherapy plan parameters, the radiotherapy plan parameters of the plurality of public training medical images being generated by aggregating a plurality of radiotherapy plan parameter estimates produced by: processing the plurality of public training medical images with a plurality of teacher machine learning models to generate sets of radiotherapy plan parameter estimates; and reducing respective dimensions of the sets of radiotherapy plan parameter estimates or medical images, the radiotherapy plan parameters of the plurality of …},
-  url      = {https://patents.google.com/patent/US11975218B2/en}
+  url      = {https://patents.google.com/patent/US11975218B2/en},
+  google_scholar_id = {bEWYMUwI8FkC}
 }
 
 @inproceedings{gunnarsson2022unsupervised,
@@ -594,7 +644,8 @@
   pages     = {01-07},
   publisher = {IEEE},
   abstract  = {Spatiotemporal imaging has applications in e.g. cardiac diagnostics, surgical guidance, and radiotherapy monitoring, In this paper, we explain the temporal motion by identifying the underlying dynamics, only based on the sequential images. Our dynamical model maps the inputs of observed high-dimensional sequential images to a low-dimensional latent space wherein a linear relationship between a hidden state process and the lower-dimensional representation of the inputs holds. For this, we use a conditional variational auto-encoder (CVAE) to nonlinearly map the higher dimensional image to a lower-dimensional space, wherein we model the dynamics with a linear Gaussian state-space model (LG-SSM). The model, a modified version of the Kalman variational auto-encoder, is end-to-end trainable, and the weights, both in the CVAE and LG-SSM, are simultaneously updated by maximizing the evidence …},
-  url       = {https://ieeexplore.ieee.org/abstract/document/9841369/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/9841369/},
+  google_scholar_id = {iH-uZ7U-co4C}
 }
 
 @article{nordström2022methods,
@@ -613,7 +664,8 @@
   abstract      = {Diffusion MRI (dMRI) is the only non-invasive technique sensitive to tissue micro-architecture, which can, in turn, be used to reconstruct tissue microstructure and white matter pathways. The accuracy of such tasks is hampered by the low signal-to-noise ratio in dMRI. Today, the noise is characterized mainly by visual inspection of residual maps and estimated standard deviation. However, it is hard to estimate the impact of noise on downstream tasks based only on such qualitative assessments. To address this issue, we introduce a novel metric, Noise Uncertainty Quantification (NUQ), for quantitative image quality analysis in the absence of a ground truth reference image. NUQ uses a recent Bayesian formulation of dMRI models to estimate the uncertainty of microstructural measures. Specifically, NUQ uses the maximum mean discrepancy metric to compute a pooled quality score by comparing samples drawn from the posterior distribution of the microstructure measures. We show that NUQ allows a fine-grained analysis of noise, capturing details that are visually imperceptible. We perform qualitative and quantitative comparisons on real datasets, showing that NUQ generates consistent scores across different denoisers and acquisitions. Lastly, by using NUQ on a cohort of schizophrenics and controls, we quantify the substantial impact of denoising on group differences.},
   url           = {https://arxiv.org/abs/2203.01921},
   eprint        = {2203.01921},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {R3hNpaxXUhUC}
 }
 
 @article{sjölund2021method,
@@ -621,7 +673,8 @@
   author   = {Jens SJÖLUND},
   year     = {2021},
   abstract = {(57) ABSTRACT A method of calibrating a positioning system in a radiation therapy system which includes a radiation therapy unit having a fixed radiation focus, includes irradiating a cali bration tool having at least one reference object, capturing at least one two-dimensional image including cross-sectional representations of reference objects of the calibration tool and determining image coordinates of the representation of each reference object. Based on the reference objects' image coordinates, positions of the reference objects in the ste reotactic coordinate system relative to an origin of the calibration tool and the position of the origin of the calibra tion tool relative to the imaging unit, a position difference between the position of the calibration tool in the stereotac tic coordinate system and a position of the calibration tool in an imaging system coordinate system including a transla tional and rotational position …},
-  url      = {https://patents.google.com/patent/US11179134B2/en}
+  url      = {https://patents.google.com/patent/US11179134B2/en},
+  google_scholar_id = {YsMSGLbcyi4C}
 }
 
 @inproceedings{weesep2025exploring,
@@ -632,7 +685,8 @@
   abstract      = {Large-language models (LLMs) and agentic systems present exciting opportunities to accelerate drug discovery. In this study, we examine the modularity of LLM-based agentic systems for drug discovery, i.e., whether parts of the system such as the LLM and type of agent are interchangeable, a topic that has received limited attention in drug discovery. We compare the performance of different LLMs and the effectiveness of tool-calling agents versus code-generating agents. Our case study, comparing performance in orchestrating tools for chemistry and drug discovery using an LLM-as-a-judge score, shows that Claude-3.5-Sonnet, Claude-3.7-Sonnet and GPT-4o outperform alternative language models such as Llama-3.1-8B, Llama-3.1-70B, GPT-3.5-Turbo, and Nova-Micro. Although we confirm that code-generating agents outperform the tool-calling ones on average, we show that this is highly question- and model-dependent. Furthermore, the impact of replacing system prompts is dependent on the question and model, underscoring that even in this particular domain one cannot just replace components of the system without re-engineering. Our study highlights the necessity of further research into the modularity of agentic systems to enable the development of reliable and modular solutions for real-world problems.},
   url           = {https://arxiv.org/abs/2506.22189},
   eprint        = {2506.22189},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {l7t_Zn2s7bgC}
 }
 
 @inproceedings{zhao2024on,
@@ -641,7 +695,8 @@
   year      = {2024},
   booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
   abstract  = {Recently, partial Bayesian neural networks (pBNNs), which only consider a subset of the parameters to be stochastic, were shown to perform competitively with full Bayesian neural networks. However, pBNNs are often multi-modal in the latent variable space and thus challenging to approximate with parametric models. To address this problem, we propose an efficient sampling-based training strategy, wherein the training of a pBNN is formulated as simulating a Feynman-Kac model. We then describe variations of sequential Monte Carlo samplers that allow us to simultaneously estimate the parameters and the latent posterior distribution of this model at a tractable computational cost. Using various synthetic and real-world datasets we show that our proposed training scheme outperforms the state of the art in terms of predictive performance.},
-  url       = {https://proceedings.mlr.press/v238/zhao24b.html}
+  url       = {https://proceedings.mlr.press/v238/zhao24b.html},
+  google_scholar_id = {ZHo1McVdvXMC}
 }
 
 @article{fay2023adaptive,
@@ -650,7 +705,8 @@
   year     = {2023},
   journal  = {Transactions on Machine Learning Research},
   abstract = {We present an adaptive mechanism for hyperparameter selection in differentially private optimization that addresses the inherent trade-off between utility and privacy. The mechanism eliminates the often unstructured and time-consuming manual effort of selecting hyperparameters and avoids the additional privacy costs that hyperparameter selection otherwise incurs on top of that of the actual algorithm.  We instantiate our mechanism for noisy gradient descent on non-convex, convex and strongly convex loss functions, respectively, to derive schedules for the noise variance and step size. These schedules account for the properties of the loss function and adapt to convergence metrics such as the gradient norm. When using these schedules, we show that noisy gradient descent converges at essentially the same rate as its noise-free counterpart.  Numerical experiments show that the schedules consistently perform well across a range of datasets without manual tuning.},
-  url      = {https://openreview.net/forum?id=LLKI5Lq2YN}
+  url      = {https://openreview.net/forum?id=LLKI5Lq2YN},
+  google_scholar_id = {HoB7MX3m0LUC}
 }
 
 @article{gunnarsson2020registration,
@@ -661,7 +717,8 @@
   abstract      = {Our anatomy is in constant motion. With modern MR imaging it is possible to record this motion in real-time during an ongoing radiation therapy session. In this paper we present an image registration method that exploits the sequential nature of 2D MR images to estimate the corresponding displacement field. The method employs several discriminative correlation filters that independently track specific points. Together with a sparse-to-dense interpolation scheme we can then estimate of the displacement field. The discriminative correlation filters are trained online, and our method is modality agnostic. For the interpolation scheme we use a neural network with normalized convolutions that is trained using synthetic diffeomorphic displacement fields. The method is evaluated on a segmented cardiac dataset and when compared to two conventional methods we observe an improved performance. This improvement is especially pronounced when it comes to the detection of larger motions of small objects.},
   url           = {https://arxiv.org/abs/2003.10819},
   eprint        = {2003.10819},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {_kc_bZDykSQC}
 }
 
 @inproceedings{zhang2025real-time,
@@ -670,7 +727,8 @@
   year      = {2025},
   booktitle = {IEEE Conference on Games (CoG)},
   abstract  = {Diffusion models have shown impressive performance in capturing complex and multi-modal action distributions for game agents, but their slow inference speed prevents practical deployment in real-time game environments. While consistency models offer a promising approach for one-step generation, they often suffer from training instability and performance degradation when applied to policy learning. In this paper, we present CPQE (Consistency Policy with Q-Ensembles), which combines consistency models with Q-ensembles to address these challenges. CPQE leverages uncertainty estimation through Q-ensembles to provide more reliable value function approximations, resulting in better training stability and improved performance compared to classic double Q-network methods. Our extensive experiments across multiple game scenarios demonstrate that CPQE achieves inference speeds of up to 60 Hz - a …},
-  url       = {https://ieeexplore.ieee.org/abstract/document/11114163/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/11114163/},
+  google_scholar_id = {p2g8aNsByqUC}
 }
 
 @article{luo2025forward-only,
@@ -682,7 +740,8 @@
   url           = {https://arxiv.org/abs/2505.16733},
   eprint        = {2505.16733},
   archiveprefix = {arXiv},
-  preview       = {forward_only_diffusion.png}
+  preview       = {forward_only_diffusion.png},
+  google_scholar_id = {Tiz5es2fbqcC}
 }
 
 @article{sjölund2022convex,
@@ -702,7 +761,8 @@
   url           = {https://arxiv.org/abs/2509.05288},
   eprint        = {2509.05288},
   archiveprefix = {arXiv},
-  preview       = {distributed_admm.png}
+  preview       = {distributed_admm.png},
+  google_scholar_id = {tOudhMTPpwUC}
 }
 
 @article{kalaivanan2025ess-flow_,
@@ -714,7 +774,8 @@
   url           = {https://arxiv.org/abs/2510.05849},
   eprint        = {2510.05849},
   archiveprefix = {arXiv},
-  preview       = {essflow.png}
+  preview       = {essflow.png},
+  google_scholar_id = {vRqMK49ujn8C}
 }
 
 @article{andersson2025probabilistic,
@@ -734,7 +795,8 @@
   year      = {2025},
   booktitle = {European Control Conference (ECC)},
   abstract  = {Transforming an asymmetric system into a symmetric system makes it possible to exploit the simplifying properties of symmetry in control problems. We define and characterize the family of symmetrizable systems, which can be transformed into symmetric systems by a linear transformation of their inputs and outputs. In the special case of complete symmetry, the set of symmetrizable systems is convex and verifiable by a semidefinite program. We show that a Khatri-Rao rank needs to be satisfied for a system to be symmetrizable and conclude that linear systems are generically neither symmetric nor symmetrizable.},
-  url       = {https://ieeexplore.ieee.org/abstract/document/11187002/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/11187002/},
+  google_scholar_id = {xtRiw3GOFMkC}
 }
 
 @article{gunnarsson2025image,
@@ -742,7 +804,8 @@
   author   = {Niklas Gunnarsson and Jens SJÖLUND},
   year     = {2025},
   abstract = {the present invention relates to the field of medical imaging and to systems, methods, computer-readable medium and modules for medical imaging in radiation therapy systems and in radiation therapy treatment.},
-  url      = {https://patents.google.com/patent/US12254404B2/en}
+  url      = {https://patents.google.com/patent/US12254404B2/en},
+  google_scholar_id = {mB3voiENLucC}
 }
 
 @article{sjolund2024generative,
@@ -760,7 +823,8 @@
   pages     = {706-716},
   publisher = {Springer Nature Switzerland},
   abstract  = {Image monitoring and guidance during medical examinations can aid both diagnosis and treatment. However, the sampling frequency is often too low, which creates a need to estimate the missing images. We present a probabilistic motion model for sequential medical images, with the ability to both estimate motion between acquired images and forecast the motion ahead of time. The core is a low-dimensional temporal process based on a linear Gaussian state-space model with analytically tractable solutions for forecasting, simulation, and imputation of missing samples. The results, from two experiments on publicly available cardiac datasets, show reliable motion estimates and an improved forecasting performance using patient-specific adaptation by online learning.},
-  url       = {https://link.springer.com/chapter/10.1007/978-3-031-72069-7_66}
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-72069-7_66},
+  google_scholar_id = {bFI3QPDXJZMC}
 }
 
 @inproceedings{zhang2023risk-sensitive,
@@ -771,7 +835,8 @@
   abstract      = {Traditional reinforcement learning methods optimize agents without considering safety, potentially resulting in unintended consequences. In this paper, we propose an optimal actor-free policy that optimizes a risk-sensitive criterion based on the conditional value at risk. The risk-sensitive objective function is modeled using an input-convex neural network ensuring convexity with respect to the actions and enabling the identification of globally optimal actions through simple gradient-following methods. Experimental results demonstrate the efficacy of our approach in maintaining effective risk control.},
   url           = {https://arxiv.org/abs/2307.00141},
   eprint        = {2307.00141},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {35N4QoGY0k4C}
 }
 
 @article{sjölund2012dose,
@@ -779,7 +844,8 @@
   author   = {Jens Sjölund},
   year     = {2012},
   abstract = {The superior soft tissue contrast and inherent patient safety of MRI makes it preferable to CT for many imaging tasks. However, the electron density information provided by CT makes it useful for dose calculations in radiotherapy. If these could instead be based solely on MRI it would spare the patient from additional ionizing radiation as well as saving the health provider the time and cost of an additional examination.In this thesis the possibility of achieving this using a machine learning algorithm called support vector machines to segment head MRI images into soft tissue, bone and air is investigated. To train the algorithm a large set of registered MRI and CT images corresponding to the same patients were used. The results were evaluated on five test patients using Monte Carlo simulations. An important finding was that the threshold value used to segment the bone in the CT images was important for the prediction performance. Moreover, the results indicate that there are significant variations in bone density among patients, an aspect with important implications for the accuracy of the dose calculations.},
-  url      = {https://www.diva-portal.org/smash/get/diva2:526119/fulltext01}
+  url      = {https://www.diva-portal.org/smash/get/diva2:526119/fulltext01},
+  google_scholar_id = {u5HHmVD_uO8C}
 }
 
 @article{schmidtobreick2026warm-starting,
@@ -791,7 +857,8 @@
   url           = {https://arxiv.org/abs/2511.13174},
   eprint        = {2511.13174},
   archiveprefix = {arXiv},
-  preview       = {warm_starting_qp.png}
+  preview       = {warm_starting_qp.png},
+  google_scholar_id = {tS2w5q8j5-wC}
 }
 
 @article{jarl2026observation-dependent,
@@ -803,7 +870,8 @@
   url           = {https://arxiv.org/abs/2602.01898},
   eprint        = {2602.01898},
   archiveprefix = {arXiv},
-  preview       = {overview_warp.png}
+  preview       = {overview_warp.png},
+  google_scholar_id = {5Ul4iDaHHb8C}
 }
 
 @article{mortensen2026toward,
@@ -813,7 +881,8 @@
   journal  = {Magnetic Resonance in Medicine},
   abstract = {Diffusion MRI probes tissue microstructure, but low SNR and limited resolution hinder detection of features and parameter estimates. We introduce slice excitation with random overlap (SERO), which enables variable repetition times (TRs) and diffusion weighting within a single shot. This acquisition supports super‐resolution reconstruction of baseline signal (S0), diffusivity (D), diffusional variance (V), and longitudinal relaxation (T1) maps.We implemented a diffusion‐weighted spin‐echo sequence in Pulseq that excites thick slices at random positions. Across shots, pseudo‐random overlap produces inter‐ and intra‐slice TR variation (0.15–21.9 s) with b‐values up to 1.4 ms/μm2. The T1‐weighting enables through‐slice super‐resolution and allows T1 estimation. Accuracy and precision were evaluated in numerical phantoms …},
   url      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.70282},
-  preview  = {sero.png}
+  preview  = {sero.png},
+  google_scholar_id = {8AbLer7MMksC}
 }
 
 @article{babu2026a,
@@ -822,7 +891,8 @@
   year     = {2026},
   abstract = {The fast-paced development of new alloys for metal additive manufacturing (AM) makes it imperative to quickly quantify how material properties depend on the processing parameters. For instance, minimizing the porosity of the printed parts can help reduce corrosion, improve strength, and increase fatigue life. Porosity is also the first property optimized during process parameter development in laser beam powder bed fusion (PBF-LB). This paper demonstrates an approach for efficiently mapping the parameter space of additively manufactured components with a minimal number of samples, using porosity as an example. The workflow consists of two main steps: a neural network for efficient evaluation of the objective and a Gaussian process for an interpretable model of the process-structure-property relationship. Specifically, a convolutional neural network, U-net, segments microscopy images to quickly calculate the porosity without manual evaluation. A Gaussian process then models the porosity as a function of its process parameters, which also allows one to quantify the uncertainty of the porosity throughout the component with minimal samples. This work applies this methodology to WE43, a magnesium alloy of specific interest to biomedical applications, to find the combination of process parameters that minimize the porosity based on the laser power, scan speed, and hatch distance. This research identified a process parameter combination leading to a porosity of 0.06\%, and a robust alternative yielding a porosity of 0.07\% with reduced standard deviation. Additionally, the paper examines the effect of sample size during model construction …},
   url      = {https://www.researchsquare.com/article/rs-8562736/latest},
-  preview  = {porosity.png}
+  preview  = {porosity.png},
+  google_scholar_id = {B3FOqHPlNUQC}
 }
 
 @article{yik2026trials,
@@ -830,7 +900,8 @@
   author  = {Jackie Yik and Lukas Lindén Thöming and Viktor Vanoppen and Jens Sjölund and Leiting Zhang and Erik Berg},
   year    = {2026},
   url     = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:2031306},
-  preview = {Workflow_diagram.png}
+  preview = {Workflow_diagram.png},
+  google_scholar_id = {geHnlv5EZngC}
 }
 
 @article{yik2026exploring,
@@ -838,7 +909,8 @@
   author  = {Jackie Yik and Michael Berg and Lukas Lindén Thöming and Jens Sjölund and Leiting Zhang and Erik Berg},
   year    = {2026},
   url     = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:2031302},
-  preview = {Li_additives.png}
+  preview = {Li_additives.png},
+  google_scholar_id = {sSrBHYA8nusC}
 }
 
 @article{sjolund2025treatment,
@@ -855,7 +927,8 @@
   year      = {2025},
   booktitle = {Conference on Decision and Control (CDC)},
   abstract  = {Finding a positive state-space realization with the minimum dimension for a given transfer function is an open problem in control theory. In this paper, we focus on positive realizations in Markov form and propose a linear programming approach that computes them with a minimum dimension. Such minimum dimension of positive Markov realizations is an upper bound of the minimal positive realization dimension. However, we show that these two dimensions are equal for certain systems.},
-  url       = {https://ieeexplore.ieee.org/abstract/document/11312247/}
+  url       = {https://ieeexplore.ieee.org/abstract/document/11312247/},
+  google_scholar_id = {uWQEDVKXjbEC}
 }
 
 @article{sjolund2025dose,
@@ -863,7 +936,8 @@
   author   = {Jens Olof Sjolund and Carl Axel Håkan Nordström},
   year     = {2025},
   abstract = {Dose-volume criteria may be equivalently expressed in terms of quantiles. This re-formulation of a dose-volume criteria allows incorporation of dose-volume criteria into a full optimization problem. Radiotherapy treatment techniques are described that may apply optimization-based formulation of quantiles to express dose-volume criterion as an inequality involving an optimization problem, which may improve DVH modeling, improve computational speed and accuracy of radiation treatment planning, and improve the delivery accuracy and efficacy of radiation doses to a patient undergoing radiotherapy treatment.},
-  url      = {https://patents.google.com/patent/US12458815B2/en}
+  url      = {https://patents.google.com/patent/US12458815B2/en},
+  google_scholar_id = {zA6iFVUQeVQC}
 }
 
 @article{sjolund2025radiotherapy,
@@ -881,7 +955,8 @@
   journal  = {Medical Physics},
   abstract = {Using inverse planning tools to create radiotherapy treatment plans is an iterative process, where clinical trade-offs are explored by changing the relative importance of different objectives and rerunning the optimizer until a desirable plan is found. We seek to optimize hundreds of radiosurgery treatment plans, corresponding to different weightings of objectives, fast enough to incorporate interactive Pareto navigation of clinical trade-offs into the clinical workflow. We apply the alternating direction method of multipliers (ADMM) to the linear-program formulation of the optimization problem used in Lightning. We implement both a CPU and a GPU version of ADMM in Matlab and compare them to Matlab's built-in, single-threaded dual-simplex solver. The ADMM implementation is adapted to the optimization procedure used in the clinical software, with a bespoke algorithm for maximizing overlap between low-dose points for different objective weights. The method is evaluated on a test dataset consisting of 20 cases from three different indications, with between one and nine targets and total target volumes ranging from 0.66 to 52 cm3, yielding speedups of 1.6-97 and 54-1500 times on CPU and GPU, respectively, compared to simplex. Plan quality was evaluated by rerunning the ADMM optimization 20 times, each with a different random seed, for each test case and for nine objective weightings per case. The resulting clinical metrics closely mimicked those obtained when rerunning the simplex solver, verifying the validity of the method. In conclusion, we show how ADMM can be adapted for radiosurgery plan optimization, allowing hundreds of high …},
   url      = {https://doi.org/10.1002/mp.70454},
-  preview  = {convergence_curves.png}
+  preview  = {convergence_curves.png},
+  google_scholar_id = {08ZZubdj9fEC}
 }
 
 @article{sjolund2025methods,
@@ -889,7 +964,8 @@
   author   = {Jens Olof Sjolund and Niklas Gunnarsson},
   year     = {2025},
   abstract = {The present invention relates to the field of radiation therapy and methods, software and systems for adaptive radiotherapy. There is provided a method for adaptive radiotherapy treatment of a patient comprising receiving a sequence of measurement data of the treatment, the measurements being captured at different time points, mapping measurement data to a representation of a treatment geometry at the time points, using the representation in a dynamical model describing how variables in the representation evolve over time, based on the dynamical model, estimating positions over time of the treatment geometry or selected parts of the treatment geometry, determining a treatment action for the patient at a defined time point using the estimation from the dynamical model and executing the treatment action at the defined time point.},
-  url      = {https://patents.google.com/patent/US12370380B2/en}
+  url      = {https://patents.google.com/patent/US12370380B2/en},
+  google_scholar_id = {rO6llkc54NcC}
 }
 
 @inproceedings{baghi2025towards,
@@ -901,7 +977,8 @@
   url           = {https://arxiv.org/abs/2503.13077},
   eprint        = {2503.13077},
   archiveprefix = {arXiv},
-  preview       = {our_arch_new.png}
+  preview       = {our_arch_new.png},
+  google_scholar_id = {OU6Ihb5iCvQC}
 }
 
 @article{fay2025personalized,
@@ -912,7 +989,8 @@
   abstract      = {We examine the privacy-enhancing properties of importance sampling. In importance sampling, selection probabilities are heterogeneous and each selected data point is weighted by the reciprocal of its selection probability. Due to the heterogeneity of importance sampling, we express our results within the framework of personalized differential privacy. We first consider the general case where an arbitrary personalized differentially private mechanism is subsampled with an arbitrary importance sampling distribution and show that the resulting mechanism also satisfies personalized differential privacy. This constitutes an extension of the established privacy amplification by subsampling result to importance sampling. Then, for any fixed mechanism, we derive the sampling distribution that achieves the optimal sampling rate subject to a worst-case privacy constraint. Empirically, we evaluate the privacy, efficiency, and accuracy of importance sampling on the example of k-means clustering.},
   url           = {https://arxiv.org/abs/2307.10187},
   eprint        = {2307.10187},
-  archiveprefix = {arXiv}
+  archiveprefix = {arXiv},
+  google_scholar_id = {KxtntwgDAa4C}
 }
 
 @inproceedings{babu2025porosity,
@@ -920,7 +998,8 @@
   author    = {Shashank Ramesh Babu and Jens Sjölund and Cecilia Persson},
   year      = {2025},
   booktitle = {34th Annual Conference of the European Society for Biomaterials, Turin, September 7-11, 2025},
-  url       = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:2027743}
+  url       = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:2027743},
+  google_scholar_id = {4fKUyHm3Qg0C}
 }
 
 @article{sjolund2024continuum,
@@ -928,7 +1007,8 @@
   author   = {Jens Olof Sjolund and Carl Axel Håkan Nordström},
   year     = {2024},
   abstract = {Systems and methods are disclosed for dynamic radiotherapy treatment planning in a continuous space of computation. Example operations for generating treatment plan data for a radiotherapy treatment include: obtaining data for a radiotherapy treatment of a human subject; generating a set of radiation controls from the data for the radiotherapy treatment, with at least one of the radiation controls being based on a mapping from a continuous (eg, infinite dimensional) computational space; converting the generated set of radiation controls to a set of treatment delivery parameters, the set of treatment delivery parameters corresponding to capabilities of a radiotherapy treatment machine; and producing treatment plan data for the radiotherapy treatment based on the set of treatment delivery parameters.},
-  url      = {https://patents.google.com/patent/US20240408410A1/en}
+  url      = {https://patents.google.com/patent/US20240408410A1/en},
+  google_scholar_id = {nb7KW1ujOQ8C}
 }
 
 @article{sjölund2023exploration,
@@ -936,7 +1016,8 @@
   author   = {Jens Olof Sjölund and Carl Axel Håkan Nordström},
   year     = {2023},
   abstract = {Systems and methods are disclosed for exploration and adaptation of radiotherapy treatment plans. Example operations for radiotherapy treatment planning include: obtaining a plurality of solutions (eg, Pareto-optimal solutions) of a radiotherapy problem, exploring the plurality of solutions to identify an additional solution in a submanifold space (eg, exploration of a Pareto surface), and generating treatment plan parameters based on the additional solution for use in a radiation therapy treatment. In an example, exploring the plurality of solutions includes: establishing a submanifold space from a manifold space representing the plurality of solutions in fewer dimensions than the weights; producing additional sets of weights in the submanifold space based on derivatives of first-order optimality conditions of the radiotherapy problem, the derivatives determined with respect to the weights; and navigating in the …},
-  url      = {https://patents.google.com/patent/US20250152971A1/en}
+  url      = {https://patents.google.com/patent/US20250152971A1/en},
+  google_scholar_id = {f2IySw72cVMC}
 }
 
 @article{sjölund2023parallel,
@@ -944,7 +1025,8 @@
   author   = {Jens Olof Sjölund and Carl Axel Håkan Nordström},
   year     = {2023},
   abstract = {APTZNLHMIGJTEW-UHFFFAOYSA-N pyraflufen-ethyl Chemical compound C1= C (Cl) C (OCC (= O) OCC)= CC (C= 2C (= C (OC (F) F) N (C) N= 2) Cl)= C1F APTZNLHMIGJTEW-UHFFFAOYSA-N 0.000 description 1},
-  url      = {https://patents.google.com/patent/US20250095822A1/en}
+  url      = {https://patents.google.com/patent/US20250095822A1/en},
+  google_scholar_id = {pyW8ca7W8N0C}
 }
 
 @article{sjolund2023generative,
@@ -956,7 +1038,8 @@
 @article{sjolund2023inferring,
   title  = {{Inferring clinical preferences from data}},
   author = {Jens Olof Sjolund},
-  year   = {2023}
+  year   = {2023},
+  google_scholar_id = {NaGl4SEjCO4C}
 }
 
 @article{sjolund2023treatment,
@@ -970,7 +1053,8 @@
   author   = {Niklas Gunnarsson and Thomas B Schön and Jens Sjölund and Peter Kimstrand},
   year     = {2023},
   abstract = {Intra-interventional imaging is a tool for monitoring and guiding ongoing treatment sessions. Ideally one would like the full 3D image at high temporal resolution, this is however not possible due to the acquisition time. In this study, we consider the scenario when the observations are sparse and consist only of 2D image slices through the 3D volume. Given 2D-2D image registrations between a predefined 3D volume and the observations, we propose a method to estimate the full 3D motion. This 3D motion enables the reconstruction of the 3D anatomy. Our method relies on a conditioning-based denoising diffusion model and generates estimates given the 2D sparse observations. We reduce the dimensionality of the diffusion process by embedding the data in a lower dimensional space using principal component analysis. The model is evaluated in two experiments: first on synthetically generated data and then using medical lung images. Our observations show that the estimates are stable across the entire volume and within 1 mm of the lower bound defined by the reconstruction error.},
-  url      = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:1895945}
+  url      = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:1895945},
+  google_scholar_id = {3s1wT3WcHBgC}
 }
 
 @article{sjölund2018algorithms,
@@ -978,7 +1062,8 @@
   author   = {Jens Sjölund},
   year     = {2018},
   abstract = {Radiotherapy plays an increasingly important role in cancer treatment, and medical imaging plays an increasingly important role in radiotherapy. Magnetic resonance imaging (MRI) is poised to be a major component in the development towards more effective radiotherapy treatments with fewer side effects. This thesis attempts to contribute in realizing this potential.},
-  url      = {https://search.proquest.com/openview/8121e4d7bc7b1b685c1d3aac0aaa1e03/1?pq-origsite=gscholar&cbl=2026366&diss=y}
+  url      = {https://search.proquest.com/openview/8121e4d7bc7b1b685c1d3aac0aaa1e03/1?pq-origsite=gscholar&cbl=2026366&diss=y},
+  google_scholar_id = {_FxGoFyzp5QC}
 }
 
 @article{sjölund2015mri,
@@ -986,12 +1071,28 @@
   author   = {Jens Sjölund},
   year     = {2015},
   abstract = {Radiotherapy plays an increasingly important role in cancer treatment, and medical imaging plays an increasingly important role in radiotherapy. Magnetic resonance imaging (MRI) is poised to be a major component in the development towards more effective radiotherapy treatments with fewer side effects. This thesis attempts to contribute in realizing this potential.},
-  url      = {https://search.proquest.com/openview/3e646ab0c04a4b3dfa4b57d4f6967882/1?pq-origsite=gscholar&cbl=2026366&diss=y}
+  url      = {https://search.proquest.com/openview/3e646ab0c04a4b3dfa4b57d4f6967882/1?pq-origsite=gscholar&cbl=2026366&diss=y},
+  google_scholar_id = {2osOgNQ5qMEC}
 }
 
 @article{szczepankiewiczunknowngradient,
   title    = {{Gradient waveform design for cross-term-compensated diffusion MRI: Demonstration of tensor-valued encoding in phantom and simulations}},
   author   = {Filip Szczepankiewicz and Jens Sjölund},
   abstract = {Diffusion weighted imaging is perturbed by the presence of background gradients, or so-called'cross-terms,'causing bias in estimated parameters and fiber orientations. In this work, we present a novel gradient waveform design that removes the cross-term sensitivity entirely. This design is valuable for diffusion MRI methods that are otherwise corrupted by background gradients, and it also facilitates arbitrary sequence timing, b-tensor shapes and suppression of concomitant gradient effects.},
-  url      = {https://archive.ismrm.org/2021/0398.html}
+  url      = {https://archive.ismrm.org/2021/0398.html},
+  google_scholar_id = {TFP_iSt0sucC}
+}
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{bankestad2026boundary,
+  title             = {{Boundary Variance Inflation Causes Acquisition Bias in Gaussian Processes}},
+  author            = {Maria Bånkestad and Sanna Jarl and Jens Sjölund},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2606.07561},
+  abstract          = {Gaussian processes with stationary kernels on bounded domains exhibit inflated posterior variance near the boundary. Despite being a long-recognized artifact in geostatistics and a source of over-exploration in Bayesian optimization, the causes and effects of boundary-induced acquisition bias are underexplored. We trace the root cause to a simple geometric mechanism: the truncation of the kernel correlation neighborhood at the domain boundary creates an observation-independent distortion that worsens with dimensionality. We show how this distortion manifests across three acquisition classes: variance maximization concentrates selections at the corners, whereas negative integrated posterior variance and expected predictive information gain move selections inward to axis-aligned interior shells. These patterns arise without reference to any objective function, meaning that acquisition behavior can be dominated by kernel geometry rather than the desired task-specific uncertainty. To quantify this, we introduce a function-free selection-profile diagnostic for arbitrary acquisitions, kernels, and bounded-domain geometries.},
+  url               = {https://arxiv.org/abs/2606.07561},
+  eprint            = {2606.07561},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {eJXPG6dFmWUC}
 }

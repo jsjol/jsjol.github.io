@@ -1,0 +1,12 @@
+# Records that appear on the Google Scholar profile but must not enter
+# _bibliography/papers.bib. bin/sync_publications.py reads this so that a
+# wrongly attributed record is excluded once rather than proposed on every run.
+#
+# Match either on the Scholar publication id (the part after the colon in a
+# _data/citations.yml key) or on the title.
+
+titles:
+  # Not his: a Turkish-language item mis-attributed to the profile.
+  - "Hasan Tahsin Arisan in Hayati"
+
+publication_ids: []

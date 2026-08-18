@@ -1,0 +1,106 @@
+name: Update publications
+
+# Two jobs with deliberately different trust levels.
+#
+# refresh   Updates the citation counts and attaches Scholar ids to entries that
+#           lack one. Both are mechanically safe -- the sync script verifies that
+#           no field value changes -- so this commits straight to master.
+#
+# propose   Adds entries for papers that are on the Scholar profile but not in
+#           the bibliography. Scholar, Crossref and arXiv metadata all need a
+#           human eye, and a new entry wants an `abbr`, a `preview` image and
+#           possibly `selected`, so this opens a pull request instead.
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+    - cron: "0 0 * * 3"
+    - cron: "0 0 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - run: pip install -r requirements.txt
+
+      - name: Refresh Google Scholar citation counts
+        run: |
+          # Scholar rate-limits and sometimes serves a CAPTCHA. A failure here
+          # must not fail the workflow: the previous counts stay in place and the
+          # next run picks it up.
+          if timeout 300 python bin/update_scholar_citations.py; then
+            echo "Citation refresh succeeded." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Citation refresh failed; keeping the existing counts." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Attach Scholar ids to existing entries
+        run: python bin/sync_publications.py --annotate | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add _data/citations.yml _bibliography/papers.bib
+          git diff --staged --quiet || {
+            git commit -m "Update citation counts and Scholar ids"
+            git push
+          }
+
+  propose:
+    needs: refresh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - run: pip install -r requirements.txt
+
+      - name: Look for papers missing from the bibliography
+        run: python bin/sync_publications.py --append | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request if anything was added
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: publications/new-entries
+          add-paths: _bibliography/papers.bib
+          commit-message: "Add publications found on Google Scholar"
+          title: "New publications found on Google Scholar"
+          body: |
+            One or more papers on the Google Scholar profile are not in
+            `_bibliography/papers.bib`. The entries below were appended, with
+            metadata from Crossref where a DOI exists and from arXiv otherwise.
+
+            Each is marked with a `% TODO` comment. Before merging, please:
+
+            - check the venue and author list, which Scholar and Crossref both
+              get wrong from time to time;
+            - add `abbr` if the venue has a short form;
+            - add a `preview` image in `assets/img/publication_preview/` if the
+              paper deserves a thumbnail, and remember to keep it under 1400 px;
+            - add `selected = {true}` to put it on the front page;
+            - delete the `% TODO` comment.
+
+            If a record should never be added — Scholar occasionally attributes
+            someone else's paper to the profile — add its title or publication id
+            to `_data/scholar_ignore.yml` instead, and close this PR.
+          labels: publications
+          delete-branch: true
