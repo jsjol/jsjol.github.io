@@ -2,7 +2,6 @@
   <div class="courses">
     {% assign sorted_courses = site.teachings | sort: 'year' | reverse | group_by: 'year' %}
     {% for year_group in sorted_courses %}
-      {% unless forloop.first %}<hr>{% endunless %}
       <h2 class="year">{{ year_group.name }}</h2>
       {% assign year_courses = year_group.items | sort: 'title' %}
       {% for course in year_courses %}

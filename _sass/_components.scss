@@ -127,17 +127,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.table-cv-map {
-  background-color: transparent;
-  border: none;
-  color: var(--global-text-color);
-}
-
-.date-column {
-  width: 75px;
-  transform: translateX(-15px) translateY(-5px);
-}
-
 // Projects
 
 .projects {
@@ -151,20 +140,25 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  // Borderless: no frame, no shadow, no card background. The image and the
+  // whitespace separate one project from the next, and the title carries the
+  // hover state.
   .card {
+    border: none;
+    background-color: transparent;
+
     img {
       width: 100%;
     }
+
+    .card-body {
+      padding: 0.75rem 0 0;
+    }
   }
 
+  // Without a frame the rows need more air to read as separate.
   .col {
-    padding-bottom: 1rem;
-  }
-
-  .grid-sizer,
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
+    padding-bottom: 2.5rem;
   }
 
   h2.category {
@@ -221,18 +215,4 @@ ul.task-list input[type="checkbox"] {
   .contact-note {
     font-size: 0.8rem;
   }
-}
-
-.wechat-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
 }

@@ -250,10 +250,9 @@ mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
 
-// Elevation utilities. These are the only four rules the site used from
-// MDBootstrap, whose stylesheet is 277 kB and whose 288 kB of JavaScript
-// contributed nothing but a ripple effect that common.js removed again. The
-// values are MDBootstrap 4.20.0's verbatim, so the shadows are unchanged.
+// Elevation utilities, carried over from MDBootstrap so that removing its 277 kB
+// stylesheet changed nothing visible. Values are MDBootstrap 4.20.0's verbatim.
+// Its .hoverable went with the project-card borders.
 
 .z-depth-0 {
   box-shadow: none !important;
@@ -263,15 +262,4 @@ mjx-container[jax="CHTML"][display="true"] {
   box-shadow:
     0 2px 5px 0 rgba(0, 0, 0, 0.16),
     0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-}
-
-.hoverable {
-  box-shadow: none;
-  transition: all 0.55s ease-in-out;
-
-  &:hover {
-    box-shadow:
-      0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
 }
