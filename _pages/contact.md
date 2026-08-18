@@ -14,4 +14,4 @@ nav_order: 7
 | **Visiting address** | Room 103163, house 10, Regementsvägen 10                                                                                                                   |
 | **Postal address**   | Uppsala University<br/>Jens Sjölund<br/>Department of Information Technology<br/>Division of Systems and Control<br/>Box 524<br/>751 20 Uppsala<br/>Sweden |
 
-Additional information for visitors can be found [here](http://www.it.uu.se/contact).
+Additional information for visitors can be found [here](https://www.uu.se/en/department/information-technology/contact).
