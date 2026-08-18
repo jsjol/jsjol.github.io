@@ -29,7 +29,7 @@ Together with the research group of [Erik J. Berg](https://scholar.google.se/cit
 In thin film science, self-driving labs have mainly been restricted to solution-based synthetic methods which are easier to automate but cannot access the broad chemical space of inorganic materials. In collaboration with the research group of [Jonathan Scragg](https://www.uu.se/en/contact-and-organisation/staff?query=N10-969), in the division of solar cell technology, we're building a self-driving lab based on magnetron co-sputtering. We present a rapid and calibration-free in-situ, machine learning driven approach to produce composition maps for arbitrary source combinations and sputtering conditions. Our framework dramatically increases throughput by avoiding the need for extensive characterisation or calibration, thus demonstrating the potential of self-driving labs to accelerate materials exploration.
 
 <div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/solar_cell_workflow.png" alt="Self-driving sputtering lab workflow" width="70%"/>
+<img src="/assets/img/publication_preview/solar_cell_workflow.png" alt="Self-driving sputtering lab workflow" width="70%"/>
 </div>
 
 ### Simulations
@@ -37,7 +37,7 @@ In thin film science, self-driving labs have mainly been restricted to solution-
 In parallel with the physical experiments above, we are also performing simulation studies to better understand the underlying mechanisms. For instance, we recently studied electrode/electrolyte interface side reactions and dendrite growth in fast-charging metal-anode batteries, by combining a phase-field model of electrodeposition with Bayesian optimization. Our approach allows exploration of the parameter space with high sample efficiency and low computation complexity.
 
 <div style="text-align: center;">
-<img src="/assets/img/dendrite.png" alt="Simulated dendrite" width="400px"/>
+<img src="/assets/img/publication_preview/dendrite.png" alt="Simulated dendrite" width="400px"/>
 </div>
 
 ### References

@@ -2,7 +2,7 @@
 layout: page
 title: Diffusion and generative models
 description: Developing and applying diffusion-based generative models for image restoration, conditional inference, and scientific applications.
-img: assets/img/irsde_overview.png
+img: assets/img/publication_preview/irsde_overview.png
 importance: 3
 category: active
 ---
@@ -14,7 +14,7 @@ Generative models and Bayesian inference are key tools for accelerating scientif
 Our work on diffusion models for image restoration introduced a mean-reverting stochastic differential equation (SDE) that transforms a high-quality image into a degraded counterpart as a mean state with fixed Gaussian noise. By simulating the corresponding reverse-time SDE, we restore the original image without relying on any task-specific prior knowledge. This approach has a closed-form solution, allowing exact computation of the time-dependent score. The method achieves highly competitive performance on deraining, deblurring, denoising, super-resolution, inpainting, and dehazing, and has been widely adopted since its publication at ICML 2023.
 
 <div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/irsde_overview.png" alt="Mean-reverting SDE for image restoration" width="100%"/>
+<img src="/assets/img/publication_preview/irsde_overview.png" alt="Mean-reverting SDE for image restoration" width="100%"/>
 <p><small>The forward SDE degrades a clean image towards a noisy low-quality mean; the learned reverse-time SDE restores it.</small></p>
 </div>
 
@@ -29,7 +29,7 @@ Our work on diffusion models for image restoration introduced a mean-reverting s
 In a follow-up, we showed how vision-language models can be steered for universal image restoration across ten different degradation types, using degradation-aware CLIP embeddings to guide the restoration process.
 
 <div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/daclip_teaser.jpg" alt="DA-CLIP for universal image restoration" width="100%"/>
+<img src="/assets/img/publication_preview/daclip_teaser.jpg" alt="DA-CLIP for universal image restoration" width="100%"/>
 <p><small>DA-CLIP handles ten different image degradation types with a single model, using degradation-aware CLIP embeddings.</small></p>
 </div>
 

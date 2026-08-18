@@ -7,71 +7,31 @@ nav: true
 nav_order: 4
 ---
 
-## PhD Students
-
-<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
-{% for person in site.data.people.phd_students %}
-<div class="col">
-  <div class="card h-100 text-center border-0">
-    {% if person.image %}
-    <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ person.name }}" style="width: 150px; height: 150px; object-fit: cover;">
-    {% endif %}
-    <div class="card-body p-2">
-      {% if person.website %}
-      <a href="{{ person.website }}"><strong>{{ person.name }}</strong></a>
-      {% else %}
-      <strong>{{ person.name }}</strong>
-      {% endif %}
-      {% if person.description %}<br><small class="text-muted">{{ person.description }}</small>{% endif %}
-    </div>
-  </div>
-</div>
-{% endfor %}
-</div>
-
-## Postdoctoral Researchers
-
-<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
-{% for person in site.data.people.postdocs %}
-<div class="col">
-  <div class="card h-100 text-center border-0">
-    {% if person.image %}
-    <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ person.name }}" style="width: 150px; height: 150px; object-fit: cover;">
-    {% endif %}
-    <div class="card-body p-2">
-      {% if person.website %}
-      <a href="{{ person.website }}"><strong>{{ person.name }}</strong></a>
-      {% else %}
-      <strong>{{ person.name }}</strong>
-      {% endif %}
-      {% if person.description %}<br><small class="text-muted">{{ person.description }}</small>{% endif %}
-    </div>
-  </div>
-</div>
-{% endfor %}
-</div>
-
-## Co-supervised PhD Students
-
-<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
-{% for person in site.data.people.co_supervised %}
-<div class="col">
-  <div class="card h-100 text-center border-0">
-    {% if person.image %}
-    <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ person.name }}" style="width: 150px; height: 150px; object-fit: cover;">
-    {% endif %}
-    <div class="card-body p-2">
-      {% if person.website %}
-      <a href="{{ person.website }}"><strong>{{ person.name }}</strong></a>
-      {% else %}
-      <strong>{{ person.name }}</strong>
-      {% endif %}
-      {% if person.description %}<br><small class="text-muted">{{ person.description }}</small>{% endif %}
-    </div>
-  </div>
-</div>
-{% endfor %}
-</div>
+{%- assign groups = "phd_students,postdocs,co_supervised" | split: "," -%}
+{%- assign headings = "PhD Students,Postdoctoral Researchers,Co-supervised PhD Students" | split: "," -%}
+{%- for group in groups -%}
+{%- assign members = site.data.people[group] -%}
+{%- if members and members.size > 0 %}
+<h2>{{ headings[forloop.index0] }}</h2>
+<ul class="people-grid">
+{%- for person in members %}
+<li class="person">
+{%- if person.image %}
+<img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" loading="lazy">
+{%- endif %}
+{% if person.website -%}
+<a class="person-name" href="{{ person.website }}">{{ person.name }}</a>
+{%- else -%}
+<span class="person-name">{{ person.name }}</span>
+{%- endif %}
+{%- if person.description %}
+<span class="person-focus">{{ person.description }}</span>
+{%- endif %}
+</li>
+{%- endfor %}
+</ul>
+{% endif -%}
+{%- endfor %}
 
 ---
 
@@ -79,18 +39,24 @@ nav_order: 4
 
 ### PhD Students
 
-{% for person in site.data.people.alumni_phd %}
-{{ person.years }} ({{ person.role }}) [{{ person.name }}]({{ person.thesis_url }}), *{{ person.thesis_title }}*, subsequently {{ person.now }}
-{% endfor %}
+<ul class="alumni-list">
+{%- for person in site.data.people.alumni_phd %}
+<li>{{ person.years }} ({{ person.role }}) {% if person.thesis_url %}<a href="{{ person.thesis_url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}, <em>{{ person.thesis_title }}</em>, subsequently {{ person.now }}</li>
+{%- endfor %}
+</ul>
 
 ### Postdoctoral Researchers
 
-{% for person in site.data.people.alumni_postdoc %}
-{{ person.years }}, [{{ person.name }}]({{ person.website }}), subsequently {{ person.now }}
-{% endfor %}
+<ul class="alumni-list">
+{%- for person in site.data.people.alumni_postdoc %}
+<li>{{ person.years }}, {% if person.website %}<a href="{{ person.website }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}, subsequently {{ person.now }}</li>
+{%- endfor %}
+</ul>
 
 ### Master's Thesis Students
 
-{% for person in site.data.people.alumni_msc %}
-{{ person.name }}, [{{ person.title }}]({{ person.url }}), {{ person.year }}
-{% endfor %}
+<ul class="alumni-list">
+{%- for person in site.data.people.alumni_msc %}
+<li>{{ person.name }}, {% if person.url %}<a href="{{ person.url }}">{{ person.title }}</a>{% else %}{{ person.title }}{% endif %}, {{ person.year }}</li>
+{%- endfor %}
+</ul>

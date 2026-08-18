@@ -2,7 +2,7 @@
 layout: page
 title: Accelerating linear algebra with graph neural networks
 description: Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.
-img: assets/img/neuralIF_demo.png
+img: assets/img/publication_preview/neuralIF_demo.png
 importance: 1
 category: active
 ---
@@ -21,7 +21,7 @@ We are pioneering a research direction that uses graph neural networks (GNNs) to
 Our first major result was NeuralIF, a GNN that learns incomplete factorization preconditioners for the conjugate gradient method. At the core is a novel message-passing block, inspired by sparse matrix theory, that aligns with the objective to find a sparse factorization of the matrix. NeuralIF significantly speeds up convergence and reduces total solving time compared to classical preconditioners without fill-ins. In a follow-up, we extended this approach to learn incomplete factorizations for the more general GMRES solver, handling non-symmetric systems.
 
 <div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/neuralIF_demo.png" alt="NeuralIF: message-passing on a matrix graph and convergence comparison" width="100%"/>
+<img src="/assets/img/publication_preview/neuralIF_demo.png" alt="NeuralIF: message-passing on a matrix graph and convergence comparison" width="100%"/>
 <p><small>NeuralIF learns a sparse factorization via message passing on the matrix graph (left), dramatically accelerating convergence of the conjugate gradient method (right).</small></p>
 </div>
 
@@ -33,7 +33,7 @@ Our first major result was NeuralIF, a GNN that learns incomplete factorization 
 Beyond preconditioning, we are exploring how GNNs can accelerate optimization solvers directly. For quadratic programs (QPs) with linear constraints, we use a GNN to predict a warm-start for an active-set solver, reducing the number of iterations needed to reach the optimal solution. The QP and its constraints are represented as a graph, and the GNN performs node-level prediction to identify the likely active set.
 
 <div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/ws_flowchart.png" alt="Warm-starting pipeline for active-set QP solvers" width="100%"/>
+<img src="/assets/img/publication_preview/warm_starting_qp.png" alt="Warm-starting pipeline for active-set QP solvers" width="100%"/>
 <p><small>A GNN maps the QP graph representation to an active-set prediction, warm-starting the solver.</small></p>
 </div>
 

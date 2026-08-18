@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: >
   Assistant Professor of Machine Learning · <a href="https://www.it.uu.se/">Uppsala University</a>
-  · <a href="https://wasp-sweden.org/">WASP Fellow · <a href="https://ellis.eu/">ELLIS Member
+  · <a href="https://wasp-sweden.org/">WASP Fellow</a> · <a href="https://ellis.eu/">ELLIS Member</a>
 
 profile:
   align: right
@@ -19,8 +19,6 @@ announcements:
   scrollable: true
   limit: 5
 
-latest_posts:
-  enabled: false
 ---
 
 I develop machine learning and optimization methods and translate them to real-world impact in medicine and the natural sciences. The overarching theme of my current research is to *accelerate science with machine learning*, which I pursue by targeting three specific bottlenecks: accelerating _computations_ through [learned numerical methods](/projects/gnn-linear-algebra/), accelerating _discovery_ through [generative models and Bayesian inference](/projects/diffusion-generative/), and accelerating _experiments_ through [AI-guided robotics and automation](/projects/self-driving-labs/).

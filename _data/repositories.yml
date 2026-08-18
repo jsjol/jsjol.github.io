@@ -1,14 +1,14 @@
+# GitHub profiles rendered as stat cards on /repositories/.
 github_users:
-  - torvalds
-  - alshedivat
+  - jsjol
+
+# Repositories from the group, rendered as pinned-repo cards.
+# Several live under group members' accounts rather than jsjol/.
+github_repos:
+  - jsjol/NOW
+  - Algolzw/image-restoration-sde
+  - Algolzw/daclip-uir
+  - paulhausner/neural-incomplete-factorization
+  - paulhausner/learning-distributed-admm
 
 repo_description_lines_max: 2
-
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
