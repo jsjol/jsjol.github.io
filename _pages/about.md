@@ -25,6 +25,6 @@ Prior to joining Uppsala University, I spent nine years at the radiotherapy comp
 
 My research group includes six PhD students and one postdoc, with ongoing collaborations spanning materials science, medicine, and industrial applications. I collaborate with materials scientists at Uppsala University on self-driving laboratories; with [AstraZeneca](https://www.astrazeneca.com), [Elekta](https://www.elekta.com), and [Alleima](https://www.alleima.com) on industrial research projects; and participate in the [AID4BC](https://aid4bc.org/) consortium on AI-based diagnostics for breast cancer. I was awarded the [Göran Gustafsson prize](https://gustafssonsstiftelser.se/) for young researchers in 2024.
 
-### working with me
+## working with me
 
 I'm always on the lookout for curious and self-driven people as well as exciting collaborations (with both industry and academia) that align with the overarching theme above. If that may be you, please get in touch!

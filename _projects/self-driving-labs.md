@@ -9,7 +9,7 @@ category: active
 
 Finding the right experimental conditions for new materials is often like finding a needle in a haystack: vast design spaces, expensive experiments, and complex interactions between variables. We address this by developing _Bayesian experimental design_ methods and deploying them in self-driving laboratories---autonomous systems that combine robotics and AI into a closed-loop for rapid experimentation and exploration.
 
-### Batteries
+## Batteries
 
 Rechargeable batteries are key for transitioning to a carbon-neutral future, but it will require huge quantities of battery materials. It is therefore of utmost importance that both the battery materials and the manufacturing process are sustainable and cost effective. In these regards, batteries based on _aqueous_ electrolytes are especially promising. However, water has a very narrow electrochemical stability window, which poses a major challenge for aqueous electrolytes. In principle, it can be accommodated by including functional additives to the electrolyte, but finding the right "recipe" is akin to finding a needle in a haystack.
 
@@ -24,7 +24,7 @@ Together with the research group of [Erik J. Berg](https://scholar.google.se/cit
 {% include video.liquid path="https://www.youtube.com/embed/mAtBjrnRx-I" width="70%" height="400px" %}
 </div>
 
-### Thin film science
+## Thin film science
 
 In thin film science, self-driving labs have mainly been restricted to solution-based synthetic methods which are easier to automate but cannot access the broad chemical space of inorganic materials. In collaboration with the research group of [Jonathan Scragg](https://www.uu.se/en/contact-and-organisation/staff?query=N10-969), in the division of solar cell technology, we're building a self-driving lab based on magnetron co-sputtering. We present a rapid and calibration-free in-situ, machine learning driven approach to produce composition maps for arbitrary source combinations and sputtering conditions. Our framework dramatically increases throughput by avoiding the need for extensive characterisation or calibration, thus demonstrating the potential of self-driving labs to accelerate materials exploration.
 
@@ -32,7 +32,7 @@ In thin film science, self-driving labs have mainly been restricted to solution-
 <img src="/assets/img/publication_preview/solar_cell_workflow.png" alt="Self-driving sputtering lab workflow" width="70%"/>
 </div>
 
-### Simulations
+## Simulations
 
 In parallel with the physical experiments above, we are also performing simulation studies to better understand the underlying mechanisms. For instance, we recently studied electrode/electrolyte interface side reactions and dendrite growth in fast-charging metal-anode batteries, by combining a phase-field model of electrodeposition with Bayesian optimization. Our approach allows exploration of the parameter space with high sample efficiency and low computation complexity.
 
@@ -40,7 +40,7 @@ In parallel with the physical experiments above, we are also performing simulati
 <img src="/assets/img/publication_preview/dendrite.png" alt="Simulated dendrite" width="400px"/>
 </div>
 
-### References
+## References
 
 - Yik J T, Zhang L, **Sjölund J**, Hou X, Svensson P H, Edström K, and Berg E J. [_Automated electrolyte formulation and coin cell assembly for high-throughput lithium-ion battery research._](https://doi.org/10.1039/D3DD00058C) Digital Discovery (2023).
 - Yik J T, Hvarfner C, **Sjölund J**, Berg EJ, and Zhang L. [_Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization._](https://doi.org/10.1016/j.xcrp.2025.102548) Cell Reports Physical Science (2025).

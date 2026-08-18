@@ -117,13 +117,17 @@ wants an `abbr`, a `preview` and possibly `selected` added by hand.
 python bin/update_scholar_citations.py    # needs `scholarly`, see requirements.txt
 ```
 
-It usually **cannot** run in CI. Google Scholar serves a CAPTCHA to datacenter
-addresses, so `scholarly` blocks waiting on it and the step is killed by its
-timeout. The previous version of the workflow swallowed that failure and
-reported success, which left the counts seven weeks out of date without anyone
-noticing; the workflow now emits a warning on each failure and turns red once
-`_data/citations.yml` is more than ten days old. When that happens, run the
-command above and push.
+It reads the profile page directly — one request, standard library only, about
+three seconds — and falls back to `scholarly` only if that fails. The old
+scholarly-only path issued several requests per run, and Google answers
+datacenter addresses with a CAPTCHA, which is why the scheduled workflow produced
+nothing for seven weeks while reporting success. The direct path stands a better
+chance from CI but is not guaranteed either, so the workflow warns on each
+failure and turns red once `_data/citations.yml` is more than ten days old. When
+that happens, run the command above and push.
+
+The two paths were checked against each other: both return 107 records and 3444
+citations, with no difference in any id, count or title.
 
 Two things worth knowing:
 

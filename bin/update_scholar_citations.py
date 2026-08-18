@@ -1,10 +1,25 @@
 #!/usr/bin/env python
+"""Refresh _data/citations.yml from the Google Scholar profile.
+
+Two paths. The primary one is a single GET of the profile page, parsed for the
+publication table: it yields the title, year, citation count and publication id
+for every paper in one or two requests. The fallback is `scholarly`, which is
+what this script used to do exclusively -- but scholarly issues several requests
+and Google answers datacenter addresses with a CAPTCHA, which is why the
+scheduled workflow produced nothing for seven weeks while reporting success.
+
+Neither path is guaranteed to work from CI. The workflow warns on failure and
+turns red once this file is more than ten days old; running this script locally
+takes about ten seconds.
+"""
 
 import os
+import re
 import sys
-import yaml
+import urllib.request
 from datetime import datetime
-from scholarly import scholarly
+
+import yaml
 
 
 def load_scholar_user_id() -> str:
@@ -34,6 +49,56 @@ def load_scholar_user_id() -> str:
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
+PROFILE_URL = "https://scholar.google.com/citations"
+# Google serves the profile page differently to an unrecognised client.
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+)
+PAGE_SIZE = 100
+
+
+def fetch_from_profile_page(user_id: str) -> dict:
+    """Parse the publication table straight off the profile page.
+
+    Returns {"<user_id>:<pub_id>": {title, year, citations}} or {} on failure,
+    keeping the same shape the scholarly path produces.
+    """
+    papers: dict = {}
+    for start in range(0, 1000, PAGE_SIZE):
+        url = f"{PROFILE_URL}?user={user_id}&hl=en&cstart={start}&pagesize={PAGE_SIZE}"
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(request, timeout=30) as response:
+                html = response.read().decode("utf-8", "replace")
+        except Exception as e:  # noqa: BLE001
+            print(f"Profile page request failed at offset {start}: {e}")
+            return {}
+
+        rows = re.findall(r'<tr class="gsc_a_tr">(.*?)</tr>', html, re.S)
+        if not rows:
+            break
+
+        for row in rows:
+            ident = re.search(r"citation_for_view=([\w-]+:[\w-]+)", row)
+            title = re.search(r'class="gsc_a_at"[^>]*>(.*?)</a>', row, re.S)
+            cites = re.search(r'class="gsc_a_ac[^"]*"[^>]*>([\d,]*)<', row)
+            year = re.search(r'class="gsc_a_h[^"]*"[^>]*>(\d*)<', row)
+            if not (ident and title):
+                continue
+            clean = re.sub(r"<[^>]+>", "", title.group(1)).strip()
+            count = (cites.group(1) if cites else "").replace(",", "")
+            papers[ident.group(1)] = {
+                "title": clean,
+                "year": (year.group(1) if year else "") or "Unknown Year",
+                "citations": int(count) if count else 0,
+            }
+
+        if len(rows) < PAGE_SIZE:
+            break
+
+    print(f"Profile page gave {len(papers)} publications.")
+    return papers
 
 
 def get_scholar_citations() -> None:
@@ -62,26 +127,56 @@ def get_scholar_citations() -> None:
 
     citation_data = {"metadata": {"last_updated": today}, "papers": {}}
 
+    papers = fetch_from_profile_page(SCHOLAR_USER_ID)
+    if papers:
+        citation_data["papers"] = papers
+    else:
+        print("Falling back to scholarly.")
+        citation_data["papers"] = fetch_via_scholarly()
+
+    if not citation_data["papers"]:
+        print("Both paths failed; leaving the existing data in place.")
+        sys.exit(1)
+
+    # Write even when no count moved. metadata.last_updated has to mean "last
+    # successful fetch", because that is what the workflow's staleness check
+    # reads: if the date only advanced when a number changed, a quiet ten days
+    # would look identical to Google refusing every request.
+    if existing_data and existing_data.get("papers") == citation_data["papers"]:
+        print("No count changed; recording the successful fetch anyway.")
+
+    try:
+        with open(OUTPUT_FILE, "w") as f:
+            yaml.dump(citation_data, f, width=1000, sort_keys=True)
+        print(f"Citation data saved to {OUTPUT_FILE}")
+    except Exception as e:
+        print(
+            f"Error writing citation data to {OUTPUT_FILE}: {e}. Please check file permissions and disk space."
+        )
+        sys.exit(1)
+
+
+def fetch_via_scholarly() -> dict:
+    """The original path, kept as a fallback. scholarly is optional."""
+    try:
+        from scholarly import scholarly
+    except ImportError:
+        print("scholarly is not installed; skipping the fallback.")
+        return {}
+
+    papers: dict = {}
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
     try:
         author = scholarly.search_author_id(SCHOLAR_USER_ID)
         author_data = scholarly.fill(author)
     except Exception as e:
-        print(
-            f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}. Please check your internet connection and Scholar user ID."
-        )
-        sys.exit(1)
+        print(f"scholarly failed for user ID '{SCHOLAR_USER_ID}': {e}")
+        return {}
 
-    if not author_data:
-        print(
-            f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
-        )
-        sys.exit(1)
-
-    if "publications" not in author_data:
-        print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
-        sys.exit(1)
+    if not author_data or "publications" not in author_data:
+        print(f"scholarly returned no publications for user ID '{SCHOLAR_USER_ID}'.")
+        return {}
 
     for pub in author_data["publications"]:
         try:
@@ -98,7 +193,7 @@ def get_scholar_citations() -> None:
 
             print(f"Found: {title} ({year}) - Citations: {citations}")
 
-            citation_data["papers"][pub_id] = {
+            papers[pub_id] = {
                 "title": title,
                 "year": year,
                 "citations": citations,
@@ -108,20 +203,7 @@ def get_scholar_citations() -> None:
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
             )
 
-    # Compare new data with existing data
-    if existing_data and existing_data.get("papers") == citation_data["papers"]:
-        print("No changes in citation data. Skipping file update.")
-        return
-
-    try:
-        with open(OUTPUT_FILE, "w") as f:
-            yaml.dump(citation_data, f, width=1000, sort_keys=True)
-        print(f"Citation data saved to {OUTPUT_FILE}")
-    except Exception as e:
-        print(
-            f"Error writing citation data to {OUTPUT_FILE}: {e}. Please check file permissions and disk space."
-        )
-        sys.exit(1)
+    return papers
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ category: active
 
 Generative models and Bayesian inference are key tools for accelerating scientific discovery by enabling efficient exploration of large design spaces. We work on both foundational aspects of these models and their application to scientific and engineering problems.
 
-### Image restoration with mean-reverting SDEs
+## Image restoration with mean-reverting SDEs
 
 Our work on diffusion models for image restoration introduced a mean-reverting stochastic differential equation (SDE) that transforms a high-quality image into a degraded counterpart as a mean state with fixed Gaussian noise. By simulating the corresponding reverse-time SDE, we restore the original image without relying on any task-specific prior knowledge. This approach has a closed-form solution, allowing exact computation of the time-dependent score. The method achieves highly competitive performance on deraining, deblurring, denoising, super-resolution, inpainting, and dehazing, and has been widely adopted since its publication at ICML 2023.
 
@@ -37,7 +37,7 @@ In a follow-up, we showed how vision-language models can be steered for universa
 - Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Controlling vision-language models for universal image restoration._](https://arxiv.org/abs/2310.01018) ICLR (2024).
 - Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [_Forward-only diffusion probabilistic models._](https://arxiv.org/abs/2505.16733) arXiv (2025).
 
-### Training-free conditional inference
+## Training-free conditional inference
 
 A key challenge for incorporating pretrained generative models into Bayesian experimental design loops is performing conditional inference without costly retraining. We are developing methods for training-free guidance of flow-based and diffusion models, enabling conditional sampling from pretrained models by leveraging the source-space structure.
 
@@ -49,7 +49,7 @@ A key challenge for incorporating pretrained generative models into Bayesian exp
 - Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) arXiv (2025).
 - Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [_Conditioning diffusion models by explicit forward-backward bridging._](https://arxiv.org/abs/2405.13794) AISTATS (2025).
 
-### Reviews and broader contributions
+## Reviews and broader contributions
 
 We have contributed two authoritative reviews to Philosophical Transactions of the Royal Society A, covering conditional sampling within generative diffusion models and the state of the art in diffusion-based image restoration. On the reinforcement learning side, we have shown how diffusion models can serve as expressive policy representations for offline RL.
 

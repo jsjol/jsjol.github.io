@@ -154,6 +154,13 @@ ul.task-list input[type="checkbox"] {
     .card-body {
       padding: 0.75rem 0 0;
     }
+
+    // The card title is an h2 so that the page does not jump from h1 to h4.
+    // These are Bootstrap's h4 metrics, so the size is unchanged.
+    .card-title {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
   }
 
   // Without a frame the rows need more air to read as separate.

@@ -16,7 +16,7 @@ We are pioneering a research direction that uses graph neural networks (GNNs) to
 <p><small>A matrix has a natural graph representation: rows and columns become nodes, and nonzero entries become edges.</small></p>
 </div>
 
-### Neural incomplete factorization
+## Neural incomplete factorization
 
 Our first major result was NeuralIF, a GNN that learns incomplete factorization preconditioners for the conjugate gradient method. At the core is a novel message-passing block, inspired by sparse matrix theory, that aligns with the objective to find a sparse factorization of the matrix. NeuralIF significantly speeds up convergence and reduces total solving time compared to classical preconditioners without fill-ins. In a follow-up, we extended this approach to learn incomplete factorizations for the more general GMRES solver, handling non-symmetric systems.
 
@@ -28,7 +28,7 @@ Our first major result was NeuralIF, a GNN that learns incomplete factorization 
 - Häusner P, Öktem O, and **Sjölund J**. [_Neural incomplete factorization: learning preconditioners for the conjugate gradient method._](https://openreview.net/forum?id=FozLrZ3CI5) Transactions on Machine Learning Research (2024).
 - Häusner P, Nieto Juscafresa A, and **Sjölund J**. [_Learning incomplete factorization preconditioners for GMRES._](https://proceedings.mlr.press/v265/hausner25a.html) Northern Lights Deep Learning Conference (2025).
 
-### Accelerating optimization solvers
+## Accelerating optimization solvers
 
 Beyond preconditioning, we are exploring how GNNs can accelerate optimization solvers directly. For quadratic programs (QPs) with linear constraints, we use a GNN to predict a warm-start for an active-set solver, reducing the number of iterations needed to reach the optimal solution. The QP and its constraints are represented as a graph, and the GNN performs node-level prediction to identify the likely active set.
 
@@ -42,7 +42,7 @@ We have also shown that distributed ADMM iterations have a one-to-one correspond
 - Schmidtobreick E J, Arnström D, Häusner P, and **Sjölund J**. [_Warm-starting active-set solvers using graph neural networks._](https://arxiv.org/abs/2511.13174) Learning for Dynamics & Control (L4DC), 2026.
 - Doerks H, Häusner P, Hernández Escobar D, and **Sjölund J**. [_Learning to accelerate distributed ADMM using graph neural networks._](https://arxiv.org/abs/2509.05288) Learning for Dynamics & Control (L4DC), 2026.
 
-### Earlier work
+## Earlier work
 
 Our first work in this direction considered nonnegative matrix factorization, where we adopted the König graph representation and framed constrained low-rank factorization as a graph problem solved by interleaving a GNN with ADMM.
 

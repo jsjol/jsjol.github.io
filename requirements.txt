@@ -1,4 +1,8 @@
-# Used by bin/update_scholar_citations.py and bin/sync_publications.py.
+# bin/update_scholar_citations.py and bin/sync_publications.py.
 # The site build itself needs no Python.
 pyyaml
-scholarly
+
+# Optional. update_scholar_citations.py reads the profile page directly with the
+# standard library; scholarly is only used as a fallback if that fails, and it
+# pulls in selenium, so CI does not install it. Add it locally with
+# `pip install scholarly` if you want the fallback available.
