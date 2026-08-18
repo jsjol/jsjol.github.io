@@ -175,10 +175,10 @@ scholar:
 
 bib_search: true
 
-# Citation-count badges shown on each publication.
+# Google Scholar citation count per publication, read from _data/citations.yml
+# (refreshed by the Update citations workflow). Renders only for entries that
+# carry a google_scholar_id, which bin/sync_publications.py maintains.
 enable_publication_badges:
-  altmetric: true
-  dimensions: true
   google_scholar: true
 
 # BibTeX keys used internally by the templates, hidden from the rendered entry.
@@ -187,14 +187,12 @@ filtered_bibtex_keywords:
     abbr,
     abstract,
     additional_info,
-    altmetric,
     annotation,
     arxiv,
     award,
     award_name,
     bibtex_show,
     code,
-    dimensions,
     eprint,
     google_scholar_id,
     hal,

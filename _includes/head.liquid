@@ -4,14 +4,14 @@
 <!--
   Content Security Policy. script-src and style-src name the exact third-party
   hosts the site loads from; everything else stays permissive because the
-  Altmetric and Dimensions badges fetch images and data from hosts they choose.
+  Google Scholar citation badge is an image from shields.io.
   'unsafe-inline' is required by the inline theme and back-to-top initializers.
 -->
 <meta
   http-equiv="Content-Security-Policy"
   content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://d1bxh8uas1mnw7.cloudfront.net https://badge.dimensions.ai https://api.altmetric.com;
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
     style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
     font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net;
     img-src 'self' data: https:;

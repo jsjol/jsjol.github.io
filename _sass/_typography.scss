@@ -4,6 +4,25 @@
 
 @use "variables" as v;
 
+// Base typography. al-folio never declared these itself: the Roboto family and
+// the light body weight came from MDBootstrap's stylesheet, so removing that
+// dropped the whole site to the system font stack at weight 400. These are
+// MDBootstrap 4.20.0's values, so the site reads as it did before.
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
 p,
 h1,
 h2,
@@ -37,10 +56,10 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
 
@@ -150,4 +169,23 @@ blockquote {
       text-decoration: none;
     }
   }
+}
+
+// Content links carry a faint underline so that a near-black link is still
+// recognisable as one. Scoped to .post, which excludes the navbar; buttons and
+// the social icons keep their own treatment.
+
+.post a:not(.btn):not(.no-underline) {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+.post .social a {
+  text-decoration: none;
 }

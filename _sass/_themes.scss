@@ -10,8 +10,12 @@
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$purple-color};
-  --global-hover-color: #{v.$purple-color};
+  // Body links are near-black and identified by their underline, so that no
+  // link is ever mistaken for a visited one. The accent below is what
+  // interactive state uses: hover, the active nav item, inline code.
+  --global-link-color: #{v.$grey-color-dark};
+  --global-theme-color: #{v.$uu-red};
+  --global-hover-color: #{v.$uu-red};
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
@@ -77,8 +81,9 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$cyan-color};
-  --global-hover-color: #{v.$cyan-color};
+  --global-link-color: #{v.$grey-color-light};
+  --global-theme-color: #{v.$uu-red-light};
+  --global-hover-color: #{v.$uu-red-light};
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
   --global-footer-text-color: #{v.$grey-color-dark};
