@@ -121,6 +121,9 @@ defaults:
 
 sass:
   style: compressed
+  # Without this a 270 kB main.css.map is deployed. purgecss strips the
+  # sourceMappingURL comment, so nothing ever fetches it.
+  sourcemap: never
 
 jekyll-minifier:
   compress_javascript: false
