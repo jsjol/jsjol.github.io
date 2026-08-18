@@ -8,5 +8,10 @@
 titles:
   # Not his: a Turkish-language item mis-attributed to the profile.
   - "Hasan Tahsin Arisan in Hayati"
+  # Supervised PhD theses. These belong on the group page, via
+  # _data/people.yml, not in the publication list.
+  - "Motion Estimation from Temporally and Spatially Sparse Medical Image Sequences"
+  - "A Self-Driving Lab for Battery Electrolyte Design"
+  - "Machine Learning with Decentralized Data and Differential Privacy: New Methods for Training, Inference and Sampling"
 
 publication_ids: []

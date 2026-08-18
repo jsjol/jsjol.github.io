@@ -109,6 +109,22 @@ job appends papers that are on Scholar but not in the bibliography and opens a
 pull request, because a new entry needs its venue and author list checked and
 wants an `abbr`, a `preview` and possibly `selected` added by hand.
 
+### The citation counts need a local run
+
+`bin/update_scholar_citations.py` takes about ten seconds here:
+
+```bash
+python bin/update_scholar_citations.py    # needs `scholarly`, see requirements.txt
+```
+
+It usually **cannot** run in CI. Google Scholar serves a CAPTCHA to datacenter
+addresses, so `scholarly` blocks waiting on it and the step is killed by its
+timeout. The previous version of the workflow swallowed that failure and
+reported success, which left the counts seven weeks out of date without anyone
+noticing; the workflow now emits a warning on each failure and turns red once
+`_data/citations.yml` is more than ten days old. When that happens, run the
+command above and push.
+
 Two things worth knowing:
 
 - **Detection costs no Scholar requests.** `bin/update_scholar_citations.py`
@@ -121,7 +137,16 @@ Two things worth knowing:
   generated BibTeX keys carry a real first-author surname rather than `unknown`.
 - **Scholar sometimes attributes someone else's paper to the profile.** Add its
   title or publication id to `_data/scholar_ignore.yml` and it will not be
-  proposed again.
+  proposed again. Supervised PhD theses are listed there too: they belong on the
+  group page via `_data/people.yml`, not in the publication list.
+- **OpenAlex is a second detection source, and is report-only.** It works from CI
+  even when Scholar does not, but it keeps separate records for the preprint and
+  the published version of the same paper, leaves HTML in titles, and lists
+  theses, so its findings are printed for a human to check rather than appended.
+  Titles are matched exactly, then on a prefix (for Scholar's truncated titles),
+  then on word overlap above 0.72 — which is what recognises "A linear
+  programming approach to inverse planning in radiosurgery" as the entry already
+  in the file under "… in Gamma Knife radiosurgery".
 
 Where several Scholar records map onto one entry — the patent families all share
 titles like "Methods for inverse planning" — the script attaches no id and says

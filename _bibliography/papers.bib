@@ -1096,3 +1096,31 @@
   archiveprefix     = {arXiv},
   google_scholar_id = {eJXPG6dFmWUC}
 }
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{ji2026sequentially,
+  title             = {{Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search}},
+  author            = {Binglin Ji and Anindya Sarkar and Hengchang Lu and Jens Sjölund and Yevgeniy Vorobeychik},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2607.01144},
+  abstract          = {While generative models have enabled training-free reward alignment, current methods typically excel in local exploration within narrow regions of the underlying distribution. These approaches struggle when preferences are unknown a priori and only revealed through sequential feedback-a scenario demanding broad exploration to uncover high-utility regions. To address this, we propose Sequentially-Controlled Interactive Multi-Particle Flow-Maps (IMPFM), a framework for sample-efficient online feedback-driven search. IMPFM progressively transports a group of interactive particles toward the target distribution, maintaining the broad coverage essential for heterogeneous preference alignment. IMPFM introduces a principled and efficient posterior sample sharing mechanism across particles powered by flow maps. By correcting individual particle drift with the collective posterior samples of the entire ensemble at each resampling step, the framework maximizes sample utility to enable global exploration while actively mitigating reward over-optimization, typical of standard control frameworks. Paired with a principled exploration-exploitation reweighting mechanism involving multi-particle interaction, this sequentially corrected multi-particle dynamics explicitly preserves structural diversity and overcomes the weight degeneracy inherent to standard SMC samplers. Crucially, we prove that the resulting sampling framework yields a multi-particle interaction-aware Feynman-Kac corrector that progressively steers the multi-particle system toward a KL-tilted target distribution, facilitating global exploration and preventing mode collapse. Extensive empirical evaluations and rigorous ablations across diverse search and alignment tasks confirm the efficacy of IMPFM over existing baselines.},
+  url               = {https://arxiv.org/abs/2607.01144},
+  eprint            = {2607.01144},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {D_sINldO8mEC}
+}
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{ji2026bootstrap,
+  title             = {{Bootstrap Flow-Map Tree Sampling Enables Online Feedback Driven Search}},
+  author            = {Binglin Ji and Anindya Sarkar and Hengchang Lu and Jens Sjölund and Yevgeniy Vorobeychik},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2607.02915},
+  abstract          = {In many scientific and engineering domains, maximizing discovery within a limited sampling budget demands strategic, observation-guided exploration. While generative models have enabled training-free reward alignment, current methods typically excel in local searches within narrow regions of the underlying distribution. These approaches struggle when preferences are unknown a priori and only revealed through sequential feedback-a scenario demanding broad exploration to uncover high-utility regions. To address this, we introduce Bootstrap Flow-Map-Tree (a.k.a BFMT), a novel computationally efficient sampling framework designed for history-aware global search and alignment under sampling budget constraints. BFMT enables full tree-path construction from any tree depth using a single function evaluation, drastically reducing computational overhead while providing critical foresight for sequential sampling. By enabling dynamic transition time steps scheduling, BFMT efficiently allocates its sampling budget, smoothly transitioning from broad global exploration to fine-grained local refinement of high-utility modes discovered through exploration. Extensive experiments and ablations across diverse search and alignment tasks demonstrate that BFMT substantially outperforms baseline approaches.},
+  url               = {https://arxiv.org/abs/2607.02915},
+  eprint            = {2607.02915},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {eflP2zaiRacC}
+}

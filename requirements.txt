@@ -1,4 +1,4 @@
-# Used only by bin/update_scholar_citations.py in the Update citations workflow.
+# Used by bin/update_scholar_citations.py and bin/sync_publications.py.
 # The site build itself needs no Python.
 pyyaml
 scholarly

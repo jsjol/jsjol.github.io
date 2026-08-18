@@ -37,12 +37,14 @@ jobs:
 
       - name: Refresh Google Scholar citation counts
         run: |
-          # Scholar rate-limits and sometimes serves a CAPTCHA. A failure here
-          # must not fail the workflow: the previous counts stay in place and the
-          # next run picks it up.
+          # Scholar serves a CAPTCHA to datacenter addresses, so this often
+          # cannot succeed from a GitHub runner. One failure must not fail the
+          # workflow, but a run of failures must be visible -- see the staleness
+          # check below. Locally the same script finishes in about ten seconds.
           if timeout 300 python bin/update_scholar_citations.py; then
             echo "Citation refresh succeeded." >> "$GITHUB_STEP_SUMMARY"
           else
+            echo "::warning::Google Scholar refused the request; keeping the existing counts."
             echo "Citation refresh failed; keeping the existing counts." >> "$GITHUB_STEP_SUMMARY"
           fi
 
@@ -59,8 +61,25 @@ jobs:
             git push
           }
 
+      - name: Fail if the citation counts have gone stale
+        run: |
+          # The previous version of this workflow swallowed the CAPTCHA failure
+          # and reported success, so the counts sat seven weeks out of date
+          # without anyone noticing. Turn a sustained failure into a red run.
+          LAST=$(python -c "import yaml; print(yaml.safe_load(open('_data/citations.yml'))['metadata']['last_updated'])")
+          AGE=$(( ( $(date +%s) - $(date -d "$LAST" +%s) ) / 86400 ))
+          echo "Citation counts last refreshed $LAST ($AGE days ago)." >> "$GITHUB_STEP_SUMMARY"
+          if [ "$AGE" -gt 10 ]; then
+            echo "::error::Citation counts are $AGE days old. Google Scholar is refusing CI requests; run 'python bin/update_scholar_citations.py' locally (about ten seconds) and push."
+            exit 1
+          fi
+
   propose:
+    # Runs even when refresh went red. A stale citation file still lists every
+    # paper Scholar knew about at its last successful refresh, and the OpenAlex
+    # check does not depend on Scholar at all.
     needs: refresh
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

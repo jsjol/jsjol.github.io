@@ -44,6 +44,7 @@ CROSSREF = "https://api.crossref.org/works"
 # https, not http: the http endpoint 301-redirects and a client that does not
 # follow redirects gets an empty body, which looks exactly like "no results".
 ARXIV = "https://export.arxiv.org/api/query"
+OPENALEX = "https://api.openalex.org"
 CONTACT = "jens.sjolund@it.uu.se"  # Crossref asks callers to identify themselves
 
 
@@ -85,6 +86,7 @@ def parse_bib(text: str) -> list[Entry]:
 
 def normalize(title: str) -> str:
     """A title reduced to something comparable across Scholar and BibTeX."""
+    title = re.sub(r"<[^>]+>", "", title)  # OpenAlex leaves markup in titles
     t = unicodedata.normalize("NFKD", title)
     t = "".join(c for c in t if not unicodedata.combining(c))
     t = t.replace("‐", "-").replace("–", "-").replace("—", "-")
@@ -101,8 +103,20 @@ def squash(title: str) -> str:
 
 
 _prefix_matches: list[tuple[str, str]] = []
+_fuzzy_matches: list[tuple[str, str, float]] = []
 
 SQUASH_PREFIX_MIN = 30  # below this length a prefix agreement is not evidence
+
+
+def token_overlap(a: str, b: str) -> float:
+    """Jaccard overlap of the word sets of two normalized titles."""
+    sa, sb = set(normalize(a).split()), set(normalize(b).split())
+    if not sa or not sb:
+        return 0.0
+    return len(sa & sb) / len(sa | sb)
+
+
+TOKEN_OVERLAP_MIN = 0.72  # below this, two titles are different papers
 
 
 def find_by_title(title: str, entries: list["Entry"], exact: dict) -> "Entry | None":
@@ -118,7 +132,7 @@ def find_by_title(title: str, entries: list["Entry"], exact: dict) -> "Entry | N
         return exact[key]
 
     target = squash(title)
-    global _prefix_matches
+    global _prefix_matches, _fuzzy_matches
     if len(target) < SQUASH_PREFIX_MIN:
         return None
     for e in entries:
@@ -128,12 +142,66 @@ def find_by_title(title: str, entries: list["Entry"], exact: dict) -> "Entry | N
         if candidate.startswith(target) or target.startswith(candidate):
             _prefix_matches.append((title, e.key))
             return e
+
+    # Last resort: the same paper worded differently by two sources.
+    best, best_score = None, 0.0
+    for e in entries:
+        score = token_overlap(title, e.title)
+        if score > best_score:
+            best, best_score = e, score
+    if best is not None and best_score >= TOKEN_OVERLAP_MIN:
+        _fuzzy_matches.append((title, best.key, best_score))
+        return best
     return None
 
 
 # --------------------------------------------------------------------------- #
 # Crossref lookup
 # --------------------------------------------------------------------------- #
+
+
+def openalex_works(orcid: str) -> list[dict]:
+    """Every work OpenAlex attributes to `orcid`, deduplicated by title.
+
+    A second detection source matters because Google Scholar refuses requests
+    from CI runners, so _data/citations.yml can be weeks stale. OpenAlex has a
+    real API with no such restriction. It does keep two records for most arXiv
+    items, one with a DOI and one without, hence the deduplication.
+    """
+    try:
+        url = f"{OPENALEX}/authors?filter=orcid:{orcid}&mailto={CONTACT}"
+        with urllib.request.urlopen(url, timeout=30) as r:
+            authors = json.load(r)["results"]
+        if not authors:
+            print("    OpenAlex knows no author with that ORCID")
+            return []
+        author_id = authors[0]["id"].rsplit("/", 1)[-1]
+
+        works, page = [], 1
+        while True:
+            url = (
+                f"{OPENALEX}/works?filter=author.id:{author_id}&per-page=200&page={page}"
+                f"&select=doi,title,publication_year,type&mailto={CONTACT}"
+            )
+            with urllib.request.urlopen(url, timeout=30) as r:
+                payload = json.load(r)
+            works.extend(payload["results"])
+            if len(works) >= payload["meta"]["count"] or not payload["results"]:
+                break
+            page += 1
+    except Exception as e:  # noqa: BLE001
+        print(f"    OpenAlex lookup failed: {e}")
+        return []
+
+    seen, unique = set(), []
+    for w in works:
+        title = (w.get("title") or "").strip()
+        key = squash(title)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        unique.append(w)
+    return unique
 
 
 def crossref_lookup(title: str) -> dict | None:
@@ -210,8 +278,9 @@ def bib_from_arxiv(rec: dict, scholar_id: str, title: str, year: str) -> str:
         ("url", "https://arxiv.org/abs/" + rec["arxiv_id"]),
         ("eprint", rec["arxiv_id"]),
         ("archiveprefix", "arXiv"),
-        ("google_scholar_id", scholar_id),
     ]
+    if scholar_id:
+        fields.append(("google_scholar_id", scholar_id))
     key = make_key(rec["authors"], rec["year"] or year, title)
     width = max(len(n) for n, _ in fields)
     body = "\n".join(f"  {n.ljust(width)} = {{{v}}}," for n, v in fields)
@@ -243,7 +312,8 @@ def bib_from_crossref(item: dict, scholar_id: str, title: str, year: str) -> str
     if item.get("DOI"):
         fields.append(("doi", item["DOI"]))
         fields.append(("url", "https://doi.org/" + item["DOI"]))
-    fields.append(("google_scholar_id", scholar_id))
+    if scholar_id:
+        fields.append(("google_scholar_id", scholar_id))
 
     key = make_key(authors, crossref_year, title)
     width = max(len(n) for n, _ in fields)
@@ -264,8 +334,9 @@ def bib_stub(scholar_id: str, title: str, year: str) -> str:
         ("author", "TODO"),
         ("year", year),
         ("journal", "TODO"),
-        ("google_scholar_id", scholar_id),
     ]
+    if scholar_id:
+        fields.append(("google_scholar_id", scholar_id))
     width = max(len(n) for n, _ in fields)
     body = "\n".join(f"  {n.ljust(width)} = {{{v}}}," for n, v in fields)
     return (
@@ -323,7 +394,7 @@ def main() -> int:
     for e in entries:
         if e.title:
             by_title_exact.setdefault(normalize(e.title), e)
-    matched, unmatched, ignored = {}, [], []
+    matched, unmatched, ignored, openalex_only = {}, [], [], []
     claims: dict[str, list] = {}
     for full_key, rec in papers.items():
         # citations.yml keys are "<scholar_userid>:<publication id>".
@@ -353,6 +424,25 @@ def main() -> int:
         else:
             ambiguous.append((key, [t for _, _, t in claimed]))
 
+    # Second detection pass: OpenAlex, which CI can always reach.
+    orcid = yaml.safe_load(open(SOCIALS_PATH)).get("orcid_id")
+    if orcid:
+        print("\nChecking OpenAlex as well...")
+        seen_unmatched = {squash(t) for _, t, _ in unmatched}
+        for w in openalex_works(orcid):
+            title = (w.get("title") or "").strip()
+            year = str(w.get("publication_year") or "")
+            key = squash(title)
+            if key in seen_unmatched:
+                continue
+            if key in ignored_titles or not title:
+                ignored.append(("", title))
+                continue
+            if find_by_title(title, entries, by_title_exact) is not None:
+                continue
+            seen_unmatched.add(key)
+            openalex_only.append((title, year))
+
     bib_only = [e for e in entries if e not in matched.values()]
 
     print(f"matched:                 {len(matched)}")
@@ -375,6 +465,16 @@ def main() -> int:
         print("\nOn Scholar but not in the bibliography:")
         for pub_id, title, year in unmatched:
             print(f"  {year}  {title[:78]}")
+    if _fuzzy_matches:
+        print("\nMatched on word overlap rather than an exact title (worth an eye):")
+        for src_title, key, score in _fuzzy_matches:
+            print(f"  {key}  <-  {score:.2f}  {src_title[:58]}")
+    if openalex_only:
+        print("\nOn OpenAlex but not in the bibliography. NOT appended, because")
+        print("OpenAlex keeps separate records for preprint and published versions")
+        print("and also lists theses; check these by hand:")
+        for title, year in openalex_only:
+            print(f"  {year}  {title[:74]}")
     if bib_only:
         print("\nIn the bibliography but not on Scholar (left alone):")
         for e in bib_only:
