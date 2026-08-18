@@ -1,15 +1,10 @@
-<!-- jQuery, Bootstrap & MDB -->
+<!-- jQuery & Bootstrap -->
 <script
   src="{{ site.third_party_libraries.jquery.url.js }}"
   integrity="{{ site.third_party_libraries.jquery.integrity.js }}"
   crossorigin="anonymous"
 ></script>
 <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url | bust_file_cache }}"></script>
-<script
-  src="{{ site.third_party_libraries.mdb.url.js }}"
-  integrity="{{ site.third_party_libraries.mdb.integrity.js }}"
-  crossorigin="anonymous"
-></script>
 
 <!-- Site scripts -->
 <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
@@ -48,7 +43,17 @@
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 {% endif %}
 
-{% if site.enable_math %}
+{%- comment -%}
+  MathJax is 1.1 MB, so load it only on pages that actually typeset something:
+  when the rendered page contains display math or an escaped inline delimiter, or
+  when the page asks for it with `math: true`. A bare `$` is not a usable signal
+  because the templates emit jQuery in inline event handlers.
+{%- endcomment -%}
+{%- assign needs_math = page.math -%}
+{%- if content contains '$$' or content contains '\(' or content contains '\[' -%}
+  {%- assign needs_math = true -%}
+{%- endif -%}
+{% if site.enable_math and needs_math %}
   <!-- MathJax -->
   <script src="{{ '/assets/js/mathjax-setup.js' | relative_url | bust_file_cache }}"></script>
   <script

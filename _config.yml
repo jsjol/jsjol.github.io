@@ -212,15 +212,6 @@ max_author_limit: 3
 more_authors_animation_delay: 10
 
 # -----------------------------------------------------------------------------
-# GitHub stat cards on /repositories/
-# -----------------------------------------------------------------------------
-
-repo_theme_light: default
-repo_theme_dark: dark
-external_services:
-  github_readme_stats_url: https://github-readme-stats.vercel.app
-
-# -----------------------------------------------------------------------------
 # Jekyll Link Attributes
 # -----------------------------------------------------------------------------
 
@@ -280,14 +271,6 @@ third_party_libraries:
       fonts: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/output/chtml/fonts/woff-v2/"
       js: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/tex-mml-chtml.js"
     version: "3.2.2"
-  mdb:
-    integrity:
-      css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
-      js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
-    url:
-      css: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/css/mdb.min.css"
-      js: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/js/mdb.min.js"
-    version: "4.20.0"
   medium_zoom:
     integrity:
       js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="

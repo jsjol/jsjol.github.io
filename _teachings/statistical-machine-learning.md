@@ -26,4 +26,4 @@ Elementary calculus, linear algebra, probability theory (gradients, matrix opera
 
 ## Textbook
 
-[*Machine Learning — A First Course for Engineers and Scientists*](https://smlbook.org/), available free online.
+[_Machine Learning — A First Course for Engineers and Scientists_](https://smlbook.org/), available free online.

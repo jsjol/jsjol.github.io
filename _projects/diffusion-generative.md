@@ -33,9 +33,9 @@ In a follow-up, we showed how vision-language models can be steered for universa
 <p><small>DA-CLIP handles ten different image degradation types with a single model, using degradation-aware CLIP embeddings.</small></p>
 </div>
 
-- Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [*Image restoration with mean-reverting stochastic differential equations.*](https://proceedings.mlr.press/v202/luo23b.html) ICML (2023).
-- Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [*Controlling vision-language models for universal image restoration.*](https://arxiv.org/abs/2310.01018) ICLR (2024).
-- Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [*Forward-only diffusion probabilistic models.*](https://arxiv.org/abs/2505.16733) arXiv (2025).
+- Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Image restoration with mean-reverting stochastic differential equations._](https://proceedings.mlr.press/v202/luo23b.html) ICML (2023).
+- Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Controlling vision-language models for universal image restoration._](https://arxiv.org/abs/2310.01018) ICLR (2024).
+- Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [_Forward-only diffusion probabilistic models._](https://arxiv.org/abs/2505.16733) arXiv (2025).
 
 ### Training-free conditional inference
 
@@ -46,13 +46,13 @@ A key challenge for incorporating pretrained generative models into Bayesian exp
 <p><small>ESS-Flow performs conditional inference by applying a potential function in the source space of a flow model, avoiding costly retraining.</small></p>
 </div>
 
-- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [*ESS-Flow: Training-free guidance of flow-based models as inference in source space.*](https://arxiv.org/abs/2510.05849) arXiv (2025).
-- Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [*Conditioning diffusion models by explicit forward-backward bridging.*](https://arxiv.org/abs/2405.13794) AISTATS (2025).
+- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) arXiv (2025).
+- Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [_Conditioning diffusion models by explicit forward-backward bridging._](https://arxiv.org/abs/2405.13794) AISTATS (2025).
 
 ### Reviews and broader contributions
 
 We have contributed two authoritative reviews to Philosophical Transactions of the Royal Society A, covering conditional sampling within generative diffusion models and the state of the art in diffusion-based image restoration. On the reinforcement learning side, we have shown how diffusion models can serve as expressive policy representations for offline RL.
 
-- Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [*Conditional sampling within generative diffusion models.*](https://doi.org/10.1098/rsta.2024.0253) Phil. Trans. R. Soc. A (2025).
-- Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [*Taming diffusion models for image restoration: a review.*](https://doi.org/10.1098/rsta.2024.0107) Phil. Trans. R. Soc. A (2025).
-- Zhang R, Luo Z, Chen Z, **Sjölund J**, and Schön T B. [*Entropy-regularized diffusion policy with Q-ensembles for offline reinforcement learning.*](https://neurips.cc/virtual/2024/poster/93653) NeurIPS (2024).
+- Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Conditional sampling within generative diffusion models._](https://doi.org/10.1098/rsta.2024.0253) Phil. Trans. R. Soc. A (2025).
+- Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Taming diffusion models for image restoration: a review._](https://doi.org/10.1098/rsta.2024.0107) Phil. Trans. R. Soc. A (2025).
+- Zhang R, Luo Z, Chen Z, **Sjölund J**, and Schön T B. [_Entropy-regularized diffusion policy with Q-ensembles for offline reinforcement learning._](https://neurips.cc/virtual/2024/poster/93653) NeurIPS (2024).

@@ -50,3 +50,30 @@
     text-indent: -1.2rem;
   }
 }
+
+// Code page
+
+.repo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.repo {
+  margin-bottom: 1.4rem;
+
+  .repo-name {
+    font-weight: bold;
+  }
+
+  .repo-description,
+  .repo-paper {
+    display: block;
+    line-height: 1.4;
+  }
+
+  .repo-paper {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+  }
+}

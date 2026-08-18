@@ -27,6 +27,7 @@ Undergraduate multivariate calculus and linear algebra; scientific programming e
 ## Learning outcomes
 
 Upon completion, students should be able to:
+
 - Formulate scientific and engineering problems as optimization problems
 - Identify mathematical properties (smoothness, convexity) and computational advantages (sparsity)
 - Describe and explain the principles of covered algorithms

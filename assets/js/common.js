@@ -15,9 +15,6 @@ $(document).ready(function () {
     });
   });
 
-  // MDB adds a ripple effect to every link; we do not want it.
-  $("a").removeClass("waves-effect waves-light");
-
   // Show the author list of a publication entry on hover.
   $('[data-toggle="popover"]').popover({ trigger: "hover" });
 });

@@ -68,7 +68,10 @@
       }
 
       .title {
-        font-weight: bolder;
+        // Absolute, not `bolder`. `bolder` is relative to the inherited weight,
+        // and MDBootstrap set a lighter weight on the container, so the theme's
+        // intended emphasis resolved to normal instead.
+        font-weight: bold;
       }
 
       .author {
@@ -102,6 +105,7 @@
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
+          text-transform: uppercase; // was inherited from MDBootstrap's .btn
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;

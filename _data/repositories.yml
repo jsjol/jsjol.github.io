@@ -1,14 +1,29 @@
-# GitHub profiles rendered as stat cards on /repositories/.
-github_users:
-  - jsjol
+# Open-source code from the group, rendered by _pages/repositories.md.
+#
+# Written out by hand rather than fetched from github-readme-stats.vercel.app,
+# which the al-folio template used: that is a free service that rate-limits and
+# returns 503, and every card on the page is one of its images, so the page
+# renders as a wall of broken images whenever it is unavailable.
+#
+# `paper` is optional and names the publication the code belongs to.
 
-# Repositories from the group, rendered as pinned-repo cards.
-# Several live under group members' accounts rather than jsjol/.
-github_repos:
-  - jsjol/NOW
-  - Algolzw/image-restoration-sde
-  - Algolzw/daclip-uir
-  - paulhausner/neural-incomplete-factorization
-  - paulhausner/learning-distributed-admm
+repositories:
+  - name: jsjol/NOW
+    description: Numerical optimization of gradient waveforms for diffusion MRI.
+    paper: Sjölund et al., Journal of Magnetic Resonance, 2015
 
-repo_description_lines_max: 2
+  - name: Algolzw/image-restoration-sde
+    description: Image restoration with mean-reverting stochastic differential equations. Winning solution of the NTIRE 2023 Image Shadow Removal Challenge.
+    paper: Luo et al., ICML 2023
+
+  - name: Algolzw/daclip-uir
+    description: Controlling vision-language models for universal image restoration.
+    paper: Luo et al., ICLR 2024
+
+  - name: paulhausner/neural-incomplete-factorization
+    description: Learned incomplete factorization preconditioners for the conjugate gradient method, using graph neural networks.
+    paper: Häusner et al., TMLR 2024
+
+  - name: paulhausner/learning-distributed-admm
+    description: Graph neural networks that learn adaptive step sizes and communication weights for distributed ADMM.
+    paper: Doerks et al., L4DC 2026

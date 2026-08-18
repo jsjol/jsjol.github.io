@@ -7,7 +7,7 @@ importance: 1
 category: active
 ---
 
-Linear algebra is a cornerstone of scientific computing, as well as one of the computational bottlenecks when solving optimization problems or partial differential equations. While reliable general-purpose methods exist, many applications can benefit tremendously from tailored methods that fully exploit the structure of a given problem. This, however, requires expert knowledge, yet even that may not achieve maximum efficiency.   
+Linear algebra is a cornerstone of scientific computing, as well as one of the computational bottlenecks when solving optimization problems or partial differential equations. While reliable general-purpose methods exist, many applications can benefit tremendously from tailored methods that fully exploit the structure of a given problem. This, however, requires expert knowledge, yet even that may not achieve maximum efficiency.
 
 We are pioneering a research direction that uses graph neural networks (GNNs) to learn components of classical numerical algorithms, thereby accelerating them without sacrificing reliability. The key insight is that sparse matrices have a natural graph structure: the sparsity pattern defines edges, and matrix entries define features. GNNs are therefore a natural computational primitive for learning over matrices.
 
@@ -25,8 +25,8 @@ Our first major result was NeuralIF, a GNN that learns incomplete factorization 
 <p><small>NeuralIF learns a sparse factorization via message passing on the matrix graph (left), dramatically accelerating convergence of the conjugate gradient method (right).</small></p>
 </div>
 
-- Häusner P, Öktem O, and **Sjölund J**. [*Neural incomplete factorization: learning preconditioners for the conjugate gradient method.*](https://openreview.net/forum?id=FozLrZ3CI5) Transactions on Machine Learning Research (2024).
-- Häusner P, Nieto Juscafresa A, and **Sjölund J**. [*Learning incomplete factorization preconditioners for GMRES.*](https://proceedings.mlr.press/v265/hausner25a.html) Northern Lights Deep Learning Conference (2025).
+- Häusner P, Öktem O, and **Sjölund J**. [_Neural incomplete factorization: learning preconditioners for the conjugate gradient method._](https://openreview.net/forum?id=FozLrZ3CI5) Transactions on Machine Learning Research (2024).
+- Häusner P, Nieto Juscafresa A, and **Sjölund J**. [_Learning incomplete factorization preconditioners for GMRES._](https://proceedings.mlr.press/v265/hausner25a.html) Northern Lights Deep Learning Conference (2025).
 
 ### Accelerating optimization solvers
 
@@ -39,11 +39,11 @@ Beyond preconditioning, we are exploring how GNNs can accelerate optimization so
 
 We have also shown that distributed ADMM iterations have a one-to-one correspondence with GNN message passing. Exploiting this connection, we train a GNN to predict adaptive step sizes and communication weights for ADMM, improving convergence speed and solution quality compared to standard ADMM---without sacrificing convergence guarantees.
 
-- Schmidtobreick E J, Arnström D, Häusner P, and **Sjölund J**. [*Warm-starting active-set solvers using graph neural networks.*](https://arxiv.org/abs/2511.13174) Learning for Dynamics & Control (L4DC), 2026.
-- Doerks H, Häusner P, Hernández Escobar D, and **Sjölund J**. [*Learning to accelerate distributed ADMM using graph neural networks.*](https://arxiv.org/abs/2509.05288) Learning for Dynamics & Control (L4DC), 2026.
+- Schmidtobreick E J, Arnström D, Häusner P, and **Sjölund J**. [_Warm-starting active-set solvers using graph neural networks._](https://arxiv.org/abs/2511.13174) Learning for Dynamics & Control (L4DC), 2026.
+- Doerks H, Häusner P, Hernández Escobar D, and **Sjölund J**. [_Learning to accelerate distributed ADMM using graph neural networks._](https://arxiv.org/abs/2509.05288) Learning for Dynamics & Control (L4DC), 2026.
 
 ### Earlier work
 
 Our first work in this direction considered nonnegative matrix factorization, where we adopted the König graph representation and framed constrained low-rank factorization as a graph problem solved by interleaving a GNN with ADMM.
 
-- **Sjölund J** and Bånkestad M. [*Graph-based neural acceleration for nonnegative matrix factorization.*](https://arxiv.org/abs/2202.00264) arXiv (2022).
+- **Sjölund J** and Bånkestad M. [_Graph-based neural acceleration for nonnegative matrix factorization._](https://arxiv.org/abs/2202.00264) arXiv (2022).

@@ -10,7 +10,7 @@ course_id: convex-optimization
 
 ## Overview
 
-This PhD course (FTN0202, 7 hp) teaches students to recognise and formulate convex optimization problems, and then solve them using specialised software. The course follows chapters 1--8 of Boyd and Vandenberghe's *Convex Optimization* textbook.
+This PhD course (FTN0202, 7 hp) teaches students to recognise and formulate convex optimization problems, and then solve them using specialised software. The course follows chapters 1--8 of Boyd and Vandenberghe's _Convex Optimization_ textbook.
 
 ## Format
 

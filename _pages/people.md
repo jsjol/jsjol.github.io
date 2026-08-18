@@ -12,6 +12,7 @@ nav_order: 4
 {%- for group in groups -%}
 {%- assign members = site.data.people[group] -%}
 {%- if members and members.size > 0 %}
+
 <h2>{{ headings[forloop.index0] }}</h2>
 <ul class="people-grid">
 {%- for person in members %}

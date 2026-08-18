@@ -134,3 +134,20 @@ blockquote {
     }
   }
 }
+
+// The subtitle under a page heading, emitted by _layouts/page.liquid. This lived
+// in the theme's _blog.scss, which is otherwise entirely blog-specific.
+
+.post-description {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}

@@ -22,9 +22,9 @@ We also developed a parallel ADMM algorithm for the LP formulation used in Gamma
 
 ### Selected references
 
-- **Sjölund J**, Riad S, Hennix M, and Nordström H. [*A linear programming approach to inverse planning in Gamma Knife radiosurgery.*](https://doi.org/10.1002/mp.13440) Medical Physics (2019).
-- Mair S, Fu A, and **Sjölund J**. [*Efficient radiation treatment planning based on voxel importance.*](https://doi.org/10.1088/1361-6560/ad37c1) Physics in Medicine & Biology (2024).
-- da Silva J, Hernández Escobar D, Kjellsson Lindblom T, Nordström H, and **Sjölund J**. [*A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans.*](https://arxiv.org/abs/2509.08602) Medical Physics (2026).
+- **Sjölund J**, Riad S, Hennix M, and Nordström H. [_A linear programming approach to inverse planning in Gamma Knife radiosurgery._](https://doi.org/10.1002/mp.13440) Medical Physics (2019).
+- Mair S, Fu A, and **Sjölund J**. [_Efficient radiation treatment planning based on voxel importance._](https://doi.org/10.1088/1361-6560/ad68bd) Physics in Medicine & Biology (2024).
+- da Silva J, Hernández Escobar D, Kjellsson Lindblom T, Nordström H, and **Sjölund J**. [_A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans._](https://arxiv.org/abs/2509.08602) Medical Physics (2026).
 
 ## Diffusion MRI
 
@@ -35,12 +35,11 @@ Diffusion MRI is a useful probe of tissue microstructure, which can be used to d
 <p><small>Optimized gradient waveforms (left) enable tensor-valued diffusion encoding, revealing microstructural information in the brain (right).</small></p>
 </div>
 
-
 ### Selected references
 
-- **Sjölund J**, Szczepankiewicz F, Nilsson M, Topgaard D, Westin C-F, and Knutsson H. [*Constrained optimization of gradient waveforms for generalized diffusion encoding.*](https://doi.org/10.1016/j.jmr.2015.10.012) Journal of Magnetic Resonance (2015).
-- Szczepankiewicz F, **Sjölund J**, Ståhlberg F, Lätt J, and Nilsson M. [*Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems.*](https://doi.org/10.1371/journal.pone.0214238) PLoS One (2019).
+- **Sjölund J**, Szczepankiewicz F, Nilsson M, Topgaard D, Westin C-F, and Knutsson H. [_Constrained optimization of gradient waveforms for generalized diffusion encoding._](https://doi.org/10.1016/j.jmr.2015.10.012) Journal of Magnetic Resonance (2015).
+- Szczepankiewicz F, **Sjölund J**, Ståhlberg F, Lätt J, and Nilsson M. [_Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems._](https://doi.org/10.1371/journal.pone.0214238) PLoS One (2019).
 
 ## Breast cancer diagnostics (AID4BC)
 
-We participate in the [AID4BC](https://aid4bc.org/) consortium, a multimodal AI initiative focused on precision diagnostics and decision support for breast cancer. Our contribution, together with [Dave Zachariah](https://www.it.uu.se/katalog/davza513) at Uppsala University, centres on multimodal machine learning methods and causal foundations for internally and externally valid clinical decision-making. Together with the other partners---Karolinska Institutet, Lund University, Linköping University, and industry partners Sectra and Stratipath---we are building the world's largest multi-site and multi-modal breast cancer study (N > 10,000). 
+We participate in the [AID4BC](https://aid4bc.org/) consortium, a multimodal AI initiative focused on precision diagnostics and decision support for breast cancer. Our contribution, together with [Dave Zachariah](https://www.it.uu.se/katalog/davza513) at Uppsala University, centres on multimodal machine learning methods and causal foundations for internally and externally valid clinical decision-making. Together with the other partners---Karolinska Institutet, Lund University, Linköping University, and industry partners Sectra and Stratipath---we are building the world's largest multi-site and multi-modal breast cancer study (N > 10,000).

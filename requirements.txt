@@ -1,0 +1,4 @@
+# Used only by bin/update_scholar_citations.py in the Update citations workflow.
+# The site build itself needs no Python.
+pyyaml
+scholarly
