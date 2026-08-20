@@ -166,6 +166,67 @@ connect-src 'self' https:;
 See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
 -->
+<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/fod_noise-480.webp 480w,/assets/img/publication_preview/fod_noise-800.webp 800w,/assets/img/publication_preview/fod_noise-1400.webp 1400w," type="image/webp" sizes="200px"></source>
+<img src="/assets/img/publication_preview/fod_noise.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="fod_noise.png" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="luo2026efficient" class="col-sm-8">
+<!-- Title -->
+<div class="title">Efficient Image Restoration with State-Dependent Forward Diffusion</div>
+<!-- Author -->
+<div class="author">
+Ziwei
+Luo, Fredrik K
+Gustafsson, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 1 more author" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '1 more author' ? 'Thomas B Schön' : '1 more author';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">1 more author</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Transactions on Machine Learning Research</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://openreview.net/forum?id=Eq9k6Va3hY" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+<a href="https://github.com/Algolzw/FoD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+</div>
+<div class="badges">
+<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:Tiz5es2fbqcC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-4-4285F4?logo=googlescholar&amp;labelColor=beige" alt="4 Google Scholar citations" loading="lazy">
+</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>This paper proposes to perform image restoration through a state-dependent mean-reverting forward diffusion (FoD) process. In contrast to traditional diffusion-based approaches that rely on a coupled forward-backward diffusion scheme, FoD directly learns image restoration through a single forward diffusion process, yielding a simple yet efficient framework. The core of FoD is a state-dependent stochastic differential equation (SDE) that involves a mean-reverting term in both the drift and diffusion functions. This mean-reverting structure drives the low-quality data toward the clean endpoint with controlled stochastic variation, therefore simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling few-step sampling during inference. The proposed FoD model, despite its simplicity, achieves strong overall performance on various image restoration tasks compared to representative diffusion, diffusion bridge, and flow matching approaches. The code is available at https://github.com/Algolzw/FoD.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
 <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/distributed_admm-480.webp 480w,/assets/img/publication_preview/distributed_admm-800.webp 800w,/assets/img/publication_preview/distributed_admm-1400.webp 1400w," type="image/webp" sizes="200px"></source>
 <img src="/assets/img/publication_preview/distributed_admm.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="distributed_admm.png" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 </picture>
@@ -874,7 +935,7 @@ clearInterval(textAdder);
 <a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
 <div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:u9iWguZQMMsC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-39-4285F4?logo=googlescholar&amp;labelColor=beige" alt="39 Google Scholar citations" loading="lazy">
+<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:u9iWguZQMMsC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-40-4285F4?logo=googlescholar&amp;labelColor=beige" alt="40 Google Scholar citations" loading="lazy">
 </a>
 </div>
 <!-- Hidden abstract block -->
@@ -1326,66 +1387,6 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Diffusion models have shown impressive performance in capturing complex and multi-modal action distributions for game agents, but their slow inference speed prevents practical deployment in real-time game environments. While consistency models offer a promising approach for one-step generation, they often suffer from training instability and performance degradation when applied to policy learning. In this paper, we present CPQE (Consistency Policy with Q-Ensembles), which combines consistency models with Q-ensembles to address these challenges. CPQE leverages uncertainty estimation through Q-ensembles to provide more reliable value function approximations, resulting in better training stability and improved performance compared to classic double Q-network methods. Our extensive experiments across multiple game scenarios demonstrate that CPQE achieves inference speeds of up to 60 Hz - a …</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="row">
-<div class="col col-sm-2 abbr">
-<figure>
-<picture>
-<!-- Auto scaling with imagemagick -->
-<!--
-See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
--->
-<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/forward_only_diffusion-480.webp 480w,/assets/img/publication_preview/forward_only_diffusion-800.webp 800w,/assets/img/publication_preview/forward_only_diffusion-1400.webp 1400w," type="image/webp" sizes="200px"></source>
-<img src="/assets/img/publication_preview/forward_only_diffusion.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="forward_only_diffusion.png" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-</picture>
-</figure>
-</div>
-<!-- Entry bib key -->
-<div id="luo2025forward-only" class="col-sm-8">
-<!-- Title -->
-<div class="title">Forward-only diffusion probabilistic models</div>
-<!-- Author -->
-<div class="author">
-Ziwei
-Luo, Fredrik K
-Gustafsson, <em>Jens
-Sjölund</em>, and
-<span class="more-authors" title="click to view 1 more author" onclick="
-var element = $(this);
-element.attr('title', '');
-var more_authors_text = element.text() == '1 more author' ? 'Thomas B Schön' : '1 more author';
-var cursorPosition = 0;
-var textAdder = setInterval(function(){
-element.html(more_authors_text.substring(0, cursorPosition + 1));
-if (++cursorPosition == more_authors_text.length){
-clearInterval(textAdder);
-}
-}, '10');
-">1 more author</span>
-</div>
-<!-- Journal/Book title and date -->
-<div class="periodical">
-<em>arXiv preprint arXiv:2505.16733</em>,  2025
-</div>
-<div class="periodical">
-</div>
-<!-- Links/Buttons -->
-<div class="links">
-<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://arxiv.org/abs/2505.16733" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:Tiz5es2fbqcC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-4-4285F4?logo=googlescholar&amp;labelColor=beige" alt="4 Google Scholar citations" loading="lazy">
-</a>
-</div>
-<!-- Hidden abstract block -->
-<div class="abstract hidden">
-<p>This work presents a forward-only diffusion (FoD) approach for generative modelling. In contrast to traditional diffusion models that rely on a coupled forward-backward diffusion scheme, FoD directly learns data generation through a single forward diffusion process, yielding a simple yet efficient generative framework. The core of FoD is a state-dependent stochastic differential equation that involves a mean-reverting term in both the drift and diffusion functions. This mean-reversion property guarantees the convergence to clean data, naturally simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling a few-step non-Markov chain sampling during inference. The proposed FoD model, despite its simplicity, achieves state-of-the-art performance on various image restoration tasks. Its general applicability on image-conditioned generation is also demonstrated via qualitative results on image-to-image translation. Our code is available at https://github.com/Algolzw/FoD.</p>
 </div>
 </div>
 </div>
@@ -1904,7 +1905,7 @@ Sjölund</em>
 <a href="https://arxiv.org/abs/2305.16368" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
 <div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:BqipwSGYUEgC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-40-4285F4?logo=googlescholar&amp;labelColor=beige" alt="40 Google Scholar citations" loading="lazy">
+<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:BqipwSGYUEgC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-41-4285F4?logo=googlescholar&amp;labelColor=beige" alt="41 Google Scholar citations" loading="lazy">
 </a>
 </div>
 <!-- Hidden abstract block -->
@@ -2740,7 +2741,7 @@ clearInterval(textAdder);
 <a href="https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00058c" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
 <div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:isC4tDSrTZIC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-37-4285F4?logo=googlescholar&amp;labelColor=beige" alt="37 Google Scholar citations" loading="lazy">
+<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:isC4tDSrTZIC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-38-4285F4?logo=googlescholar&amp;labelColor=beige" alt="38 Google Scholar citations" loading="lazy">
 </a>
 </div>
 <!-- Hidden abstract block -->
@@ -3353,7 +3354,7 @@ clearInterval(textAdder);
 <a href="https://ieeexplore.ieee.org/abstract/document/9925717/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
 <div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:4JMBOYKVnBMC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-390-4285F4?logo=googlescholar&amp;labelColor=beige" alt="390 Google Scholar citations" loading="lazy">
+<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:4JMBOYKVnBMC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-392-4285F4?logo=googlescholar&amp;labelColor=beige" alt="392 Google Scholar citations" loading="lazy">
 </a>
 </div>
 <!-- Hidden abstract block -->

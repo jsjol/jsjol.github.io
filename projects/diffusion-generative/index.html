@@ -168,10 +168,15 @@ connect-src 'self' https:;
 <img src="/assets/img/publication_preview/daclip_teaser.jpg" alt="DA-CLIP for universal image restoration" width="100%">
 <p><small>DA-CLIP handles ten different image degradation types with a single model, using degradation-aware CLIP embeddings.</small></p>
 </div>
+<p>More recently, we have removed the coupled forward-backward pair altogether. Making the mean-reverting term state-dependent, so that it appears in both the drift and the diffusion function, lets a single forward process interpolate between the low-quality and the clean distribution. The resulting model, <em>state-dependent forward diffusion</em> (FoD), is analytically tractable and is trained with a stochastic flow matching objective, so sampling takes only a few steps. Setting the diffusion term to zero reduces FoD to deterministic flow matching, and the restored images then come out over-smoothed, so it is the stochasticity that recovers the high-frequency detail.</p>
+<div style="text-align: center; margin: 1.5em 0;">
+<img src="/assets/img/publication_preview/fod_noise.png" alt="FoD compared with its noise-free variant on deraining and inpainting" width="100%">
+<p><small>Removing the stochastic diffusion term (right) reduces FoD to deterministic flow matching, which over-smooths and leaves artifacts in heavily degraded regions.</small></p>
+</div>
 <ul>
 <li>Luo Z, Gustafsson F K, Zhao Z, <strong>Sjölund J</strong>, and Schön T B. <a href="https://proceedings.mlr.press/v202/luo23b.html" rel="external nofollow noopener" target="_blank"><em>Image restoration with mean-reverting stochastic differential equations.</em></a> ICML (2023).</li>
 <li>Luo Z, Gustafsson F K, Zhao Z, <strong>Sjölund J</strong>, and Schön T B. <a href="https://arxiv.org/abs/2310.01018" rel="external nofollow noopener" target="_blank"><em>Controlling vision-language models for universal image restoration.</em></a> ICLR (2024).</li>
-<li>Luo Z, Gustafsson F K, <strong>Sjölund J</strong>, and Schön T B. <a href="https://arxiv.org/abs/2505.16733" rel="external nofollow noopener" target="_blank"><em>Forward-only diffusion probabilistic models.</em></a> arXiv (2025).</li>
+<li>Luo Z, Gustafsson F K, <strong>Sjölund J</strong>, and Schön T B. <a href="https://openreview.net/forum?id=Eq9k6Va3hY" rel="external nofollow noopener" target="_blank"><em>Efficient image restoration with state-dependent forward diffusion.</em></a> Transactions on Machine Learning Research (2026).</li>
 </ul>
 <h2 id="training-free-conditional-inference">Training-free conditional inference</h2>
 <p>A key challenge for incorporating pretrained generative models into Bayesian experimental design loops is performing conditional inference without costly retraining. We are developing methods for training-free guidance of flow-based and diffusion models, enabling conditional sampling from pretrained models by leveraging the source-space structure.</p>
