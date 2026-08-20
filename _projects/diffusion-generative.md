@@ -33,9 +33,16 @@ In a follow-up, we showed how vision-language models can be steered for universa
 <p><small>DA-CLIP handles ten different image degradation types with a single model, using degradation-aware CLIP embeddings.</small></p>
 </div>
 
+More recently, we have removed the coupled forward-backward pair altogether. Making the mean-reverting term state-dependent, so that it appears in both the drift and the diffusion function, lets a single forward process interpolate between the low-quality and the clean distribution. The resulting model, _state-dependent forward diffusion_ (FoD), is analytically tractable and is trained with a stochastic flow matching objective, so sampling takes only a few steps. Setting the diffusion term to zero reduces FoD to deterministic flow matching, and the restored images then come out over-smoothed, so it is the stochasticity that recovers the high-frequency detail.
+
+<div style="text-align: center; margin: 1.5em 0;">
+<img src="/assets/img/publication_preview/fod_noise.png" alt="FoD compared with its noise-free variant on deraining and inpainting" width="100%"/>
+<p><small>Removing the stochastic diffusion term (right) reduces FoD to deterministic flow matching, which over-smooths and leaves artifacts in heavily degraded regions.</small></p>
+</div>
+
 - Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Image restoration with mean-reverting stochastic differential equations._](https://proceedings.mlr.press/v202/luo23b.html) ICML (2023).
 - Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Controlling vision-language models for universal image restoration._](https://arxiv.org/abs/2310.01018) ICLR (2024).
-- Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [_Forward-only diffusion probabilistic models._](https://arxiv.org/abs/2505.16733) arXiv (2025).
+- Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [_Efficient image restoration with state-dependent forward diffusion._](https://openreview.net/forum?id=Eq9k6Va3hY) Transactions on Machine Learning Research (2026).
 
 ## Training-free conditional inference
 
