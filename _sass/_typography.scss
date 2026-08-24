@@ -38,6 +38,24 @@ strong {
   color: var(--global-text-color);
 }
 
+/*
+  The rule above is element-level, so it also matches an em/strong/span sitting
+  inside a link and wins on source order -- an italic or bold link then renders
+  in the body text color and stops looking like a link at all. Every paper title
+  on the project pages is an italic link, so let those inherit instead. The
+  navbar brand sets its own color on the anchor, so it inherits that unchanged.
+*/
+a {
+  em,
+  div,
+  li,
+  p,
+  span,
+  strong {
+    color: inherit;
+  }
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
