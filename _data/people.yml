@@ -12,11 +12,11 @@ phd_students:
     image: laura.JPG
     description: "Accelerating decision making in drug discovery with trustworthy foundation models"
   - name: "Pritish Ranjan Joshi"
-    website: "https://drtsinx98.github.io/"
+    website: "https://www.pritish.eu/"
     image: pritish.jpg
     description: "Simulation-based inference for metal plating dynamics"
   - name: "Aleix Nieto Juscafresa"
-    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N22-2821"
+    website: "https://aleixnieto.github.io/"
     image: aleix_square.jpg
     description: "Multimodal machine learning for precision medicine in breast cancer"
   - name: "Tinh Thi Cao"
@@ -36,7 +36,7 @@ co_supervised:
     image: Ziwei.png
     description: "Diffusion models for image restoration"
   - name: "Viktor Vanoppen"
-    website: "https://www.katalog.uu.se/empinfo/?id=N19-461"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N19-461"
     image: Viktor.png
     description: "Fundamental studies of metal plating processes for energy storage"
   - name: "Sanna Jarl"
