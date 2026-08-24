@@ -2,7 +2,7 @@
 layout: course
 title: Statistical Machine Learning
 description: Introductory course on supervised learning — classification and regression with real data — and its computational and statistical foundations.
-instructor: Jens Sjölund, Sara Hamis, Thomas B. Schön, Antônio H. Ribeiro, and others
+role: Course responsible
 year: 2025
 years: "2022–2025"
 course_id: statistical-machine-learning

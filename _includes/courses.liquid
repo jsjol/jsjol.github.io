@@ -2,13 +2,18 @@
   <div class="courses">
     {% assign sorted_courses = site.teachings | sort: 'year' | reverse | group_by: 'year' %}
     {% for year_group in sorted_courses %}
-      <h2 class="year">{{ year_group.name }}</h2>
       {% assign year_courses = year_group.items | sort: 'title' %}
       {% for course in year_courses %}
         <div class="course-item">
           <h3 class="course-title">
             <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
           </h3>
+          {% if course.years %}
+            <p class="course-meta">
+              {{ course.years -}}
+              {%- if course.role %} &middot; {{ course.role }}{% endif %}
+            </p>
+          {% endif %}
           {% if course.description %}
             <div class="course-description">
               {{ course.description | markdownify }}

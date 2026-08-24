@@ -2,9 +2,9 @@
 layout: course
 title: Convex Optimization
 description: Recognising, formulating, and solving convex optimization problems using specialised software.
-instructor: Daniel Hernández Escobar and Jens Sjölund
+role: Course responsible (2022)
 year: 2026
-years: "2021, 2026"
+years: "2021, 2022, 2026"
 course_id: convex-optimization
 ---
 

@@ -2,9 +2,9 @@
 layout: course
 title: Advanced Probabilistic Machine Learning
 description: Advanced course on modern probabilistic and Bayesian approaches to machine learning.
-instructor: Jens Sjölund, Sara Hamis, Thomas B. Schön, Antônio H. Ribeiro, and others
-year: 2025
-years: "2021–2025"
+role: Course responsible (2026)
+year: 2026
+years: "2021–2026"
 course_id: advanced-probabilistic-ml
 ---
 
