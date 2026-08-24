@@ -2,7 +2,7 @@
 layout: course
 title: Advanced Probabilistic Machine Learning
 description: Advanced course on modern probabilistic and Bayesian approaches to machine learning.
-role: Course responsible (2026)
+role: Lecturer, course responsible from 2025
 year: 2026
 years: "2021–2026"
 course_id: advanced-probabilistic-ml

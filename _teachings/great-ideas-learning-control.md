@@ -2,6 +2,7 @@
 layout: course
 title: Great Ideas in Learning and Control
 description: Seminar-style PhD course covering foundational topics at the intersection of learning and control theory.
+role: One lecture
 year: 2024
 years: "2023–2024"
 course_id: great-ideas-learning-control

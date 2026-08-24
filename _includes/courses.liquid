@@ -8,10 +8,11 @@
           <h3 class="course-title">
             <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
           </h3>
-          {% if course.years %}
+          {% if course.years or course.role %}
             <p class="course-meta">
               {{ course.years -}}
-              {%- if course.role %} &middot; {{ course.role }}{% endif %}
+              {%- if course.years and course.role %} &middot; {% endif -%}
+              {{- course.role }}
             </p>
           {% endif %}
           {% if course.description %}

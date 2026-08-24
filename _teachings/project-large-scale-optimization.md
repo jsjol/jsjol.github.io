@@ -2,6 +2,7 @@
 layout: course
 title: Project in Large-scale Optimization
 description: Independent project accompanying the large-scale optimization course.
+role: Co-creator and co-teacher
 year: 2023
 years: "2023"
 course_id: project-large-scale-optimization
