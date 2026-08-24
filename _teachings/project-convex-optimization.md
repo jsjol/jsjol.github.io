@@ -2,7 +2,7 @@
 layout: course
 title: Project in Convex Optimization
 description: Independent project accompanying the convex optimization course.
-role: Course responsible 2022, co-teacher 2026
+role: Course responsible 2022, co-taught with Daniel Hernández Escobar in 2026
 year: 2026
 course_id: project-convex-optimization
 ---

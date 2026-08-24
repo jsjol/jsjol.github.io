@@ -2,7 +2,7 @@
 layout: course
 title: Convex Optimization
 description: Recognising, formulating, and solving convex optimization problems using specialised software.
-role: Course creator and responsible 2021, co-teacher 2026
+role: Course creator and responsible 2021, co-taught with Daniel Hernández Escobar in 2026
 year: 2026
 course_id: convex-optimization
 ---

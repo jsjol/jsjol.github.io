@@ -2,7 +2,7 @@
 layout: course
 title: Large-scale Optimization
 description: Algorithms for solving large-scale, continuous, optimization problems — from fundamentals to advanced techniques.
-role: Co-creator and co-teacher
+role: Co-created and co-taught with Sebastian Mair
 year: 2023
 years: "2023"
 course_id: large-scale-optimization
