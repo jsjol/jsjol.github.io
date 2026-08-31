@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-20'
+  last_updated: '2026-08-31'
 papers:
   AlF2g-YAAAAJ:08ZZubdj9fEC:
     citations: 0
@@ -30,7 +30,7 @@ papers:
     title: Generation of realizable radiotherapy plans
     year: '2022'
   AlF2g-YAAAAJ:4JMBOYKVnBMC:
-    citations: 392
+    citations: 395
     title: 'Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning'
     year: '2022'
   AlF2g-YAAAAJ:4OULZ7Gr8RgC:
@@ -66,7 +66,7 @@ papers:
     title: A computational framework for efficient porosity analysis and process parameter optimization in powder bed fusion with laser beam
     year: '2026'
   AlF2g-YAAAAJ:BqipwSGYUEgC:
-    citations: 41
+    citations: 42
     title: 'Neural incomplete factorization: learning preconditioners for the conjugate gradient method'
     year: '2024'
   AlF2g-YAAAAJ:BrmTIyaxlBUC:
@@ -118,11 +118,11 @@ papers:
     title: "Probabilistic Zeeman-Doppler imaging of stellar magnetic fields-I. Analysis of \u03C4 Scorpii in the weak-field limit"
     year: Unknown Year
   AlF2g-YAAAAJ:M3NEmzRMIkIC:
-    citations: 440
+    citations: 444
     title: Image restoration with mean-reverting stochastic differential equations
     year: '2023'
   AlF2g-YAAAAJ:MXK_kJrjxJIC:
-    citations: 31
+    citations: 32
     title: System and method for automatic treatment planning
     year: '2018'
   AlF2g-YAAAAJ:NMxIlDl6LWMC:
@@ -154,7 +154,7 @@ papers:
     title: 'NUQ: A noise metric for diffusion MRI via uncertainty discrepancy quantification'
     year: '2022'
   AlF2g-YAAAAJ:RGFaLdJalmkC:
-    citations: 42
+    citations: 43
     title: Ntire 2023 hr nonhomogeneous dehazing challenge report
     year: '2023'
   AlF2g-YAAAAJ:RYcK_YlVTxYC:
@@ -162,7 +162,7 @@ papers:
     title: Treatment planning
     year: '2023'
   AlF2g-YAAAAJ:Se3iqnhoufwC:
-    citations: 9
+    citations: 10
     title: Convex inverse planning method
     year: '2020'
   AlF2g-YAAAAJ:TFP_iSt0sucC:
@@ -175,8 +175,8 @@ papers:
     year: '2022'
   AlF2g-YAAAAJ:Tiz5es2fbqcC:
     citations: 4
-    title: Forward-only diffusion probabilistic models
-    year: '2025'
+    title: Efficient Image Restoration with State-Dependent Forward Diffusion
+    year: '2026'
   AlF2g-YAAAAJ:Tyk-4Ss8FVUC:
     citations: 12
     title: Gaussian process regression can turn non-uniform and undersampled diffusion MRI data into diffusion spectrum imaging
@@ -226,7 +226,7 @@ papers:
     title: Learning incomplete factorization preconditioners for GMRES
     year: '2025'
   AlF2g-YAAAAJ:a0OBvERweLwC:
-    citations: 386
+    citations: 391
     title: Controlling Vision-Language Models for Multi-Task Image Restoration
     year: '2024'
   AlF2g-YAAAAJ:abG-DnoFyZgC:
@@ -258,11 +258,11 @@ papers:
     title: Efficient Radiation Treatment Planning based on Voxel Importance
     year: '2024'
   AlF2g-YAAAAJ:d1gkVwhDpl0C:
-    citations: 210
+    citations: 211
     title: Generating patient specific pseudo-CT of the head from MR using atlas-based regression
     year: '2015'
   AlF2g-YAAAAJ:dfsIfKJdRG4C:
-    citations: 34
+    citations: 36
     title: Photo-realistic image restoration in the wild with controlled vision-language models
     year: '2024'
   AlF2g-YAAAAJ:dhFuZR0502QC:
@@ -302,7 +302,7 @@ papers:
     title: Trials and Tribulations of High-Dimensional Electrolyte Design for Aqueous Zinc Batteries Using Bayesian Optimization
     year: '2026'
   AlF2g-YAAAAJ:hqOjcs7Dif8C:
-    citations: 72
+    citations: 73
     title: A linear programming approach to inverse planning in Gamma Knife radiosurgery
     year: '2019'
   AlF2g-YAAAAJ:iH-uZ7U-co4C:
@@ -330,7 +330,7 @@ papers:
     title: Variational Elliptical Processes
     year: '2023'
   AlF2g-YAAAAJ:mB3voiENLucC:
-    citations: 1
+    citations: 2
     title: Image Registration in Treatment Planning
     year: '2021'
   AlF2g-YAAAAJ:mVmsd5A6BfQC:
@@ -344,7 +344,7 @@ papers:
   AlF2g-YAAAAJ:nb7KW1ujOQ8C:
     citations: 0
     title: Continuum radiotherapy treatment planning
-    year: '2024'
+    year: '2026'
   AlF2g-YAAAAJ:ns9cj8rnVeAC:
     citations: 28
     title: Lens-to-lens bokeh effect transformation. NTIRE 2023 challenge report
@@ -357,10 +357,6 @@ papers:
     citations: 0
     title: Parallel generation of Pareto optimal radiotherapy plans
     year: '2023'
-  AlF2g-YAAAAJ:q3oQSFYPqjQC:
-    citations: 0
-    title: Exploring Modularity of LLM-Based Agentic Systems for Drug Discovery
-    year: '2025'
   AlF2g-YAAAAJ:qUcmZB5y_30C:
     citations: 12
     title: Parameter search in radiotherapy treatment plan optimization
@@ -398,7 +394,7 @@ papers:
     title: Dose planning from MRI using machine learning for automatic segmentation of skull and air
     year: '2012'
   AlF2g-YAAAAJ:u9iWguZQMMsC:
-    citations: 40
+    citations: 41
     title: Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization
     year: '2025'
   AlF2g-YAAAAJ:uWQEDVKXjbEC:
@@ -406,7 +402,7 @@ papers:
     title: Minimal positive Markov realizations
     year: '2025'
   AlF2g-YAAAAJ:u_35RYKgDlwC:
-    citations: 44
+    citations: 45
     title: Entropy-regularized diffusion policy with q-ensembles for offline reinforcement learning
     year: '2024'
   AlF2g-YAAAAJ:ufrVoPGSRksC:
