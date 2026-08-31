@@ -175,11 +175,12 @@ scholar:
 
 bib_search: true
 
-# Google Scholar citation count per publication, read from _data/citations.yml
-# (refreshed by the Update citations workflow). Renders only for entries that
-# carry a google_scholar_id, which bin/sync_publications.py maintains.
-enable_publication_badges:
-  google_scholar: true
+# No citation counts are rendered. Google Scholar refuses CI requests (HTTP 403
+# from any runner), so a count on the page is either stale or needs a manual
+# refresh three times a week, and OpenAlex reports less than half of Scholar's
+# total. _data/citations.yml is kept as the Scholar publication list that
+# bin/sync_publications.py reads to detect new papers -- it does not feed the
+# site, so it going stale costs nothing.
 
 # BibTeX keys used internally by the templates, hidden from the rendered entry.
 filtered_bibtex_keywords:

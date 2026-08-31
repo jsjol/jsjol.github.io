@@ -2,9 +2,10 @@
 {% include metadata.liquid %}
 
 <!--
-  Content Security Policy. script-src and style-src name the exact third-party
-  hosts the site loads from; everything else stays permissive because the
-  Google Scholar citation badge is an image from shields.io.
+  Content Security Policy, naming the exact third-party hosts the site loads
+  from. img-src was permissive only for the shields.io citation badge, which the
+  site no longer renders, so no external image remains and it is now closed to
+  data: and same origin. Add a host here if a page ever needs a remote image.
   'unsafe-inline' is required by the inline theme and back-to-top initializers.
 -->
 <meta
@@ -14,7 +15,7 @@
     script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
     style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
     font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net;
-    img-src 'self' data: https:;
+    img-src 'self' data:;
     media-src 'self';
     frame-src https:;
     connect-src 'self' https:;
