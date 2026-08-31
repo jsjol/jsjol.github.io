@@ -114,15 +114,20 @@ wants an `abbr`, a `preview` and possibly `selected` added by hand.
 `bin/update_scholar_citations.py` takes about ten seconds here:
 
 ```bash
-python bin/update_scholar_citations.py    # needs `scholarly`, see requirements.txt
+conda run -n homepage python bin/update_scholar_citations.py
 ```
+
+The `homepage` conda env is needed for PyYAML; the interpreter on `PATH` does not
+have it. `scholarly` lives there too, though the primary path never uses it.
 
 It reads the profile page directly — one request, standard library only, about
 three seconds — and falls back to `scholarly` only if that fails. The old
 scholarly-only path issued several requests per run, and Google answers
 datacenter addresses with a CAPTCHA, which is why the scheduled workflow produced
-nothing for seven weeks while reporting success. The direct path stands a better
-chance from CI but is not guaranteed either, so the workflow warns on each
+nothing for seven weeks while reporting success. The direct path was hoped to fare
+better from CI. It does not: the runner gets HTTP 403 on the profile page and the
+last successful refresh from Actions was 2026-06-29, so in practice every refresh
+happens locally. The workflow warns on each
 failure and turns red once `_data/citations.yml` is more than ten days old. When
 that happens, run the command above and push.
 

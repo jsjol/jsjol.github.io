@@ -37,10 +37,11 @@ jobs:
 
       - name: Refresh Google Scholar citation counts
         run: |
-          # Scholar serves a CAPTCHA to datacenter addresses, so this often
-          # cannot succeed from a GitHub runner. One failure must not fail the
-          # workflow, but a run of failures must be visible -- see the staleness
-          # check below. Locally the same script finishes in about ten seconds.
+          # Scholar refuses datacenter addresses -- the runner gets HTTP 403 on
+          # the profile page, where the same request from a home connection gets
+          # 200. It has not succeeded from CI since 2026-06-29. One failure must
+          # not fail the workflow, but a run of them must be visible -- see the
+          # staleness check below. Locally the script takes a few seconds.
           if timeout 300 python bin/update_scholar_citations.py; then
             echo "Citation refresh succeeded." >> "$GITHUB_STEP_SUMMARY"
           else
@@ -63,14 +64,14 @@ jobs:
 
       - name: Fail if the citation counts have gone stale
         run: |
-          # The previous version of this workflow swallowed the CAPTCHA failure
+          # The previous version of this workflow swallowed the Scholar failure
           # and reported success, so the counts sat seven weeks out of date
           # without anyone noticing. Turn a sustained failure into a red run.
           LAST=$(python -c "import yaml; print(yaml.safe_load(open('_data/citations.yml'))['metadata']['last_updated'])")
           AGE=$(( ( $(date +%s) - $(date -d "$LAST" +%s) ) / 86400 ))
           echo "Citation counts last refreshed $LAST ($AGE days ago)." >> "$GITHUB_STEP_SUMMARY"
           if [ "$AGE" -gt 10 ]; then
-            echo "::error::Citation counts are $AGE days old. Google Scholar is refusing CI requests; run 'python bin/update_scholar_citations.py' locally (about ten seconds) and push."
+            echo "::error::Citation counts are $AGE days old. Google Scholar answers the runner with HTTP 403; run 'conda run -n homepage python bin/update_scholar_citations.py' locally (a few seconds) and push."
             exit 1
           fi
 
