@@ -45,9 +45,10 @@
     }
   </script>
 <!--
-Content Security Policy. script-src and style-src name the exact third-party
-hosts the site loads from; everything else stays permissive because the
-Google Scholar citation badge is an image from shields.io.
+Content Security Policy, naming the exact third-party hosts the site loads
+from. img-src was permissive only for the shields.io citation badge, which the
+site no longer renders, so no external image remains and it is now closed to
+data: and same origin. Add a host here if a page ever needs a remote image.
 'unsafe-inline' is required by the inline theme and back-to-top initializers.
 -->
 <meta http-equiv="Content-Security-Policy" content="
@@ -55,7 +56,7 @@ default-src 'self';
 script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
 style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
 font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net;
-img-src 'self' data: https:;
+img-src 'self' data:;
 media-src 'self';
 frame-src https:;
 connect-src 'self' https:;
@@ -71,7 +72,7 @@ connect-src 'self' https:;
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 <!-- Site styles -->
-<link rel="stylesheet" href="/assets/css/main.css?v=ee957ac680ea229aaaf0ab54f4433d0a">
+<link rel="stylesheet" href="/assets/css/main.css?v=fbbcb77617696e84fcffd483a520d9f9">
 <link rel="canonical" href="https://jsjol.github.io/">
 <!-- Dark mode. Loaded synchronously so the theme is set before first paint. -->
 <script src="/assets/js/theme.js?v=e026ceffaf9ac823d345558107777112"></script>
@@ -256,10 +257,6 @@ clearInterval(textAdder);
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://arxiv.org/abs/2301.11699" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:M3NEmzRMIkIC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-440-4285F4?logo=googlescholar&amp;labelColor=beige" alt="440 Google Scholar citations" loading="lazy">
-</a>
-</div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>This paper presents a stochastic differential equation (SDE) approach for general-purpose image restoration. The key construction consists in a mean-reverting SDE that transforms a high-quality image into a degraded counterpart as a mean state with fixed Gaussian noise. Then, by simulating the corresponding reverse-time SDE, we are able to restore the origin of the low-quality image without relying on any task-specific prior knowledge. Crucially, the proposed mean-reverting SDE has a closed-form solution, allowing us to compute the ground truth time-dependent score and learn it with a neural network. Moreover, we propose a maximum likelihood objective to learn an optimal reverse trajectory that stabilizes the training and improves the restoration results. The experiments show that our proposed method achieves highly competitive performance in quantitative comparisons on image deraining, deblurring, and denoising, setting a new state-of-the-art on two deraining datasets. Finally, the general applicability of our approach is further demonstrated via qualitative results on image super-resolution, inpainting, and dehazing. Code is available at https://github.com/Algolzw/image-restoration-sde.</p>
@@ -303,10 +300,6 @@ Sjölund</em>
 <div class="links">
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://arxiv.org/abs/2305.16368" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:BqipwSGYUEgC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-41-4285F4?logo=googlescholar&amp;labelColor=beige" alt="41 Google Scholar citations" loading="lazy">
-</a>
 </div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
@@ -364,10 +357,6 @@ clearInterval(textAdder);
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b319c0e8092ba726cb22e718d7d9a95e-Abstract-Conference.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:u_35RYKgDlwC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-44-4285F4?logo=googlescholar&amp;labelColor=beige" alt="44 Google Scholar citations" loading="lazy">
-</a>
-</div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a novel entropy-regularized diffusion policy and takes into account the confidence of the Q-value prediction with Q-ensembles. At the core of our diffusion policy is a mean-reverting stochastic differential equation (SDE) that transfers the action distribution into a standard Gaussian form and then samples actions conditioned on the environment state with a corresponding reverse-time process. We show that the entropy of such a policy is tractable and that can be used to increase the exploration of OOD samples in offline RL training. Moreover, we propose using the lower confidence bound of Q-ensembles for pessimistic Q-value function estimation. The proposed approach demonstrates state-of-the-art performance across a range of tasks in the D4RL benchmarks, significantly improving upon existing diffusion-based policies. The code is available at https://github. com/ruoqizzz/entropy-offlineRL.</p>
@@ -423,10 +412,6 @@ clearInterval(textAdder);
 <div class="links">
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:u9iWguZQMMsC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-40-4285F4?logo=googlescholar&amp;labelColor=beige" alt="40 Google Scholar citations" loading="lazy">
-</a>
 </div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
@@ -484,10 +469,6 @@ clearInterval(textAdder);
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://www.nature.com/articles/s41524-025-01735-x" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 </div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:K3LRdlH-MEoC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-9-4285F4?logo=googlescholar&amp;labelColor=beige" alt="9 Google Scholar citations" loading="lazy">
-</a>
-</div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Metal anodes provide the highest energy density in batteries. However, they still suffer from electrode/electrolyte interface side reactions and dendrite growth, especially under fast-charging conditions. In this paper, we consider a phase-field model of electrodeposition in metal-anode batteries and provide a scalable, versatile framework for optimizing its chemical parameters. Our approach is based on Bayesian optimization and explores the parameter space with a high sample efficiency and a low computation complexity. We use this framework to find the optimal cell for suppressing dendrite growth and accelerating charging speed under constant voltage. We identify interfacial mobility as a key parameter, which should be maximized to inhibit dendrites without compromising the charging speed. The results are verified using extended simulations of dendrite evolution in charging half cells with lithium-metal anodes.</p>
@@ -544,10 +525,6 @@ clearInterval(textAdder);
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
 <a href="https://openreview.net/forum?id=Eq9k6Va3hY" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
 <a href="https://github.com/Algolzw/FoD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-</div>
-<div class="badges">
-<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=AlF2g-YAAAAJ&amp;citation_for_view=AlF2g-YAAAAJ:Tiz5es2fbqcC" aria-label="Google Scholar citations" role="button" rel="external nofollow noopener" target="_blank"><img src="https://img.shields.io/badge/citations-4-4285F4?logo=googlescholar&amp;labelColor=beige" alt="4 Google Scholar citations" loading="lazy">
-</a>
 </div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
