@@ -58,7 +58,7 @@ co_supervised:
   - name: "Hampus Arnestrand"
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N24-2518"
     image: hampus.jpg
-    description: "Bayesian experimental design for electrode microstructures in green hydrogen production"
+    description: "Machine learning for analysis and optimization of microstructures for green hydrogen production"
 
 alumni_phd:
   - name: "Jackie Yik"
