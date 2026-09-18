@@ -29,6 +29,10 @@ postdocs:
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N23-2641"
     image: daniel.jpg
     description: "Vector optimization for radiotherapy planning"
+  - name: "Yeongwoo Kim"
+    website: "https://www.uu.se/en/contact-and-organisation/staff?query=N26-2195"
+    image: yeongwoo.png
+    description: "Switching dynamical systems for interpretable models of battery degradation"
 
 co_supervised:
   - name: "Ziwei Luo"
