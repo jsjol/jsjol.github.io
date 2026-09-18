@@ -32,7 +32,7 @@ postdocs:
   - name: "Yeongwoo Kim"
     website: "https://www.uu.se/en/contact-and-organisation/staff?query=N26-2195"
     image: yeongwoo.png
-    description: "Switching dynamical systems for interpretable models of battery degradation"
+    description: "Change detection in battery time series"
 
 co_supervised:
   - name: "Ziwei Luo"
