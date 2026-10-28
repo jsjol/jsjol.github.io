@@ -239,7 +239,6 @@
   journal  = {Advances in Neural Information Processing Systems (NeurIPS)},
   abstract = {Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a novel entropy-regularized diffusion policy and takes into account the confidence of the Q-value prediction with Q-ensembles. At the core of our diffusion policy is a mean-reverting stochastic differential equation (SDE) that transfers the action distribution into a standard Gaussian form and then samples actions conditioned on the environment state with a corresponding reverse-time process. We show that the entropy of such a policy is tractable and that can be used to increase the exploration of OOD samples in offline RL training. Moreover, we propose using the lower confidence bound of Q-ensembles for pessimistic Q-value function estimation. The proposed approach demonstrates state-of-the-art performance across a range of tasks in the D4RL benchmarks, significantly improving upon existing diffusion-based policies. The code is available at https://github. com/ruoqizzz/entropy-offlineRL.},
   url      = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/b319c0e8092ba726cb22e718d7d9a95e-Abstract-Conference.html},
-  selected = {true},
   preview  = {entropy-regularized.png},
   google_scholar_id = {u_35RYKgDlwC}
 }
@@ -769,12 +768,13 @@
 @article{kalaivanan2025ess-flow_,
   title         = {{ESS-Flow: Training-free guidance of flow-based models as inference in source space}},
   author        = {Adhithyan Kalaivanan and Zheng Zhao and Jens Sjölund and Fredrik Lindsten},
-  year          = {2025},
-  journal       = {arXiv preprint arXiv:2510.05849},
+  year          = {2026},
+  journal       = {Advances in Neural Information Processing Systems (NeurIPS)},
   abstract      = {Guiding pretrained flow-based generative models for conditional generation or to produce samples with desired target properties enables solving diverse tasks without retraining on paired data. We present ESS-Flow, a gradient-free method that leverages the typically Gaussian prior of the source distribution in flow-based models to perform Bayesian inference directly in the source space using Elliptical Slice Sampling. ESS-Flow only requires forward passes through the generative model and observation process, no gradient or Jacobian computations, and is applicable even when gradients are unreliable or unavailable, such as with simulation-based observations or quantization in the generation or observation process. We demonstrate its effectiveness on designing materials with desired target properties and predicting protein structures from sparse inter-residue distance measurements.},
   url           = {https://arxiv.org/abs/2510.05849},
   eprint        = {2510.05849},
   archiveprefix = {arXiv},
+  selected      = {true},
   preview       = {essflow.png},
   google_scholar_id = {vRqMK49ujn8C}
 }
