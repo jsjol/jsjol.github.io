@@ -72,7 +72,7 @@ connect-src 'self' https:;
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 <!-- Site styles -->
-<link rel="stylesheet" href="/assets/css/main.css?v=fbbcb77617696e84fcffd483a520d9f9">
+<link rel="stylesheet" href="/assets/css/main.css?v=870be08e016f4a987a800abcf54de439">
 <link rel="canonical" href="https://jsjol.github.io/publications/">
 <!-- Dark mode. Loaded synchronously so the theme is set before first paint. -->
 <script src="/assets/js/theme.js?v=e026ceffaf9ac823d345558107777112"></script>
@@ -266,6 +266,62 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Distributed optimization is fundamental in large-scale machine learning and control applications. Among existing methods, the Alternating Direction Method of Multipliers (ADMM) has gained popularity due to its strong convergence guarantees and suitability for decentralized computation. However, ADMM often suffers from slow convergence and sensitivity to hyperparameter choices. In this work, we show that distributed ADMM iterations can be naturally represented within the message-passing framework of graph neural networks (GNNs). Building on this connection, we propose to learn adaptive step sizes and communication weights by a graph neural network that predicts the hyperparameters based on the iterates. By unrolling ADMM for a fixed number of iterations, we train the network parameters end-to-end to minimize the final iterates error for a given problem class, while preserving the algorithm’s convergence properties. Numerical experiments demonstrate that our learned variant consistently improves convergence speed and solution quality compared to standard ADMM. The code is available at https://github.com/paulhausner/learning-distributed-admm.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/essflow-480.webp 480w,/assets/img/publication_preview/essflow-800.webp 800w,/assets/img/publication_preview/essflow-1400.webp 1400w," type="image/webp" sizes="200px"></source>
+<img src="/assets/img/publication_preview/essflow.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="essflow.png" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="kalaivanan2025ess-flow_" class="col-sm-8">
+<!-- Title -->
+<div class="title">ESS-Flow: Training-free guidance of flow-based models as inference in source space</div>
+<!-- Author -->
+<div class="author">
+Adhithyan
+Kalaivanan, Zheng
+Zhao, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 1 more author" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '1 more author' ? 'Fredrik Lindsten' : '1 more author';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">1 more author</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Advances in Neural Information Processing Systems (NeurIPS)</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2510.05849" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Guiding pretrained flow-based generative models for conditional generation or to produce samples with desired target properties enables solving diverse tasks without retraining on paired data. We present ESS-Flow, a gradient-free method that leverages the typically Gaussian prior of the source distribution in flow-based models to perform Bayesian inference directly in the source space using Elliptical Slice Sampling. ESS-Flow only requires forward passes through the generative model and observation process, no gradient or Jacobian computations, and is applicable even when gradients are unreliable or unavailable, such as with simulation-based observations or quantization in the generation or observation process. We demonstrate its effectiveness on designing materials with desired target properties and predicting protein structures from sparse inter-residue distance measurements.</p>
 </div>
 </div>
 </div>
@@ -704,6 +760,38 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Multi-agent reinforcement learning has shown promise in learning cooperative behaviors in team-based environments. However, such methods often demand extensive training time. For instance, the state-of-the-art method TiZero takes 40 days to train high-quality policies for a football environment. In this paper, we hypothesize that better exploration mechanisms can improve the sample efficiency of multi-agent methods. We propose two different approaches for better exploration in TiZero: a self-supervised intrinsic reward and a random network distillation bonus. Additionally, we introduce architectural modifications to the original algorithm to enhance TiZero’s computational efficiency. We evaluate the sample efficiency of these approaches through extensive experiments. Our results show that random network distillation improves training sample efficiency by 18.8% compared to the original TiZero. Furthermore, we evaluate the qualitative behavior of the models produced by both variants against a heuristic AI, with the self-supervised reward encouraging possession and random network distillation leading to a more offensive performance. Our results highlights the applicability of our random network distillation variant in practical settings. Lastly, due to the nature of the proposed method, we acknowledge its use beyond football simulation, especially in environments with strong multi-agent and strategic aspects.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="sjolund2024continuum" class="col-sm-8">
+<!-- Title -->
+<div class="title">Continuum radiotherapy treatment planning</div>
+<!-- Author -->
+<div class="author">
+Jens Olof
+Sjolund  and Carl Axel Håkan
+Nordström
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em></em> 2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://patents.google.com/patent/US12623093B2/en" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Systems and methods are disclosed for dynamic radiotherapy treatment planning in a continuous space of computation. Example operations for generating treatment plan data for a radiotherapy treatment include: obtaining data for a radiotherapy treatment of a human subject; generating a set of radiation controls from the data for the radiotherapy treatment, with at least one of the radiation controls being based on a mapping from a continuous (eg, infinite dimensional) computational space; converting the generated set of radiation controls to a set of treatment delivery parameters, the set of treatment delivery parameters corresponding to capabilities of a radiotherapy treatment machine; and producing treatment plan data for the radiotherapy treatment based on the set of treatment delivery parameters.</p>
 </div>
 </div>
 </div>
@@ -1300,62 +1388,6 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Diffusion models have shown impressive performance in capturing complex and multi-modal action distributions for game agents, but their slow inference speed prevents practical deployment in real-time game environments. While consistency models offer a promising approach for one-step generation, they often suffer from training instability and performance degradation when applied to policy learning. In this paper, we present CPQE (Consistency Policy with Q-Ensembles), which combines consistency models with Q-ensembles to address these challenges. CPQE leverages uncertainty estimation through Q-ensembles to provide more reliable value function approximations, resulting in better training stability and improved performance compared to classic double Q-network methods. Our extensive experiments across multiple game scenarios demonstrate that CPQE achieves inference speeds of up to 60 Hz - a …</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="row">
-<div class="col col-sm-2 abbr">
-<figure>
-<picture>
-<!-- Auto scaling with imagemagick -->
-<!--
-See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
--->
-<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/essflow-480.webp 480w,/assets/img/publication_preview/essflow-800.webp 800w,/assets/img/publication_preview/essflow-1400.webp 1400w," type="image/webp" sizes="200px"></source>
-<img src="/assets/img/publication_preview/essflow.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="essflow.png" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-</picture>
-</figure>
-</div>
-<!-- Entry bib key -->
-<div id="kalaivanan2025ess-flow_" class="col-sm-8">
-<!-- Title -->
-<div class="title">ESS-Flow: Training-free guidance of flow-based models as inference in source space</div>
-<!-- Author -->
-<div class="author">
-Adhithyan
-Kalaivanan, Zheng
-Zhao, <em>Jens
-Sjölund</em>, and
-<span class="more-authors" title="click to view 1 more author" onclick="
-var element = $(this);
-element.attr('title', '');
-var more_authors_text = element.text() == '1 more author' ? 'Fredrik Lindsten' : '1 more author';
-var cursorPosition = 0;
-var textAdder = setInterval(function(){
-element.html(more_authors_text.substring(0, cursorPosition + 1));
-if (++cursorPosition == more_authors_text.length){
-clearInterval(textAdder);
-}
-}, '10');
-">1 more author</span>
-</div>
-<!-- Journal/Book title and date -->
-<div class="periodical">
-<em>arXiv preprint arXiv:2510.05849</em>,  2025
-</div>
-<div class="periodical">
-</div>
-<!-- Links/Buttons -->
-<div class="links">
-<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://arxiv.org/abs/2510.05849" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<!-- Hidden abstract block -->
-<div class="abstract hidden">
-<p>Guiding pretrained flow-based generative models for conditional generation or to produce samples with desired target properties enables solving diverse tasks without retraining on paired data. We present ESS-Flow, a gradient-free method that leverages the typically Gaussian prior of the source distribution in flow-based models to perform Bayesian inference directly in the source space using Elliptical Slice Sampling. ESS-Flow only requires forward passes through the generative model and observation process, no gradient or Jacobian computations, and is applicable even when gradients are unreliable or unavailable, such as with simulation-based observations or quantization in the generation or observation process. We demonstrate its effectiveness on designing materials with desired target properties and predicting protein structures from sparse inter-residue distance measurements.</p>
 </div>
 </div>
 </div>
@@ -2281,38 +2313,6 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Image monitoring and guidance during medical examinations can aid both diagnosis and treatment. However, the sampling frequency is often too low, which creates a need to estimate the missing images. We present a probabilistic motion model for sequential medical images, with the ability to both estimate motion between acquired images and forecast the motion ahead of time. The core is a low-dimensional temporal process based on a linear Gaussian state-space model with analytically tractable solutions for forecasting, simulation, and imputation of missing samples. The results, from two experiments on publicly available cardiac datasets, show reliable motion estimates and an improved forecasting performance using patient-specific adaptation by online learning.</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<div class="row">
-<div class="col col-sm-2 abbr">
-</div>
-<!-- Entry bib key -->
-<div id="sjolund2024continuum" class="col-sm-8">
-<!-- Title -->
-<div class="title">Continuum radiotherapy treatment planning</div>
-<!-- Author -->
-<div class="author">
-Jens Olof
-Sjolund  and Carl Axel Håkan
-Nordström
-</div>
-<!-- Journal/Book title and date -->
-<div class="periodical">
-<em></em> 2024
-</div>
-<div class="periodical">
-</div>
-<!-- Links/Buttons -->
-<div class="links">
-<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://patents.google.com/patent/US20240408410A1/en" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-</div>
-<!-- Hidden abstract block -->
-<div class="abstract hidden">
-<p>Systems and methods are disclosed for dynamic radiotherapy treatment planning in a continuous space of computation. Example operations for generating treatment plan data for a radiotherapy treatment include: obtaining data for a radiotherapy treatment of a human subject; generating a set of radiation controls from the data for the radiotherapy treatment, with at least one of the radiation controls being based on a mapping from a continuous (eg, infinite dimensional) computational space; converting the generated set of radiation controls to a set of treatment delivery parameters, the set of treatment delivery parameters corresponding to capabilities of a radiotherapy treatment machine; and producing treatment plan data for the radiotherapy treatment based on the set of treatment delivery parameters.</p>
 </div>
 </div>
 </div>
