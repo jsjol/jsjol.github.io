@@ -31,6 +31,12 @@
     text-align: right;
   }
 
+  // The selected papers are grouped by year only to order them newest first;
+  // the year headings are not shown.
+  &.selected-papers h2.bibliography {
+    display: none;
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
