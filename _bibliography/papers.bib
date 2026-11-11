@@ -1125,3 +1125,72 @@
   archiveprefix     = {arXiv},
   google_scholar_id = {eflP2zaiRacC}
 }
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{bankestad2026understanding,
+  title             = {{Understanding Hidden Spatial Preferences in Bayesian Optimization}},
+  author            = {Maria Bånkestad and Jens Sjölund},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2610.14696},
+  abstract          = {Bayesian optimization uses posterior uncertainty to decide where to explore, but this uncertainty is not spatially neutral. On bounded domains, Gaussian-process posterior variance is typically larger near faces, edges, and corners, giving variance-based acquisition functions a systematic boundary bias. This spatial preference is usually inherited from the surrogate rather than chosen as part of the exploration strategy. We separate these roles by keeping the predictive model fixed and modifying the spatial preference of the exploration term. We control the preference with spatial weight fields and amortize their construction with neural surrogates. Controlled experiments show that the Gaussian process' default boundary bias changes which parts of the domain are explored and which optima are reached. We compare three alternative exploration principles and find, across standard benchmark functions and stochastic robot-pushing tasks, that they can often lower regret, particularly early in the optimization. The spatial structure of posterior uncertainty is therefore not a neutral default: it shapes the exploration strategy and can materially affect optimization performance.},
+  url               = {https://arxiv.org/abs/2610.14696},
+  eprint            = {2610.14696},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {1qzjygNMrQYC}
+}
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{taghavian2026exact,
+  title             = {{Exact model reduction by Lie symmetry groups}},
+  author            = {Hamed Taghavian and Jens Sjölund},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2610.26767},
+  abstract          = {We develop a model-reduction technique based on Lie group theory for general engineering models described by a system of algebraic, ordinary, and/or partial differential equations with an arbitrary number of inputs, outputs, and constant parameters. The proposed method reduces the parameter space of these models without changing their external behavior, that is, their input-output maps. We apply this method to phase-field models used for high-fidelity simulations in electrochemistry to accelerate the analysis and design of metal-ion batteries.},
+  url               = {https://arxiv.org/abs/2610.26767},
+  eprint            = {2610.26767},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {J-pR_7NvFogC}
+}
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{weesep2026llms,
+  title             = {{Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?}},
+  author            = {Laura van Weesep and Riccardo Tedoldi and Jens Sjölund and Hossein Azizpour and Susanne Winiwarter and Ola Engkvist and Jon Paul Janet and Samuel Genheden and Juan Viguera Diez},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2610.01616},
+  abstract          = {The emergence of foundation models for molecular property prediction requires a high degree of AI data readiness, including reliable metadata annotation. However, both public repositories and industrial screening databases suffer from missing, inconsistent, or conflated assay annotations. In this work, we quantify the extent of missing annotations in PubChem for the BioAssay Ontology (BAO) assay format and physical detection method fields and investigate whether open-source and proprietary large language models (LLMs) can reliably predict and audit metadata annotations directly from the assay text. In our assessment, we found that the annotation coverage across PubChem's $\sim$2 million bioassays is critically sparse, 36\% lacking an assay format, 89\% a BioAssay type, and &gt;99.9\% any BAO-mapped assay format or detection technology term. This motivates the need for automated test-metadata curation. Using evaluation sets derived from PubChem and ChEMBL, we assess the agreement of seven open-source and proprietary LLMs with existing silver labels. Recall is at least 0.96 for biochemical and cell-based assay formats, with a similar pattern for detection technology, although disagreements increase on under-represented classes. Manual inspection shows that many of these disagreements trace back to inconsistencies between silver sources rather than to LLM error. Moreover, in a qualitative study with a senior industrial curator, LLM-generated evidence prompted the expert to revise some of their own labels, showing LLMs can flag potentially mislabeled assays. Across the study, performance differences between proprietary and open-source models were small. Together, these results suggest LLMs can support the large-scale annotation and auditing of assay metadata, though per-class reliability estimates and targeted human review remain necessary before such labels enter downstream ML pipelines.},
+  url               = {https://arxiv.org/abs/2610.01616},
+  eprint            = {2610.01616},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {V3AGJWp-ZtQC}
+}
+
+% TODO from arXiv: check whether this has since appeared at a venue, then
+%   add abbr, preview and selected as appropriate.
+@article{kalaivanan2026interacting,
+  title             = {{Interacting particle guidance for sampling reward-tilted generative priors}},
+  author            = {Adhithyan Kalaivanan and Zheng Zhao and Jens Sjölund and Fredrik Lindsten},
+  year              = {2026},
+  journal           = {arXiv preprint arXiv:2609.37227},
+  abstract          = {Inference-time steering adapts pretrained diffusion and flow-based models to new tasks, e.g., to generate samples from a conditional distribution or samples with desired properties, without retraining. This can be formalized as sampling from a reward-tilted generative prior. As exact sampling from this distribution is intractable, guidance-based methods rely on approximations producing biased samples, and sequential Monte Carlo (SMC) methods correct for this bias using importance weights. However, while exact in the large particle limit, SMC suffers from weight degeneracy and particle collapse in practice. We propose interacting particle guidance (IPG), which replaces reweighting with transport. The particles interact through an additional drift, derived from the Feynman--Kac PDE to cancel the reweighting term, and remain unweighted. Choosing the drift in a reproducing kernel Hilbert space yields a closed-form solution that is cheap to compute, with negligible overhead compared to SMC. We demonstrate the method on Gaussian mixtures with known posteriors, and on high-dimensional image inpainting and protein structure inference tasks.},
+  url               = {https://arxiv.org/abs/2609.37227},
+  eprint            = {2609.37227},
+  archiveprefix     = {arXiv},
+  google_scholar_id = {kRWSkSYxWN8C}
+}
+
+% TODO review this entry: check the venue and author list, then add
+%   abbr, abstract, preview and selected as appropriate.
+@article{onils2026potency,
+  title             = {{Potency Prediction via Probabilistic Modeling of Dose–Response Curves}},
+  author            = {Anton O’Nils and Stefano Sarao Mannelli and Ola Engkvist and Jens Sjölund and Annie M. Westerlund},
+  year              = {2026},
+  journal           = {TODO},
+  publisher         = {American Chemical Society (ACS)},
+  doi               = {10.26434/chemrxiv.15008694/v1},
+  url               = {https://doi.org/10.26434/chemrxiv.15008694/v1},
+  google_scholar_id = {mvPsJ3kp5DgC}
+}
