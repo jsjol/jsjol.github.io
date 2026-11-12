@@ -9,14 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Computational medicine | Jens Sjölund</title>
 <meta name="author" content="Jens Sjölund">
-<meta name="description" content="Machine learning and optimization for radiotherapy, medical imaging, and clinical diagnostics.">
+<meta name="description" content="Machine learning and optimization for radiotherapy, medical imaging, and drug discovery.">
 <meta name="keywords" content="machine learning, optimization, graph neural networks, self-driving labs, diffusion models, Uppsala University">
 <!-- Open Graph -->
 <meta property="og:site_name" content="Jens Sjölund">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Computational medicine | Jens Sjölund">
 <meta property="og:url" content="https://jsjol.github.io/projects/medtech/">
-<meta property="og:description" content="Machine learning and optimization for radiotherapy, medical imaging, and clinical diagnostics.">
+<meta property="og:description" content="Machine learning and optimization for radiotherapy, medical imaging, and drug discovery.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jsjol.github.io/assets/img/og-preview.png">
 <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
 <!-- Twitter/X card, also read by Bluesky, LinkedIn, Slack and Mastodon -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Computational medicine | Jens Sjölund">
-<meta name="twitter:description" content="Machine learning and optimization for radiotherapy, medical imaging, and clinical diagnostics.">
+<meta name="twitter:description" content="Machine learning and optimization for radiotherapy, medical imaging, and drug discovery.">
 <meta name="twitter:image" content="https://jsjol.github.io/assets/img/og-preview.png">
 <!-- Schema.org. sameAs lets search engines link this page to the same person elsewhere. --><script type="application/ld+json">
     {
@@ -147,10 +147,10 @@ connect-src 'self' https:;
 <div class="post">
 <header class="post-header">
 <h1 class="post-title">Computational medicine</h1>
-<p class="post-description">Machine learning and optimization for radiotherapy, medical imaging, and clinical diagnostics.</p>
+<p class="post-description">Machine learning and optimization for radiotherapy, medical imaging, and drug discovery.</p>
 </header>
 <article>
-<p>Our work in medical technology spans radiotherapy planning, diffusion MRI, and breast cancer diagnostics—each an active area where principled computational methods make a concrete clinical difference.</p>
+<p>Our work in medical technology spans radiotherapy planning, diffusion MRI, breast cancer diagnostics, and drug discovery—each an active area where principled computational methods make a real difference.</p>
 <h2 id="radiotherapy-planning">Radiotherapy planning</h2>
 <p>Radiotherapy planning is complex and time consuming. At <a href="https://www.elekta.com" rel="external nofollow noopener" target="_blank">Elekta</a>, we did the research groundwork for the next-generation treatment optimizer for <a href="https://www.elekta.com/radiosurgery/leksell-gamma-knife-lightning/" rel="external nofollow noopener" target="_blank">Leksell Gamma Knife Lightning</a>, a commercial radiosurgery planning system used worldwide. This included new convex surrogates for common clinical objectives, techniques for reducing problem size, AI-powered problem compression, and methods for automatically assigning weights based on historical treatment data. We also developed a method that incorporates delivery constraints directly into a neural network, ensuring predicted treatment plans are actually realizable. This work resulted in 11 granted US patents. We continue to work on radiotherapy optimization, currently through a VINNOVA-funded project with Elekta on data-driven decision support.</p>
 <div style="text-align: center; margin: 1.5em 0;">
@@ -167,6 +167,7 @@ connect-src 'self' https:;
 </ul>
 <h2 id="diffusion-mri">Diffusion MRI</h2>
 <p>Diffusion MRI is a useful probe of tissue microstructure, which can be used to derive biomarkers for diagnostics and treatment. In collaboration with <a href="https://scholar.google.se/citations?user=ktiCQwMAAAAJ&amp;hl=sv&amp;oi=ao" rel="external nofollow noopener" target="_blank">Filip Szczepankiewicz</a> and others, we developed the open-source library <a href="https://github.com/jsjol/NOW" rel="external nofollow noopener" target="_blank">NOW</a> that has established itself as the de facto standard tool for gradient waveform design for tensor-valued encoding in diffusion MRI. Since its introduction in 2015, the methodology and software has been extended and refined to capture additional effects, including Maxwell compensation, motion compensation and cross-term compensation.</p>
+<p>A recent collaboration, led by Filip Szczepankiewicz’s group, introduced slice excitation with random overlap (SERO). Thick slices are excited at random, overlapping positions, so the repetition time varies within and between slices. The resulting T1 weighting allows super-resolution reconstruction across slices together with maps of diffusivity, diffusional variance and T1 relaxation.</p>
 <div style="text-align: center; margin: 1.5em 0;">
 <img src="/assets/img/NOW_demo.png" alt="Numerically optimized gradient waveforms and resulting diffusion MRI" width="600px">
 <p><small>Optimized gradient waveforms (left) enable tensor-valued diffusion encoding, revealing microstructural information in the brain (right).</small></p>
@@ -176,9 +177,19 @@ connect-src 'self' https:;
 <li>
 <strong>Sjölund J</strong>, Szczepankiewicz F, Nilsson M, Topgaard D, Westin C-F, and Knutsson H. <a href="https://doi.org/10.1016/j.jmr.2015.10.012" rel="external nofollow noopener" target="_blank"><em>Constrained optimization of gradient waveforms for generalized diffusion encoding.</em></a> Journal of Magnetic Resonance (2015).</li>
 <li>Szczepankiewicz F, <strong>Sjölund J</strong>, Ståhlberg F, Lätt J, and Nilsson M. <a href="https://doi.org/10.1371/journal.pone.0214238" rel="external nofollow noopener" target="_blank"><em>Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems.</em></a> PLoS One (2019).</li>
+<li>Mortensen F, Jurek J, <strong>Sjölund J</strong>, Vis G, Wirestam R, Molendowska M, Materka A, and Szczepankiewicz F. <a href="https://doi.org/10.1002/mrm.70282" rel="external nofollow noopener" target="_blank"><em>Toward super-resolution reconstruction of diffusion–relaxation MRI using slice excitation with random overlap (SERO).</em></a> Magnetic Resonance in Medicine (2026).</li>
 </ul>
 <h2 id="breast-cancer-diagnostics-aid4bc">Breast cancer diagnostics (AID4BC)</h2>
 <p>We participate in the <a href="https://aid4bc.org/" rel="external nofollow noopener" target="_blank">AID4BC</a> consortium, a multimodal AI initiative focused on precision diagnostics and decision support for breast cancer. Our contribution, together with <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N13-1398" rel="external nofollow noopener" target="_blank">Dave Zachariah</a> at Uppsala University, centres on multimodal machine learning methods and causal foundations for internally and externally valid clinical decision-making. Together with the other partners—Karolinska Institutet, Lund University, Linköping University, and industry partners Sectra and Stratipath—we are building the world’s largest multi-site and multi-modal breast cancer study (N &gt; 10,000).</p>
+<h2 id="drug-discovery">Drug discovery</h2>
+<p>Together with AstraZeneca, we develop machine learning methods for drug discovery. Potency prediction is usually framed as regression on a single summary number, the half-maximal inhibitory concentration. We instead model the entire dose–response curve as the cumulative distribution function of a latent concentration variable. The model learns from the raw measurements and retains the slope, asymptotes and shape of the curve, which the summary number discards.</p>
+<p>We also study language models as tools in the drug discovery workflow. In agentic systems that orchestrate chemistry tools, components such as the language model and the type of agent cannot simply be exchanged without re-engineering the system. For bioassay databases, where annotations are often missing or inconsistent, language models can support large-scale annotation and auditing of assay metadata, although rare classes still need targeted human review.</p>
+<h3 id="selected-references-2">Selected references</h3>
+<ul>
+<li>van Weesep L, Genheden S, Engkvist O, and <strong>Sjölund J</strong>. <a href="https://arxiv.org/abs/2506.22189" rel="external nofollow noopener" target="_blank"><em>Exploring modularity of agentic systems for drug discovery.</em></a> European Conference on Multi-Agent Systems (2025).</li>
+<li>van Weesep L, Tedoldi R, <strong>Sjölund J</strong>, Azizpour H, Winiwarter S, Engkvist O, Janet J P, Genheden S, and Viguera Diez J. <a href="https://arxiv.org/abs/2610.01616" rel="external nofollow noopener" target="_blank"><em>Can LLMs reliably annotate bioassay metadata to improve data readiness?</em></a> NeurIPS Workshop on AI Data Readiness for Scientific Discovery (2026).</li>
+<li>O’Nils A, Sarao Mannelli S, Engkvist O, <strong>Sjölund J</strong>, and Westerlund A M. <a href="https://doi.org/10.26434/chemrxiv.15008694/v1" rel="external nofollow noopener" target="_blank"><em>Potency prediction via probabilistic modeling of dose–response curves.</em></a> ChemRxiv (2026).</li>
+</ul>
 </article>
 </div>
 </div>

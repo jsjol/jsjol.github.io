@@ -165,7 +165,7 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Res
 </figure>
 </div>
 <div class="clearfix">
-<p>I develop machine learning and optimization methods and translate them to real-world impact in medicine and the natural sciences. The overarching theme of my current research is to <em>accelerate science with machine learning</em>, which I pursue by targeting three specific bottlenecks: accelerating <em>computations</em> through <a href="/projects/gnn-linear-algebra/">learned numerical methods</a>, accelerating <em>discovery</em> through <a href="/projects/diffusion-generative/">generative models and Bayesian inference</a>, and accelerating <em>experiments</em> through <a href="/projects/self-driving-labs/">AI-guided robotics and automation</a>.</p>
+<p>I develop machine learning and optimization methods and translate them to real-world impact in medicine and the natural sciences. The overarching theme of my current research is to <em>accelerate science with machine learning</em>, which I pursue by targeting three specific bottlenecks: accelerating <em>computations</em> through <a href="/projects/gnn-linear-algebra/">learned numerical methods</a>, accelerating <em>discovery</em> through <a href="/projects/diffusion-generative/">generative models and Bayesian inference</a>, and accelerating <em>experiments</em> through <a href="/projects/self-driving-labs/">Bayesian experimental design in self-driving labs</a>.</p>
 <p>Prior to joining Uppsala University, I spent nine years at the radiotherapy company <a href="https://www.elekta.com" rel="external nofollow noopener" target="_blank">Elekta</a>, first as an industrial PhD student affiliated with Linköping University, then as a Senior Research Scientist. During this time, I developed the optimization methods behind <a href="https://www.elekta.com/radiosurgery/leksell-gamma-knife-lightning/" rel="external nofollow noopener" target="_blank">Leksell Gamma Knife Lightning</a>, a commercial radiosurgery planning system used worldwide, and filed 28 patent applications (23 now granted). The years in industry sharpened my sense of what it means for algorithms to matter—how they must function under constraints of safety, uncertainty, and cost.</p>
 <p>My research group includes six PhD students and two postdocs, with ongoing collaborations spanning materials science, medicine, and industrial applications. I collaborate with materials scientists at Uppsala University on self-driving laboratories; with <a href="https://www.astrazeneca.com" rel="external nofollow noopener" target="_blank">AstraZeneca</a>, <a href="https://www.elekta.com" rel="external nofollow noopener" target="_blank">Elekta</a>, and <a href="https://www.alleima.com" rel="external nofollow noopener" target="_blank">Alleima</a> on industrial research projects; and participate in the <a href="https://aid4bc.org/" rel="external nofollow noopener" target="_blank">AID4BC</a> consortium on AI-based diagnostics for breast cancer. I was awarded the <a href="https://gustafssonsstiftelser.se/" rel="external nofollow noopener" target="_blank">Göran Gustafsson prize</a> for young researchers in 2024.</p>
 <h2 id="working-with-me">working with me</h2>
@@ -176,6 +176,11 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Res
 </h2>
 <div class="news">
 <table class="table table-sm table-borderless">
+<tr>
+<th scope="row" style="width: 20%">Nov 12, 2026</th>
+<td>Two papers accepted at <a href="https://neurips.cc/Conferences/2026" rel="external nofollow noopener" target="_blank">NeurIPS 2026</a>. In <a href="https://arxiv.org/abs/2611.12544" rel="external nofollow noopener" target="_blank"><em>Learning inexact alternating minimization for convex problems with quadratic coupling</em></a>, led by Paul Häusner, neural networks trained to approximate the subproblem solutions replace the iterative inner solvers of alternating minimization, which makes CT reconstruction up to 30 times faster at matched accuracy. In <a href="https://arxiv.org/abs/2510.05849" rel="external nofollow noopener" target="_blank"><em>ESS-Flow: Training-free guidance of flow-based models as inference in source space</em></a>, led by Adhithyan Kalaivanan, pretrained flow-based models are guided without gradients by sampling in their source space.
+</td>
+</tr>
 <tr>
 <th scope="row" style="width: 20%">Sep 15, 2026</th>
 <td>
@@ -198,11 +203,6 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Res
 <td>Two papers presented at <a href="https://sites.google.com/usc.edu/l4dc2026/" rel="external nofollow noopener" target="_blank">L4DC 2026</a>: <a href="https://arxiv.org/abs/2511.13174" rel="external nofollow noopener" target="_blank"><em>Warm-starting active-set solvers using graph neural networks</em></a> (led by Ella J. Schmidtobreick) and <a href="https://arxiv.org/abs/2509.05288" rel="external nofollow noopener" target="_blank"><em>Learning to accelerate distributed ADMM using graph neural networks</em></a> (led by Henri Doerks and Paul Häusner).
 </td>
 </tr>
-<tr>
-<th scope="row" style="width: 20%">May 10, 2026</th>
-<td>New paper in Medical Physics, <a href="https://doi.org/10.1002/mp.70454" rel="external nofollow noopener" target="_blank"><em>A parallel algorithm for generating Pareto-optimal radiosurgery treatment plans</em></a>, resulting from our collaboration with Elekta.
-</td>
-</tr>
 </table>
 </div>
 <h2>
@@ -210,7 +210,8 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Res
 </h2>
 <div class="publications selected-papers">
 <h2 class="bibliography">2026</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
 <div class="row">
 <div class="col col-sm-2 abbr">
 <figure>
@@ -265,9 +266,7 @@ clearInterval(textAdder);
 </div>
 </div>
 </div>
-</li></ol>
-<h2 class="bibliography">2025</h2>
-<ol class="bibliography">
+</li>
 <li>
 <div class="row">
 <div class="col col-sm-2 abbr">
@@ -278,25 +277,25 @@ clearInterval(textAdder);
 See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
 -->
-<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/sdl_additives-480.webp 480w,/assets/img/publication_preview/sdl_additives-800.webp 800w,/assets/img/publication_preview/sdl_additives-1400.webp 1400w," type="image/webp" sizes="200px">
-<img src="/assets/img/publication_preview/sdl_additives.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sdl_additives.jpg" data-zoomable loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/inexact_altmin-480.webp 480w,/assets/img/publication_preview/inexact_altmin-800.webp 800w,/assets/img/publication_preview/inexact_altmin-1400.webp 1400w," type="image/webp" sizes="200px">
+<img src="/assets/img/publication_preview/inexact_altmin.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="inexact_altmin.png" data-zoomable loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 </source></picture>
 </figure>
 </div>
 <!-- Entry bib key -->
-<div id="yik2025accelerating" class="col-sm-8">
+<div id="häusner2026learning" class="col-sm-8">
 <!-- Title -->
-<div class="title">Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization</div>
+<div class="title">Learning inexact alternating minimization for convex problems with quadratic coupling</div>
 <!-- Author -->
 <div class="author">
-Jackie T
-Yik, Carl
-Hvarfner, <em>Jens
+Paul
+Häusner, Jevgenija
+Rudzusika, <em>Jens
 Sjölund</em>, and
-<span class="more-authors" title="click to view 2 more authors" onclick="
+<span class="more-authors" title="click to view 1 more author" onclick="
 var element = $(this);
 element.attr('title', '');
-var more_authors_text = element.text() == '2 more authors' ? 'Erik J Berg, Leiting Zhang' : '2 more authors';
+var more_authors_text = element.text() == '1 more author' ? 'Ozan Öktem' : '1 more author';
 var cursorPosition = 0;
 var textAdder = setInterval(function(){
 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -304,26 +303,30 @@ if (++cursorPosition == more_authors_text.length){
 clearInterval(textAdder);
 }
 }, '10');
-">2 more authors</span>
+">1 more author</span>
 </div>
 <!-- Journal/Book title and date -->
 <div class="periodical">
-<em>Cell Reports Physical Science</em>,  2025
+<em>Advances in Neural Information Processing Systems (NeurIPS)</em>,  2026
 </div>
 <div class="periodical">
 </div>
 <!-- Links/Buttons -->
 <div class="links">
 <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-<a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+<a href="https://arxiv.org/abs/2611.12544" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+<a href="https://github.com/paulhausner/learned-alternating-minimization" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
 </div>
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
-<p>The integration of automation and data-driven methodologies offers a promising approach to accelerating materials discovery in energy storage research. Thus far, in battery research, coin-cell assembly has advanced to become nearly fully automated but remains largely disconnected from data-driven methods. To bridge the disconnect, this work presents a self-driving laboratory framework to accelerate electrolyte discovery by integrating automated coin-cell assembly, galvanostatic cycling of LiFePO4||Li4Ti5O12 organic-aqueous full cells, and Bayesian optimization for selecting subsequent experiments based on prior results. The study explored an organic-aqueous hybrid electrolyte system comprising four co-solvents and two lithium-conducting salts. Using this framework, cells with an optimized electrolyte cycled with at least 94% Coulombic efficiency. Additionally, online electrochemical mass spectrometry …</p>
+<p>Alternating minimization is a standard tool for optimization problems with two coupled variable blocks. Its cost is dominated by the inner subproblem solvers, which rarely have a closed-form solution. In this paper, we propose to learn an inexact alternating scheme in which neural networks approximate the subproblem solution at each iteration. For convex problems with quadratic couplings between the variable blocks that satisfy a quadratic growth condition, we derive a worst-case bound on the optimality gap that exposes the per-iteration error that each network is trained to minimize in a greedy fashion. Combining the bound with a PAC-Bayes argument, we obtain a fixed-horizon, high-probability bound on the expected optimality gap over the distribution of problem instances. We apply the learned scheme to robust matrix completion and low-dose CT reconstruction with dictionary regularization where we achieve a 5x-13x speedup over the inexact first-order baseline at matched accuracy. A brief end-to-end fine-tuning stage extends this up to 30x and outperforms other learned schemes. The code is available at https://github.com/paulhausner/learned-alternating-minimization.</p>
 </div>
 </div>
 </div>
 </li>
+</ol>
+<h2 class="bibliography">2025</h2>
+<ol class="bibliography">
 <li>
 <div class="row">
 <div class="col col-sm-2 abbr">
@@ -376,6 +379,62 @@ clearInterval(textAdder);
 <!-- Hidden abstract block -->
 <div class="abstract hidden">
 <p>Metal anodes provide the highest energy density in batteries. However, they still suffer from electrode/electrolyte interface side reactions and dendrite growth, especially under fast-charging conditions. In this paper, we consider a phase-field model of electrodeposition in metal-anode batteries and provide a scalable, versatile framework for optimizing its chemical parameters. Our approach is based on Bayesian optimization and explores the parameter space with a high sample efficiency and a low computation complexity. We use this framework to find the optimal cell for suppressing dendrite growth and accelerating charging speed under constant voltage. We identify interfacial mobility as a key parameter, which should be maximized to inhibit dendrites without compromising the charging speed. The results are verified using extended simulations of dendrite evolution in charging half cells with lithium-metal anodes.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+<figure>
+<picture>
+<!-- Auto scaling with imagemagick -->
+<!--
+See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+-->
+<source class="responsive-img-srcset" srcset="/assets/img/publication_preview/sdl_additives-480.webp 480w,/assets/img/publication_preview/sdl_additives-800.webp 800w,/assets/img/publication_preview/sdl_additives-1400.webp 1400w," type="image/webp" sizes="200px">
+<img src="/assets/img/publication_preview/sdl_additives.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sdl_additives.jpg" data-zoomable loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+</source></picture>
+</figure>
+</div>
+<!-- Entry bib key -->
+<div id="yik2025accelerating" class="col-sm-8">
+<!-- Title -->
+<div class="title">Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization</div>
+<!-- Author -->
+<div class="author">
+Jackie T
+Yik, Carl
+Hvarfner, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Erik J Berg, Leiting Zhang' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>Cell Reports Physical Science</em>,  2025
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00147-X" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>The integration of automation and data-driven methodologies offers a promising approach to accelerating materials discovery in energy storage research. Thus far, in battery research, coin-cell assembly has advanced to become nearly fully automated but remains largely disconnected from data-driven methods. To bridge the disconnect, this work presents a self-driving laboratory framework to accelerate electrolyte discovery by integrating automated coin-cell assembly, galvanostatic cycling of LiFePO4||Li4Ti5O12 organic-aqueous full cells, and Bayesian optimization for selecting subsequent experiments based on prior results. The study explored an organic-aqueous hybrid electrolyte system comprising four co-solvents and two lithium-conducting salts. Using this framework, cells with an optimized electrolyte cycled with at least 94% Coulombic efficiency. Additionally, online electrochemical mass spectrometry …</p>
 </div>
 </div>
 </div>

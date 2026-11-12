@@ -7,16 +7,16 @@
 <!-- Standard metadata -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Accelerating linear algebra with graph neural networks | Jens Sjölund</title>
+<title>Learned numerical methods for linear algebra and optimization | Jens Sjölund</title>
 <meta name="author" content="Jens Sjölund">
-<meta name="description" content="Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.">
+<meta name="description" content="Learning components of numerical algorithms, such as preconditioners, warm starts and inner solvers, to accelerate them without sacrificing reliability.">
 <meta name="keywords" content="machine learning, optimization, graph neural networks, self-driving labs, diffusion models, Uppsala University">
 <!-- Open Graph -->
 <meta property="og:site_name" content="Jens Sjölund">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Accelerating linear algebra with graph neural networks | Jens Sjölund">
+<meta property="og:title" content="Learned numerical methods for linear algebra and optimization | Jens Sjölund">
 <meta property="og:url" content="https://jsjol.github.io/projects/gnn-linear-algebra/">
-<meta property="og:description" content="Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.">
+<meta property="og:description" content="Learning components of numerical algorithms, such as preconditioners, warm starts and inner solvers, to accelerate them without sacrificing reliability.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jsjol.github.io/assets/img/og-preview.png">
 <meta property="og:image:width" content="1200">
@@ -24,8 +24,8 @@
 <meta property="og:image:alt" content="Jens Sjölund — Assistant Professor in Artificial Intelligence at Uppsala University. Machine learning and optimization to make computationally hard problems tractable.">
 <!-- Twitter/X card, also read by Bluesky, LinkedIn, Slack and Mastodon -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Accelerating linear algebra with graph neural networks | Jens Sjölund">
-<meta name="twitter:description" content="Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.">
+<meta name="twitter:title" content="Learned numerical methods for linear algebra and optimization | Jens Sjölund">
+<meta name="twitter:description" content="Learning components of numerical algorithms, such as preconditioners, warm starts and inner solvers, to accelerate them without sacrificing reliability.">
 <meta name="twitter:image" content="https://jsjol.github.io/assets/img/og-preview.png">
 <!-- Schema.org. sameAs lets search engines link this page to the same person elsewhere. --><script type="application/ld+json">
     {
@@ -146,8 +146,8 @@ connect-src 'self' https:;
 <div class="container mt-5" role="main">
 <div class="post">
 <header class="post-header">
-<h1 class="post-title">Accelerating linear algebra with graph neural networks</h1>
-<p class="post-description">Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.</p>
+<h1 class="post-title">Learned numerical methods for linear algebra and optimization</h1>
+<p class="post-description">Learning components of numerical algorithms, such as preconditioners, warm starts and inner solvers, to accelerate them without sacrificing reliability.</p>
 </header>
 <article>
 <p>Linear algebra is a cornerstone of scientific computing, as well as one of the computational bottlenecks when solving optimization problems or partial differential equations. While reliable general-purpose methods exist, many applications can benefit tremendously from tailored methods that fully exploit the structure of a given problem. This, however, requires expert knowledge, yet even that may not achieve maximum efficiency.</p>
@@ -173,9 +173,11 @@ connect-src 'self' https:;
 <p><small>A GNN maps the QP graph representation to an active-set prediction, warm-starting the solver.</small></p>
 </div>
 <p>We have also shown that distributed ADMM iterations have a one-to-one correspondence with GNN message passing. Exploiting this connection, we train a GNN to predict adaptive step sizes and communication weights for ADMM, improving convergence speed and solution quality compared to standard ADMM—without sacrificing convergence guarantees.</p>
+<p>The same idea applies beyond graph neural networks. Alternating minimization solves problems with two coupled blocks of variables by optimizing one block at a time, and most of its cost lies in the inner solvers for these subproblems. We replace the inner solvers with neural networks trained to approximate the subproblem solutions. For convex problems with quadratic coupling, a worst-case bound on the optimality gap identifies the per-iteration error that each network is trained to minimize, and a PAC-Bayes argument turns it into a high-probability bound over the distribution of problem instances. On low-dose CT reconstruction, the learned scheme matches the accuracy of the iterative baseline up to 30 times faster.</p>
 <ul>
 <li>Schmidtobreick E J, Arnström D, Häusner P, and <strong>Sjölund J</strong>. <a href="https://arxiv.org/abs/2511.13174" rel="external nofollow noopener" target="_blank"><em>Warm-starting active-set solvers using graph neural networks.</em></a> Learning for Dynamics &amp; Control (L4DC), 2026.</li>
 <li>Doerks H, Häusner P, Hernández Escobar D, and <strong>Sjölund J</strong>. <a href="https://arxiv.org/abs/2509.05288" rel="external nofollow noopener" target="_blank"><em>Learning to accelerate distributed ADMM using graph neural networks.</em></a> Learning for Dynamics &amp; Control (L4DC), 2026.</li>
+<li>Häusner P, Rudzusika J, <strong>Sjölund J</strong>, and Öktem O. <a href="https://arxiv.org/abs/2611.12544" rel="external nofollow noopener" target="_blank"><em>Learning inexact alternating minimization for convex problems with quadratic coupling.</em></a> NeurIPS (2026).</li>
 </ul>
 <h2 id="earlier-work">Earlier work</h2>
 <p>Our first work in this direction considered nonnegative matrix factorization, where we adopted the König graph representation and framed constrained low-rank factorization as a graph problem solved by interleaving a GNN with ADMM.</p>
