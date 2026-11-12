@@ -18,7 +18,7 @@ Topics include numerical linear algebra, first-order methods for unconstrained a
 
 - 10 lectures
 - 3 hand-in assignments with peer review
-- Optional 3 hp project
+- Optional 3 hp project course, in which students apply the methods to a problem of their choice, typically connected to their own research
 
 ## Prerequisites
 

@@ -15,4 +15,4 @@ This PhD course (FTN0202, 7 hp) teaches students to recognise and formulate conv
 
 Flipped classroom model with weekly meetings. Students complete readings, watch lectures, and solve problems independently. In-class time is devoted to discussion, problem-solving, and programming activities using CVXPY. Assessment through quizzes and homework assignments.
 
-An optional 3 hp project extension is available.
+An optional 3 hp project course extends it, in which students apply convex optimization techniques to a problem connected to their own research.

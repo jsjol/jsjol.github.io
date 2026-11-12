@@ -7,7 +7,7 @@ importance: 4
 category: active
 ---
 
-Our work in medical technology spans radiotherapy planning, diffusion MRI, breast cancer diagnostics, and drug discovery---each an active area where principled computational methods make a concrete clinical difference.
+Our work in medical technology spans radiotherapy planning, diffusion MRI, breast cancer diagnostics, and drug discovery---each an active area where principled computational methods make a real difference.
 
 ## Radiotherapy planning
 
