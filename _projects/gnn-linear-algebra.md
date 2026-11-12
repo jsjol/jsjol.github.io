@@ -39,8 +39,11 @@ Beyond preconditioning, we are exploring how GNNs can accelerate optimization so
 
 We have also shown that distributed ADMM iterations have a one-to-one correspondence with GNN message passing. Exploiting this connection, we train a GNN to predict adaptive step sizes and communication weights for ADMM, improving convergence speed and solution quality compared to standard ADMM---without sacrificing convergence guarantees.
 
+The same idea applies beyond graph neural networks. Alternating minimization solves problems with two coupled blocks of variables by optimizing one block at a time, and most of its cost lies in the inner solvers for these subproblems. We replace the inner solvers with neural networks trained to approximate the subproblem solutions. For convex problems with quadratic coupling, a worst-case bound on the optimality gap identifies the per-iteration error that each network is trained to minimize, and a PAC-Bayes argument turns it into a high-probability bound over the distribution of problem instances. On low-dose CT reconstruction, the learned scheme matches the accuracy of the iterative baseline up to 30 times faster.
+
 - Schmidtobreick E J, Arnström D, Häusner P, and **Sjölund J**. [_Warm-starting active-set solvers using graph neural networks._](https://arxiv.org/abs/2511.13174) Learning for Dynamics & Control (L4DC), 2026.
 - Doerks H, Häusner P, Hernández Escobar D, and **Sjölund J**. [_Learning to accelerate distributed ADMM using graph neural networks._](https://arxiv.org/abs/2509.05288) Learning for Dynamics & Control (L4DC), 2026.
+- Häusner P, Rudzusika J, **Sjölund J**, and Öktem O. [_Learning inexact alternating minimization for convex problems with quadratic coupling._](https://arxiv.org/abs/2611.12544) NeurIPS (2026).
 
 ## Earlier work
 

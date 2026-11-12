@@ -30,6 +30,8 @@ We also developed a parallel ADMM algorithm for the LP formulation used in Gamma
 
 Diffusion MRI is a useful probe of tissue microstructure, which can be used to derive biomarkers for diagnostics and treatment. In collaboration with [Filip Szczepankiewicz](https://scholar.google.se/citations?user=ktiCQwMAAAAJ&hl=sv&oi=ao) and others, we developed the open-source library [NOW](https://github.com/jsjol/NOW) that has established itself as the de facto standard tool for gradient waveform design for tensor-valued encoding in diffusion MRI. Since its introduction in 2015, the methodology and software has been extended and refined to capture additional effects, including Maxwell compensation, motion compensation and cross-term compensation.
 
+A recent collaboration, led by Filip Szczepankiewicz's group, introduced slice excitation with random overlap (SERO). Thick slices are excited at random, overlapping positions, so the repetition time varies within and between slices. The resulting T1 weighting allows super-resolution reconstruction across slices together with maps of diffusivity, diffusional variance and T1 relaxation.
+
 <div style="text-align: center; margin: 1.5em 0;">
 <img src="/assets/img/NOW_demo.png" alt="Numerically optimized gradient waveforms and resulting diffusion MRI" width="600px"/>
 <p><small>Optimized gradient waveforms (left) enable tensor-valued diffusion encoding, revealing microstructural information in the brain (right).</small></p>
@@ -39,6 +41,7 @@ Diffusion MRI is a useful probe of tissue microstructure, which can be used to d
 
 - **Sjölund J**, Szczepankiewicz F, Nilsson M, Topgaard D, Westin C-F, and Knutsson H. [_Constrained optimization of gradient waveforms for generalized diffusion encoding._](https://doi.org/10.1016/j.jmr.2015.10.012) Journal of Magnetic Resonance (2015).
 - Szczepankiewicz F, **Sjölund J**, Ståhlberg F, Lätt J, and Nilsson M. [_Tensor-valued diffusion encoding for diffusional variance decomposition (DIVIDE): Technical feasibility in clinical MRI systems._](https://doi.org/10.1371/journal.pone.0214238) PLoS One (2019).
+- Mortensen F, Jurek J, **Sjölund J**, Vis G, Wirestam R, Molendowska M, Materka A, and Szczepankiewicz F. [_Toward super-resolution reconstruction of diffusion–relaxation MRI using slice excitation with random overlap (SERO)._](https://doi.org/10.1002/mrm.70282) Magnetic Resonance in Medicine (2026).
 
 ## Breast cancer diagnostics (AID4BC)
 

@@ -48,12 +48,15 @@ More recently, we have removed the coupled forward-backward pair altogether. Mak
 
 A key challenge for incorporating pretrained generative models into Bayesian experimental design loops is performing conditional inference without costly retraining. We are developing methods for training-free guidance of flow-based and diffusion models, enabling conditional sampling from pretrained models by leveraging the source-space structure.
 
+Guidance-based methods only approximate the target distribution, and sequential Monte Carlo corrects for this with importance weights, but in practice the weights degenerate and the particles collapse onto a few samples. Interacting particle guidance replaces the reweighting with an additional drift, derived from the Feynman–Kac equation, that moves the particles instead. With the drift chosen in a reproducing kernel Hilbert space, it has a closed form and costs little more than sequential Monte Carlo.
+
 <div style="text-align: center; margin: 1.5em 0;">
 <img src="/assets/img/publication_preview/essflow.png" alt="ESS-Flow: training-free guidance in source space" width="60%"/>
 <p><small>ESS-Flow performs conditional inference by applying a potential function in the source space of a flow model, avoiding costly retraining.</small></p>
 </div>
 
-- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) arXiv (2025).
+- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) NeurIPS (2026).
+- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_Interacting particle guidance for sampling reward-tilted generative priors._](https://arxiv.org/abs/2609.37227) arXiv (2026).
 - Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [_Conditioning diffusion models by explicit forward-backward bridging._](https://arxiv.org/abs/2405.13794) AISTATS (2025).
 
 ## Reviews and broader contributions
@@ -62,4 +65,4 @@ We have contributed two authoritative reviews to Philosophical Transactions of t
 
 - Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Conditional sampling within generative diffusion models._](https://doi.org/10.1098/rsta.2024.0253) Phil. Trans. R. Soc. A (2025).
 - Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Taming diffusion models for image restoration: a review._](https://doi.org/10.1098/rsta.2024.0107) Phil. Trans. R. Soc. A (2025).
-- Zhang R, Luo Z, Chen Z, **Sjölund J**, and Schön T B. [_Entropy-regularized diffusion policy with Q-ensembles for offline reinforcement learning._](https://neurips.cc/virtual/2024/poster/93653) NeurIPS (2024).
+- Zhang R, Luo Z, **Sjölund J**, Schön T B, and Mattsson P. [_Entropy-regularized diffusion policy with Q-ensembles for offline reinforcement learning._](https://neurips.cc/virtual/2024/poster/93653) NeurIPS (2024).
