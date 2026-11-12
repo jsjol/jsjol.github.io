@@ -65,7 +65,7 @@ More recently, we have removed the coupled forward-backward pair altogether. Mak
 
 ## Reviews and broader contributions
 
-We have contributed two authoritative reviews to Philosophical Transactions of the Royal Society A, covering conditional sampling within generative diffusion models and the state of the art in diffusion-based image restoration. On the reinforcement learning side, we have shown how diffusion models can serve as expressive policy representations for offline RL.
+We have contributed two reviews to Philosophical Transactions of the Royal Society A, covering conditional sampling within generative diffusion models and the state of the art in diffusion-based image restoration. On the reinforcement learning side, we have shown how diffusion models can serve as expressive policy representations for offline RL.
 
 - Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Conditional sampling within generative diffusion models._](https://doi.org/10.1098/rsta.2024.0253) Phil. Trans. R. Soc. A (2025).
 - Zhao Z, Luo Z, **Sjölund J**, and Schön T B. [_Taming diffusion models for image restoration: a review._](https://doi.org/10.1098/rsta.2024.0107) Phil. Trans. R. Soc. A (2025).
