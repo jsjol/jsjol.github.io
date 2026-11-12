@@ -919,6 +919,201 @@ clearInterval(textAdder);
 </div>
 </div>
 </li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="bankestad2026understanding" class="col-sm-8">
+<!-- Title -->
+<div class="title">Understanding Hidden Spatial Preferences in Bayesian Optimization</div>
+<!-- Author -->
+<div class="author">
+Maria
+Bånkestad  and <em>Jens
+Sjölund</em>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>arXiv preprint arXiv:2610.14696</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2610.14696" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Bayesian optimization uses posterior uncertainty to decide where to explore, but this uncertainty is not spatially neutral. On bounded domains, Gaussian-process posterior variance is typically larger near faces, edges, and corners, giving variance-based acquisition functions a systematic boundary bias. This spatial preference is usually inherited from the surrogate rather than chosen as part of the exploration strategy. We separate these roles by keeping the predictive model fixed and modifying the spatial preference of the exploration term. We control the preference with spatial weight fields and amortize their construction with neural surrogates. Controlled experiments show that the Gaussian process’ default boundary bias changes which parts of the domain are explored and which optima are reached. We compare three alternative exploration principles and find, across standard benchmark functions and stochastic robot-pushing tasks, that they can often lower regret, particularly early in the optimization. The spatial structure of posterior uncertainty is therefore not a neutral default: it shapes the exploration strategy and can materially affect optimization performance.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="taghavian2026exact" class="col-sm-8">
+<!-- Title -->
+<div class="title">Exact model reduction by Lie symmetry groups</div>
+<!-- Author -->
+<div class="author">
+Hamed
+Taghavian  and <em>Jens
+Sjölund</em>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>arXiv preprint arXiv:2610.26767</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2610.26767" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>We develop a model-reduction technique based on Lie group theory for general engineering models described by a system of algebraic, ordinary, and/or partial differential equations with an arbitrary number of inputs, outputs, and constant parameters. The proposed method reduces the parameter space of these models without changing their external behavior, that is, their input-output maps. We apply this method to phase-field models used for high-fidelity simulations in electrochemistry to accelerate the analysis and design of metal-ion batteries.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="weesep2026llms" class="col-sm-8">
+<!-- Title -->
+<div class="title">Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?</div>
+<!-- Author -->
+<div class="author">
+Laura
+Weesep, Riccardo
+Tedoldi, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 6 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '6 more authors' ? 'Hossein Azizpour, Susanne Winiwarter, Ola Engkvist, Jon Paul Janet, Samuel Genheden, Juan Viguera Diez' : '6 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">6 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>arXiv preprint arXiv:2610.01616</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2610.01616" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>The emergence of foundation models for molecular property prediction requires a high degree of AI data readiness, including reliable metadata annotation. However, both public repositories and industrial screening databases suffer from missing, inconsistent, or conflated assay annotations. In this work, we quantify the extent of missing annotations in PubChem for the BioAssay Ontology (BAO) assay format and physical detection method fields and investigate whether open-source and proprietary large language models (LLMs) can reliably predict and audit metadata annotations directly from the assay text. In our assessment, we found that the annotation coverage across PubChem’s \sim2 million bioassays is critically sparse, 36% lacking an assay format, 89% a BioAssay type, and &gt;99.9% any BAO-mapped assay format or detection technology term. This motivates the need for automated test-metadata curation. Using evaluation sets derived from PubChem and ChEMBL, we assess the agreement of seven open-source and proprietary LLMs with existing silver labels. Recall is at least 0.96 for biochemical and cell-based assay formats, with a similar pattern for detection technology, although disagreements increase on under-represented classes. Manual inspection shows that many of these disagreements trace back to inconsistencies between silver sources rather than to LLM error. Moreover, in a qualitative study with a senior industrial curator, LLM-generated evidence prompted the expert to revise some of their own labels, showing LLMs can flag potentially mislabeled assays. Across the study, performance differences between proprietary and open-source models were small. Together, these results suggest LLMs can support the large-scale annotation and auditing of assay metadata, though per-class reliability estimates and targeted human review remain necessary before such labels enter downstream ML pipelines.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="kalaivanan2026interacting" class="col-sm-8">
+<!-- Title -->
+<div class="title">Interacting particle guidance for sampling reward-tilted generative priors</div>
+<!-- Author -->
+<div class="author">
+Adhithyan
+Kalaivanan, Zheng
+Zhao, <em>Jens
+Sjölund</em>, and
+<span class="more-authors" title="click to view 1 more author" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '1 more author' ? 'Fredrik Lindsten' : '1 more author';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">1 more author</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>arXiv preprint arXiv:2609.37227</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+<a href="https://arxiv.org/abs/2609.37227" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+<!-- Hidden abstract block -->
+<div class="abstract hidden">
+<p>Inference-time steering adapts pretrained diffusion and flow-based models to new tasks, e.g., to generate samples from a conditional distribution or samples with desired properties, without retraining. This can be formalized as sampling from a reward-tilted generative prior. As exact sampling from this distribution is intractable, guidance-based methods rely on approximations producing biased samples, and sequential Monte Carlo (SMC) methods correct for this bias using importance weights. However, while exact in the large particle limit, SMC suffers from weight degeneracy and particle collapse in practice. We propose interacting particle guidance (IPG), which replaces reweighting with transport. The particles interact through an additional drift, derived from the Feynman–Kac PDE to cancel the reweighting term, and remain unweighted. Choosing the drift in a reproducing kernel Hilbert space yields a closed-form solution that is cheap to compute, with negligible overhead compared to SMC. We demonstrate the method on Gaussian mixtures with known posteriors, and on high-dimensional image inpainting and protein structure inference tasks.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col col-sm-2 abbr">
+</div>
+<!-- Entry bib key -->
+<div id="onils2026potency" class="col-sm-8">
+<!-- Title -->
+<div class="title">Potency Prediction via Probabilistic Modeling of Dose–Response Curves</div>
+<!-- Author -->
+<div class="author">
+Anton
+O’Nils, Stefano Sarao
+Mannelli, Ola
+Engkvist, and
+<span class="more-authors" title="click to view 2 more authors" onclick="
+var element = $(this);
+element.attr('title', '');
+var more_authors_text = element.text() == '2 more authors' ? 'Jens Sjölund, Annie M. Westerlund' : '2 more authors';
+var cursorPosition = 0;
+var textAdder = setInterval(function(){
+element.html(more_authors_text.substring(0, cursorPosition + 1));
+if (++cursorPosition == more_authors_text.length){
+clearInterval(textAdder);
+}
+}, '10');
+">2 more authors</span>
+</div>
+<!-- Journal/Book title and date -->
+<div class="periodical">
+<em>TODO</em>,  2026
+</div>
+<div class="periodical">
+</div>
+<!-- Links/Buttons -->
+<div class="links">
+<a href="https://doi.org/10.26434/chemrxiv.15008694/v1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+<a href="https://doi.org/10.26434/chemrxiv.15008694/v1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+</div>
+</div>
+</div>
+</li>
 </ol>
 <h2 class="bibliography">2025</h2>
 <ol class="bibliography">
