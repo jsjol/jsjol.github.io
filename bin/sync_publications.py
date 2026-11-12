@@ -253,13 +253,14 @@ def arxiv_lookup(title: str) -> dict | None:
         candidate = squash(clean)
         if not (candidate == target or candidate.startswith(target) or target.startswith(candidate)):
             continue
-        published = re.search(r"<published>(\d{4})", e)
+        published = re.search(r"<published>((\d{4})-\d{2}-\d{2})", e)
         summary = re.search(r"<summary>(.*?)</summary>", e, re.S)
         return {
             "arxiv_id": re.sub(r"v\d+$", "", ident.group(1)),
             "title": clean,
             "authors": [a.strip() for a in re.findall(r"<name>(.*?)</name>", e)],
-            "year": published.group(1) if published else "",
+            "year": published.group(2) if published else "",
+            "date": published.group(1) if published else "",
             "abstract": re.sub(r"\s+", " ", summary.group(1)).strip() if summary else "",
         }
     return None
@@ -270,8 +271,10 @@ def bib_from_arxiv(rec: dict, scholar_id: str, title: str, year: str) -> str:
         ("title", "{" + title + "}"),
         ("author", " and ".join(rec["authors"]) or "TODO"),
         ("year", rec["year"] or year),
-        ("journal", "arXiv preprint arXiv:" + rec["arxiv_id"]),
     ]
+    if rec.get("date"):
+        fields.append(("date", rec["date"]))
+    fields.append(("journal", "arXiv preprint arXiv:" + rec["arxiv_id"]))
     if rec.get("abstract"):
         fields.append(("abstract", rec["abstract"]))
     fields += [
@@ -303,6 +306,8 @@ def bib_from_crossref(item: dict, scholar_id: str, title: str, year: str) -> str
 
     fields = [("title", "{" + title + "}"), ("author", " and ".join(authors) or "TODO")]
     fields.append(("year", crossref_year))
+    if issued and issued[0] and len(issued) > 1:
+        fields.append(("date", "-".join(f"{p:02d}" for p in issued)))
     fields.append(("booktitle" if is_proceedings else "journal", venue or "TODO"))
     for name, key in (("volume", "volume"), ("number", "issue"), ("pages", "page")):
         if item.get(key):

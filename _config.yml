@@ -172,6 +172,9 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+  # Within a year, newest first. `date` (YYYY-MM or YYYY-MM-DD) is hidden from the page.
+  sort_by: year,date
+  order: descending,descending
 
 bib_search: true
 
@@ -194,6 +197,7 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     code,
+    date,
     eprint,
     google_scholar_id,
     hal,
