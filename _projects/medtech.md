@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Computational medicine
-description: Machine learning and optimization for radiotherapy, medical imaging, and clinical diagnostics.
+description: Machine learning and optimization for radiotherapy, medical imaging, and drug discovery.
 img: assets/img/NOW_demo.png
 importance: 4
 category: active
 ---
 
-Our work in medical technology spans radiotherapy planning, diffusion MRI, and breast cancer diagnostics---each an active area where principled computational methods make a concrete clinical difference.
+Our work in medical technology spans radiotherapy planning, diffusion MRI, breast cancer diagnostics, and drug discovery---each an active area where principled computational methods make a concrete clinical difference.
 
 ## Radiotherapy planning
 
@@ -46,3 +46,15 @@ A recent collaboration, led by Filip Szczepankiewicz's group, introduced slice e
 ## Breast cancer diagnostics (AID4BC)
 
 We participate in the [AID4BC](https://aid4bc.org/) consortium, a multimodal AI initiative focused on precision diagnostics and decision support for breast cancer. Our contribution, together with [Dave Zachariah](https://www.uu.se/en/contact-and-organisation/staff?query=N13-1398) at Uppsala University, centres on multimodal machine learning methods and causal foundations for internally and externally valid clinical decision-making. Together with the other partners---Karolinska Institutet, Lund University, Linköping University, and industry partners Sectra and Stratipath---we are building the world's largest multi-site and multi-modal breast cancer study (N > 10,000).
+
+## Drug discovery
+
+Together with AstraZeneca, we develop machine learning methods for drug discovery. Potency prediction is usually framed as regression on a single summary number, the half-maximal inhibitory concentration. We instead model the entire dose–response curve as the cumulative distribution function of a latent concentration variable. The model learns from the raw measurements and retains the slope, asymptotes and shape of the curve, which the summary number discards.
+
+We also study language models as tools in the drug discovery workflow. In agentic systems that orchestrate chemistry tools, components such as the language model and the type of agent cannot simply be exchanged without re-engineering the system. For bioassay databases, where annotations are often missing or inconsistent, language models can support large-scale annotation and auditing of assay metadata, although rare classes still need targeted human review.
+
+### Selected references
+
+- van Weesep L, Genheden S, Engkvist O, and **Sjölund J**. [_Exploring modularity of agentic systems for drug discovery._](https://arxiv.org/abs/2506.22189) European Conference on Multi-Agent Systems (2025).
+- van Weesep L, Tedoldi R, **Sjölund J**, Azizpour H, Winiwarter S, Engkvist O, Janet J P, Genheden S, and Viguera Diez J. [_Can LLMs reliably annotate bioassay metadata to improve data readiness?_](https://arxiv.org/abs/2610.01616) NeurIPS Workshop on AI Data Readiness for Scientific Discovery (2026).
+- O'Nils A, Sarao Mannelli S, Engkvist O, **Sjölund J**, and Westerlund A M. [_Potency prediction via probabilistic modeling of dose–response curves._](https://doi.org/10.26434/chemrxiv.15008694/v1) ChemRxiv (2026).

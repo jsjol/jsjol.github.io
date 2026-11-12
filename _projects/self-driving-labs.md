@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Self-driving labs for accelerated materials science
-description: Building autonomous laboratories that combine robotics and AI into closed-loop systems for rapid experimentation and exploration.
+title: Bayesian experimental design for self-driving labs
+description: Methods for choosing the next experiment, deployed in autonomous laboratories for materials science.
 img: assets/img/odacell.png
 importance: 2
 category: active
@@ -24,6 +24,10 @@ Together with the research group of [Erik J. Berg](https://scholar.google.se/cit
 {% include video.liquid path="https://www.youtube.com/embed/mAtBjrnRx-I" width="70%" height="400px" %}
 </div>
 
+- Yik J T, Zhang L, **Sjölund J**, Hou X, Svensson P H, Edström K, and Berg E J. [_Automated electrolyte formulation and coin cell assembly for high-throughput lithium-ion battery research._](https://doi.org/10.1039/D3DD00058C) Digital Discovery (2023).
+- Yik J T, Hvarfner C, **Sjölund J**, Berg EJ, and Zhang L. [_Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization._](https://doi.org/10.1016/j.xcrp.2025.102548) Cell Reports Physical Science (2025).
+- Vanoppen V, Johannsmann D, Hou X, **Sjölund J**, Broqvist P, and Berg E J. [_Exploring Metal Electroplating for Energy Storage by Quartz Crystal Microbalance: A Review._](https://doi.org/10.1002/adsr.202400025) Advanced Sensor Research.
+
 ## Thin film science
 
 In thin film science, self-driving labs have mainly been restricted to solution-based synthetic methods which are easier to automate but cannot access the broad chemical space of inorganic materials. In collaboration with the research group of [Jonathan Scragg](https://www.uu.se/en/contact-and-organisation/staff?query=N10-969), in the division of solar cell technology, we're building a self-driving lab based on magnetron co-sputtering. We present a rapid and calibration-free in-situ, machine learning driven approach to produce composition maps for arbitrary source combinations and sputtering conditions. Our framework dramatically increases throughput by avoiding the need for extensive characterisation or calibration, thus demonstrating the potential of self-driving labs to accelerate materials exploration.
@@ -31,6 +35,8 @@ In thin film science, self-driving labs have mainly been restricted to solution-
 <div style="text-align: center; margin: 1.5em 0;">
 <img src="/assets/img/publication_preview/solar_cell_workflow.png" alt="Self-driving sputtering lab workflow" width="70%"/>
 </div>
+
+- Jarl S, **Sjölund J**, Frost R J W, Holst A, and Scragg J J S. [_Machine learning for in-situ composition mapping in a self-driving magnetron sputtering system._](https://doi.org/10.1016/j.matdes.2025.115087) Materials & Design (2025).
 
 ## Simulations
 
@@ -42,20 +48,15 @@ In parallel with the physical experiments above, we are also performing simulati
 
 Phase-field models of this kind have many physical parameters. Using Lie symmetry groups, we reduce the parameter space of such a model without changing its input-output behavior. The reduction gives exact mappings between parameter sets, for instance sets that produce identical dendrite morphologies in battery cells of different sizes.
 
+- Taghavian H, Vanoppen V, Berg E J, Broqvist P, and **Sjölund J**. [_Navigating chemical design spaces for metal-ion batteries via machine-learning-guided phase-field simulations._](https://doi.org/10.1038/s41524-025-01735-x) npj Computational Materials (2025).
+- Taghavian H and **Sjölund J**. [_Exact model reduction by Lie symmetry groups._](https://arxiv.org/abs/2610.26767) arXiv (2026).
+
 ## Bayesian experimental design
 
 Gaussian processes are the standard surrogate model for choosing the next experiment, and we study how they shape those choices. On a bounded design space, the posterior variance of a Gaussian process with a stationary kernel is inflated near the boundary, because the kernel's correlation neighborhood is cut off there. This effect worsens with dimension and does not depend on the measured values. Its consequences differ between acquisition functions: maximizing the variance concentrates measurements in the corners, while integrated posterior variance and expected predictive information gain place them on axis-aligned shells in the interior.
 
 For active learning, where the goal is to reconstruct an unknown function, we correct the boundary bias with a geometric equalizer. A second limitation is that the posterior variance depends only on where measurements are made, not on what they show. A warp of the input space, built from the posterior mean without any training, therefore puts more measurements where the function varies rapidly. For Bayesian optimization, we keep the surrogate fixed and set the spatial preference of the exploration term explicitly, through spatial weight fields whose construction is amortized by neural surrogates. The default boundary bias changes which optima are reached, and alternative exploration principles often lower the regret, particularly early in the optimization.
 
-## References
-
-- Yik J T, Zhang L, **Sjölund J**, Hou X, Svensson P H, Edström K, and Berg E J. [_Automated electrolyte formulation and coin cell assembly for high-throughput lithium-ion battery research._](https://doi.org/10.1039/D3DD00058C) Digital Discovery (2023).
-- Yik J T, Hvarfner C, **Sjölund J**, Berg EJ, and Zhang L. [_Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization._](https://doi.org/10.1016/j.xcrp.2025.102548) Cell Reports Physical Science (2025).
-- Vanoppen V, Johannsmann D, Hou X, **Sjölund J**, Broqvist P, and Berg E J. [_Exploring Metal Electroplating for Energy Storage by Quartz Crystal Microbalance: A Review._](https://doi.org/10.1002/adsr.202400025) Advanced Sensor Research.
-- Jarl S, **Sjölund J**, Frost R J W, Holst A, and Scragg J J S. [_Machine learning for in-situ composition mapping in a self-driving magnetron sputtering system._](https://doi.org/10.1016/j.matdes.2025.115087) Materials & Design (2025).
-- Taghavian H, Vanoppen V, Berg E J, Broqvist P, and **Sjölund J**. [_Navigating chemical design spaces for metal-ion batteries via machine-learning-guided phase-field simulations._](https://doi.org/10.1038/s41524-025-01735-x) npj Computational Materials (2025).
-- Taghavian H and **Sjölund J**. [_Exact model reduction by Lie symmetry groups._](https://arxiv.org/abs/2610.26767) arXiv (2026).
 - Bånkestad M, Jarl S, and **Sjölund J**. [_Boundary variance inflation causes acquisition bias in Gaussian processes._](https://arxiv.org/abs/2606.07561) arXiv (2026).
 - Jarl S, **Sjölund J**, Scragg J J S, and Bånkestad M. [_Correcting boundary bias and observation independence in Bayesian experimental design._](https://arxiv.org/abs/2602.01898) arXiv (2026).
 - Bånkestad M and **Sjölund J**. [_Understanding hidden spatial preferences in Bayesian optimization._](https://arxiv.org/abs/2610.14696) arXiv (2026).

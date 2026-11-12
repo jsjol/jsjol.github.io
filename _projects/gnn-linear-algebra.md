@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Accelerating linear algebra with graph neural networks
-description: Pioneering the use of graph neural networks as a computational primitive for accelerating numerical algorithms.
+title: Learned numerical methods for linear algebra and optimization
+description: Learning components of numerical algorithms, such as preconditioners, warm starts and inner solvers, to accelerate them without sacrificing reliability.
 img: assets/img/publication_preview/neuralIF_demo.png
 importance: 1
 category: active
