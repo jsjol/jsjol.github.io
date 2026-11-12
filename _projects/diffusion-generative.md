@@ -1,13 +1,32 @@
 ---
 layout: page
 title: Diffusion and generative models
-description: Developing and applying diffusion-based generative models for image restoration, conditional inference, and scientific applications.
+description: Developing and applying diffusion-based generative models for conditional inference, image restoration, and scientific applications.
 img: assets/img/publication_preview/irsde_overview.png
 importance: 3
 category: active
 ---
 
 Generative models and Bayesian inference are key tools for accelerating scientific discovery by enabling efficient exploration of large design spaces. We work on both foundational aspects of these models and their application to scientific and engineering problems.
+
+## Training-free conditional inference
+
+A key challenge for incorporating pretrained generative models into Bayesian experimental design loops is performing conditional inference without costly retraining. We develop methods that condition pretrained diffusion and flow-based models on observations or target properties at inference time.
+
+A flow-based model maps samples from a source distribution, typically Gaussian, to data. ESS-Flow uses this structure to perform Bayesian inference directly in the source space with elliptical slice sampling. It needs only forward passes through the generative model and the observation process, so it also applies when gradients are unreliable or unavailable, for example with simulation-based observations.
+
+<div style="text-align: center; margin: 1.5em 0;">
+<img src="/assets/img/publication_preview/essflow.png" alt="ESS-Flow: training-free guidance in source space" width="60%"/>
+<p><small>ESS-Flow performs conditional inference by applying a potential function in the source space of a flow model, avoiding costly retraining.</small></p>
+</div>
+
+For diffusion models, we express exact conditional simulation within the unconditional model as inference over a partial bridge of the denoising stochastic differential equation. Particle Gibbs and pseudo-marginal samplers then target the conditional distribution without any approximation beyond the Monte Carlo error.
+
+Guidance-based methods steer a pretrained model toward a reward or an observation and only approximate the resulting target distribution. Sequential Monte Carlo corrects for this with importance weights, but in practice the weights degenerate and the particles collapse onto a few samples. Interacting particle guidance replaces the reweighting with an additional drift, derived from the Feynman–Kac equation, that moves the particles instead. With the drift chosen in a reproducing kernel Hilbert space, it has a closed form and costs little more than sequential Monte Carlo.
+
+- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) NeurIPS (2026).
+- Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [_Conditioning diffusion models by explicit forward-backward bridging._](https://arxiv.org/abs/2405.13794) AISTATS (2025).
+- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_Interacting particle guidance for sampling reward-tilted generative priors._](https://arxiv.org/abs/2609.37227) arXiv (2026).
 
 ## Image restoration with mean-reverting SDEs
 
@@ -43,21 +62,6 @@ More recently, we have removed the coupled forward-backward pair altogether. Mak
 - Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Image restoration with mean-reverting stochastic differential equations._](https://proceedings.mlr.press/v202/luo23b.html) ICML (2023).
 - Luo Z, Gustafsson F K, Zhao Z, **Sjölund J**, and Schön T B. [_Controlling vision-language models for universal image restoration._](https://arxiv.org/abs/2310.01018) ICLR (2024).
 - Luo Z, Gustafsson F K, **Sjölund J**, and Schön T B. [_Efficient image restoration with state-dependent forward diffusion._](https://openreview.net/forum?id=Eq9k6Va3hY) Transactions on Machine Learning Research (2026).
-
-## Training-free conditional inference
-
-A key challenge for incorporating pretrained generative models into Bayesian experimental design loops is performing conditional inference without costly retraining. We are developing methods for training-free guidance of flow-based and diffusion models, enabling conditional sampling from pretrained models by leveraging the source-space structure.
-
-Guidance-based methods only approximate the target distribution, and sequential Monte Carlo corrects for this with importance weights, but in practice the weights degenerate and the particles collapse onto a few samples. Interacting particle guidance replaces the reweighting with an additional drift, derived from the Feynman–Kac equation, that moves the particles instead. With the drift chosen in a reproducing kernel Hilbert space, it has a closed form and costs little more than sequential Monte Carlo.
-
-<div style="text-align: center; margin: 1.5em 0;">
-<img src="/assets/img/publication_preview/essflow.png" alt="ESS-Flow: training-free guidance in source space" width="60%"/>
-<p><small>ESS-Flow performs conditional inference by applying a potential function in the source space of a flow model, avoiding costly retraining.</small></p>
-</div>
-
-- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_ESS-Flow: Training-free guidance of flow-based models as inference in source space._](https://arxiv.org/abs/2510.05849) NeurIPS (2026).
-- Kalaivanan A, Zhao Z, **Sjölund J**, and Lindsten F. [_Interacting particle guidance for sampling reward-tilted generative priors._](https://arxiv.org/abs/2609.37227) arXiv (2026).
-- Corenflos A, Zhao Z, Särkkä S, **Sjölund J**, and Schön T B. [_Conditioning diffusion models by explicit forward-backward bridging._](https://arxiv.org/abs/2405.13794) AISTATS (2025).
 
 ## Reviews and broader contributions
 
